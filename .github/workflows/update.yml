@@ -28,6 +28,9 @@ jobs:
       - name: Hent Stortinget
         run: python pipeline/stortinget.py
 
+      - name: Hent Sivilombudet
+        run: python pipeline/sivilombudet.py
+
       - name: Bygg søkeindeks
         run: python pipeline/build_index.py
 

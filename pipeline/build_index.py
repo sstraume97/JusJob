@@ -52,10 +52,23 @@ def _stortinget_entries():
         }
 
 
+def _sivilombudet_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "sivilombudet.jsonl.gz"):
+        yield {
+            "id": f"sivilombudet-{d['case_number'] or d['url']}",
+            "source": "sivilombudet.no",
+            "type": "uttalelse",
+            "title": d["title"],
+            "court_or_body": "Sivilombudet",
+            "url": d["url"],
+            "snippet": d["summary"] or d["body"][:300],
+        }
+
+
 SOURCE_BUILDERS = [
     _rettspraksis_entries,
     _stortinget_entries,
-    # TODO: legg til _sivilombudet_entries osv. når den er klar
+    _sivilombudet_entries,
 ]
 
 
