@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "JusJob",
+  "version": "0.1.0",
+  "description": "Søk i norske rettskilder (rettspraksis.no, Stortinget, Sivilombudet m.fl.) direkte i Zotero",
+  "author": "Sondre Bogen-Straume",
+  "homepage_url": "https://github.com/sstraume97/JusJob",
+  "applications": {
+    "zotero": {
+      "id": "jusjob@sstraume97.github.io",
+      "strict_min_version": "7.0",
+      "strict_max_version": "7.*"
+    }
+  }
+}

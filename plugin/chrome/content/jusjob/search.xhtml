@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css"?>
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        title="JusJob – søk i rettskilder"
+        width="900" height="650"
+        persist="screenX screenY width height">
+
+  <html:div style="display:flex;flex-direction:column;height:100%;padding:10px;box-sizing:border-box;font-family:sans-serif;">
+    <html:div style="display:flex;gap:8px;align-items:center;">
+      <html:input id="jusjob-search-input" type="text"
+                  placeholder="Søk på tittel, saksnummer, stikkord …"
+                  style="flex:1;padding:6px;font-size:14px;" />
+      <html:span id="jusjob-status" style="color:#666;font-size:12px;">Laster indeks …</html:span>
+    </html:div>
+    <html:div id="jusjob-results"
+              style="overflow:auto;flex:1;margin-top:10px;border:1px solid #ccc;"/>
+  </html:div>
+
+  <script src="search.js"/>
+</window>
