@@ -39,9 +39,23 @@ def _rettspraksis_entries():
         }
 
 
+def _stortinget_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "stortinget.jsonl.gz"):
+        yield {
+            "id": f"stortinget-{d['id']}",
+            "source": "stortinget.no",
+            "type": d["dokumentgruppe"] or d["type"],
+            "title": d["tittel"],
+            "court_or_body": d["komite"] or "Stortinget",
+            "url": f"https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p={d['id']}",
+            "snippet": d["henvisning"],
+        }
+
+
 SOURCE_BUILDERS = [
     _rettspraksis_entries,
-    # TODO: legg til _stortinget_entries, _sivilombudet_entries osv. når de er klare
+    _stortinget_entries,
+    # TODO: legg til _sivilombudet_entries osv. når den er klar
 ]
 
 

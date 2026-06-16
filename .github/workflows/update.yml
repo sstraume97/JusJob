@@ -25,6 +25,9 @@ jobs:
       - name: Hent rettspraksis.no
         run: python pipeline/rettspraksis.py
 
+      - name: Hent Stortinget
+        run: python pipeline/stortinget.py
+
       - name: Bygg søkeindeks
         run: python pipeline/build_index.py
 
