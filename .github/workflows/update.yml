@@ -33,6 +33,7 @@ jobs:
         run: python pipeline/sivilombudet.py
 
       - name: Hent rettspraksis.no (maks 2000 nye sider per daglig kjøring)
+        continue-on-error: true
         env:
           MAX_NEW_PAGES: "2000"
         run: python pipeline/rettspraksis.py
