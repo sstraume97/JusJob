@@ -42,10 +42,18 @@ class Decision:
 
 def _api_get(session: requests.Session, delay: float = INFO_DELAY_SECONDS, **params) -> dict:
     params.setdefault("format", "json")
-    resp = session.get(API_URL, params=params, timeout=30)
-    resp.raise_for_status()
-    time.sleep(delay)
-    return resp.json()
+    for attempt in range(5):
+        try:
+            resp = session.get(API_URL, params=params, timeout=60)
+            resp.raise_for_status()
+            time.sleep(delay)
+            return resp.json()
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+            if attempt == 4:
+                raise
+            wait = 10 * 2 ** attempt  # 10, 20, 40, 80 sekunder
+            print(f"  Timeout/feil (forsøk {attempt+1}/5), venter {wait}s: {e}", flush=True)
+            time.sleep(wait)
 
 
 def _category_members(session: requests.Session, category: str) -> Iterator[dict]:
