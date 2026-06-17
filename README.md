@@ -11,22 +11,51 @@ Prosjektet består av to deler:
 
 ## Arkitektur
 
-```
-GitHub Actions (daglig cron)
-        │
-        ▼
-pipeline/rettspraksis.py    ──► data/rettspraksis.jsonl.gz
-pipeline/stortinget.py      ──► data/stortinget.jsonl.gz
-pipeline/sivilombudet.py    ──► data/sivilombudet.jsonl.gz
-        │
-        ▼
-pipeline/build_index.py     ──► data/search-index.json
-        │
-        ▼
-GitHub Pages  (https://sstraume97.github.io/JusJob/search-index.json)
-        │
-        ▼
-Zotero-plugin søker i search-index.json
+```mermaid
+flowchart TD
+    subgraph Kilder["📚 Rettskilder"]
+        A1([rettspraksis.no\nMediaWiki API])
+        A2([data.stortinget.no\nXML-API])
+        A3([sivilombudet.no\nSitemap + HTML])
+    end
+
+    subgraph Actions["⚙️ GitHub Actions"]
+        B1[pipeline/rettspraksis.py]
+        B2[pipeline/stortinget.py]
+        B3[pipeline/sivilombudet.py]
+        B4[pipeline/build_index.py]
+    end
+
+    subgraph Data["💾 data/  ← committes til repo"]
+        C1[(rettspraksis.jsonl.gz)]
+        C2[(stortinget.jsonl.gz)]
+        C3[(sivilombudet.jsonl.gz)]
+        C4[(search-index.json)]
+    end
+
+    subgraph Pages["🌐 GitHub Pages"]
+        D[search-index.json\nsstraume97.github.io/JusJob/]
+    end
+
+    subgraph Zotero["🔍 Zotero-plugin"]
+        E[Søkevindu\nclient-side filtrering]
+        F[Importer som\nZotero-item]
+    end
+
+    A1 -->|inkrementell, batch 50 sider| B1
+    A2 -->|5 siste sesjoner| B2
+    A3 -->|inkrementell via lastmod| B3
+
+    B1 --> C1
+    B2 --> C2
+    B3 --> C3
+
+    C1 & C2 & C3 --> B4
+    B4 --> C4
+
+    C4 -->|publiseres| D
+    D -->|fetch over HTTPS| E
+    E -->|velg treff| F
 ```
 
 Alle data-filer committes til repoet og publiseres som statiske filer via GitHub Pages. Zotero-pluginen henter `search-index.json` over HTTPS og søker client-side — ingen server å drifte.
