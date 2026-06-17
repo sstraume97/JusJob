@@ -1,8 +1,8 @@
-name: Oppdater rettskildedata
+name: Oppdater rettskildedata (daglig)
 
 on:
   schedule:
-    - cron: "0 3 * * *"  # daglig kl 03:00 UTC
+    - cron: "0 3 * * *"   # daglig kl 03:00 UTC
   workflow_dispatch: {}
 
 permissions:
@@ -10,9 +10,13 @@ permissions:
   pages: write
   id-token: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   scrape-and-build:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -22,14 +26,16 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Hent rettspraksis.no
-        run: python pipeline/rettspraksis.py
-
       - name: Hent Stortinget
         run: python pipeline/stortinget.py
 
       - name: Hent Sivilombudet
         run: python pipeline/sivilombudet.py
+
+      - name: Hent rettspraksis.no (maks 2000 nye sider per daglig kjøring)
+        env:
+          MAX_NEW_PAGES: "2000"
+        run: python pipeline/rettspraksis.py
 
       - name: Bygg søkeindeks
         run: python pipeline/build_index.py
