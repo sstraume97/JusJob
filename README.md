@@ -64,14 +64,50 @@ Alle data-filer committes til repoet og publiseres som statiske filer via GitHub
 
 ## Kilder
 
+### Lovverk og forarbeider
+
 | Kilde | Type rettskilder | Status | Metode |
 |---|---|---|---|
-| [rettspraksis.no](https://www.rettspraksis.no) | Rettsavgjørelser (Høyesterett, lagmannsretter, tingretter) | ✅ Implementert | MediaWiki API (`/w/api.php`), CC-lisens |
-| [Stortinget](https://data.stortinget.no) | Saker, forarbeider, vedtak (Prop., Innst., Dok. 8 m.m.) | ✅ Implementert | Offisielt XML-API |
+| [Lovdata (gratis)](https://lovdata.no) | Lover, forskrifter | ⏳ Ikke startet | NLOD 2.0 åpne data (XML-eksport) |
+| [Stortinget](https://data.stortinget.no) | Saker, Prop., Innst., Dok. 8, vedtak, møtereferater | ✅ Implementert | Offisielt XML-API |
+| [Regjeringen.no](https://www.regjeringen.no) | NOU-er, høringer, proposisjoner, rundskriv | ⏳ Ikke startet | HTML-skraping |
+| [EUR-Lex / EØS-notater](https://eur-lex.europa.eu) | EU-forordninger, direktiver, EØS-notater | ⏳ Ikke startet | EUR-Lex REST API + regjeringen.no/eos |
+
+### Rettsavgjørelser
+
+| Kilde | Type rettskilder | Status | Metode |
+|---|---|---|---|
+| [rettspraksis.no](https://www.rettspraksis.no) | Høyesterett, lagmannsretter, tingretter (CC-lisens) | ✅ Implementert | MediaWiki API (`/w/api.php`) |
+| [Lovdata (gratis)](https://lovdata.no) | Et utvalg Høyesteretts-avgjørelser (gratisdelen) | ⏳ Ikke startet | NLOD 2.0 åpne data |
+| [Domstol.no](https://www.domstol.no) | Avgjørelser fra tingrett/lagmannsrett (fritt tilgjengelige) | ⏳ Ikke startet | HTML-skraping |
+| [EFTA-domstolen / EU-domstolen](https://www.eftacourt.int) | EØS-relevante avgjørelser | ⏳ Ikke startet | EFTA Court API / curia.europa.eu |
+| [EMD / HUDOC](https://hudoc.echr.coe.int) | Den europeiske menneskerettsdomstolen | ⏳ Ikke startet | HUDOC JSON API |
+
+### Tilsyn, ombud og kontrollorganer
+
+| Kilde | Type rettskilder | Status | Metode |
+|---|---|---|---|
 | [Sivilombudet](https://www.sivilombudet.no) | Uttalelser | ✅ Implementert | HTML-skraping via sitemap.xml |
-| Lovdata (gratis) | Lover og forskrifter | ⏳ Ikke startet | NLOD 2.0 åpne data |
-| Regjeringen.no | NOU-er, høringer, rundskriv | ⏳ Ikke startet | HTML-skraping |
-| Helsetilsynet / Riksrevisjonen | Tilsynsrapporter, riksrevisjonsrapporter | ⏳ Ikke startet | HTML-skraping |
+| [Helsetilsynet](https://www.helsetilsynet.no) | Tilsynsrapporter, vedtak | ⏳ Ikke startet | HTML-skraping |
+| [Riksrevisjonen](https://www.riksrevisjonen.no) | Revisjonsrapporter, undersøkelser | ⏳ Ikke startet | HTML-skraping |
+| [Datatilsynet](https://www.datatilsynet.no) | Vedtak, veiledninger | ⏳ Ikke startet | HTML-skraping |
+| [Forbrukertilsynet](https://www.forbrukertilsynet.no) | Vedtak, retningslinjer | ⏳ Ikke startet | HTML-skraping |
+| [LDO / Diskrimineringsnemnda](https://www.diskrimineringsnemnda.no) | Vedtak, uttalelser | ⏳ Ikke startet | HTML-skraping |
+
+### Klage- og nemndsorganer
+
+| Kilde | Type rettskilder | Status | Metode |
+|---|---|---|---|
+| [Trygderetten](https://www.trygderetten.no) | Kjennelser | ⏳ Ikke startet | HTML-skraping |
+| [Pasientskadenemnda (NPE)](https://www.npe.no) | Vedtak | ⏳ Ikke startet | HTML-skraping |
+| [Husleietvistutvalget](https://www.htu.no) | Avgjørelser | ⏳ Ikke startet | HTML-skraping |
+
+### Andre forvaltningskilder
+
+| Kilde | Type rettskilder | Status | Metode |
+|---|---|---|---|
+| [KUDOS (DFØ)](https://kudos.dfo.no) | Styringsdokumenter, evalueringer | ⏳ Ikke startet | HTML-skraping |
+| [Departementenes rundskriv](https://www.regjeringen.no/rundskriv) | Rundskriv per departement | ⏳ Ikke startet | HTML-skraping (underside av regjeringen.no) |
 
 ---
 
@@ -131,11 +167,43 @@ Rådata lagres som komprimerte JSONL-filer (`.jsonl.gz`). Kun metadata og et kor
 
 Pluginen er et skjelett og er **ikke ferdig testet**. Se [`plugin/README.md`](plugin/README.md) for status og instruksjoner for å teste i Zotero.
 
-Kort om hva den gjør:
+### Implementert (skjelett, utestet)
+
 - Legger til "Søk i rettskilder (JusJob)…" under Verktøy-menyen i Zotero
-- Åpner et søkevindu som henter `search-index.json` fra GitHub Pages
-- Lar deg søke på tittel, domstol og tekstutdrag
-- Importerer valgte treff som Zotero-items (bruker Zoteros innebygde "Case"-type for rettsavgjørelser)
+- Søkevindu som henter `search-index.json` fra GitHub Pages og søker client-side
+- Importerer valgte treff som Zotero-items (bruker Zoteros innebygde `Case`-type for rettsavgjørelser, `Document` for øvrig)
+
+### Gjenstår — plugin-funksjoner
+
+| Funksjon | Beskrivelse | Status |
+|---|---|---|
+| **Søkepanel i Zotero** | Ferdigstille og teste søkevinduet; filtrering per kilde og kildetyp | 🚧 Skjelett |
+| **Norsk juridisk sitatstil (CSL)** | Ny CSL-stil som siterer lover, dommer og forarbeider korrekt etter norsk juridisk tradisjon (f.eks. `Rt. 2013 s. 1`, `NOU 2020: 4`, `Lov 1902-05-22 nr 10`) | ⏳ Ikke startet |
+| **Zotero Connector-translator** | `Save to Zotero`-knapp i nettleseren som gjenkjenner kildetypen (lov, dom, forarbeid) på støttede sider og henter riktige metadata automatisk | ⏳ Ikke startet |
+| **Sitatsjekk** | Lim inn en henvisning (f.eks. `Rt. 2013 s. 1170`) og få den automatisk slått opp og lagt i Zotero med riktige felt | ⏳ Ikke startet |
+| **Forarbeidskjede-bygger** | Gitt en lovbestemmelse, foreslå komplett kjede: NOU → Prop. → Innst. → lovvedtak, basert på Stortinget-API | ⏳ Ikke startet |
+| **Endringshistorikk-varsling** | Følg en lov/bestemmelse og få varsel i Zotero når Lovdata viser at den er endret | ⏳ Ikke startet |
+| **Eksport til juridisk notat** | Generer ferdig fotnoteliste i Word/PDF fra valgte Zotero-items i riktig norsk juridisk sitering | ⏳ Ikke startet |
+| **Automatisk kobling mellom kilder** | En lov i Zotero-biblioteket lenkes automatisk til relevante forarbeider og rettsavgjørelser som allerede er lagret | ⏳ Ikke startet |
+
+### Planlagt plugin-struktur (fullversjon)
+
+```
+plugin/
+  manifest.json
+  bootstrap.js
+  chrome.manifest
+  chrome/content/jusjob/
+    search.xhtml          – søkepanel (under utvikling)
+    search.js
+  resource/translators/   – Zotero Connector-translators per kilde
+    lovdata.js
+    stortinget.js
+    rettspraksis.js
+    sivilombudet.js
+  csl/
+    jusjob-juridisk.csl   – norsk juridisk sitatstil
+```
 
 ---
 
