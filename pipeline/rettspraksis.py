@@ -23,9 +23,9 @@ import requests
 API_URL = "https://www.rettspraksis.no/w/api.php"
 USER_AGENT = "JusJob-DataPipeline/0.1 (+https://github.com/sstraume97/JusJob)"
 DECISION_SUBCATEGORIES = {"Kategori:Høyesterett", "Kategori:Lagmannsretter", "Kategori:Tingretter"}
-CONTENT_DELAY_SECONDS = 0.3   # mellom batch-kall med sideinnhold
-INFO_DELAY_SECONDS = 0.1      # mellom billige revinfo/kategorikall
-BATCH_SIZE = 50               # MediaWikis standard max-titler per kall
+CONTENT_DELAY_SECONDS = 2.0   # mellom batch-kall med sideinnhold
+INFO_DELAY_SECONDS = 0.5      # mellom billige revinfo/kategorikall
+BATCH_SIZE = 10               # mindre batch for å unngå timeout på store responser
 
 
 SNIPPET_LENGTH = 300  # lagrer kun de første tegnene av sideteksten
