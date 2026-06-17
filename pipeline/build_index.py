@@ -35,7 +35,7 @@ def _rettspraksis_entries():
             "title": d["title"],
             "court_or_body": d["court"],
             "url": d["url"],
-            "snippet": d["wikitext"][:300],
+            "snippet": d["snippet"],
         }
 
 

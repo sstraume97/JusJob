@@ -28,14 +28,15 @@ INFO_DELAY_SECONDS = 0.1      # mellom billige revinfo/kategorikall
 BATCH_SIZE = 50               # MediaWikis standard max-titler per kall
 
 
+SNIPPET_LENGTH = 300  # lagrer kun de første tegnene av sideteksten
+
 @dataclass
 class Decision:
     page_id: int
     title: str
     court: str
     revid: int
-    wikitext: str
-    categories: list[str]
+    snippet: str          # første SNIPPET_LENGTH tegn av wikitext
     url: str
 
 
@@ -75,26 +76,25 @@ def _pages_revinfo(session: requests.Session, titles: list[str]) -> dict[str, in
     return result
 
 
-def _pages_wikitext_batch(session: requests.Session, titles: list[str]) -> dict[str, tuple[str, list[str]]]:
-    """Henter wikitext + kategorier for opp til BATCH_SIZE titler i ett kall."""
+def _pages_snippet_batch(session: requests.Session, titles: list[str]) -> dict[str, str]:
+    """Henter første SNIPPET_LENGTH tegn av wikitext for opp til BATCH_SIZE titler."""
     data = _api_get(
         session,
         delay=CONTENT_DELAY_SECONDS,
         action="query",
-        prop="revisions|categories",
+        prop="revisions",
         rvprop="content",
         rvslots="main",
         titles="|".join(titles),
     )
-    result: dict[str, tuple[str, list[str]]] = {}
+    result: dict[str, str] = {}
     for page in data["query"]["pages"].values():
         title = page["title"]
         revisions = page.get("revisions")
         if not revisions:
             continue
         wikitext = revisions[0]["slots"]["main"]["*"]
-        cats = [c["title"] for c in page.get("categories", [])]
-        result[title] = (wikitext, cats)
+        result[title] = wikitext[:SNIPPET_LENGTH]
     return result
 
 
@@ -138,23 +138,22 @@ def iter_decisions(
             remaining = max_new_pages - fetched_new
             needs_fetch = needs_fetch[:remaining]
 
-        # Batch-hent innhold for nye/endrede sider
+        # Batch-hent snippet for nye/endrede sider
         for i in range(0, len(needs_fetch), BATCH_SIZE):
             batch = needs_fetch[i : i + BATCH_SIZE]
             title_map = {m["title"]: m for m in batch}
-            wikitext_map = _pages_wikitext_batch(session, list(title_map.keys()))
-            for title, (wikitext, cats) in wikitext_map.items():
+            snippet_map = _pages_snippet_batch(session, list(title_map.keys()))
+            for title, snippet in snippet_map.items():
                 member = title_map[title]
                 yield Decision(
                     page_id=member["pageid"],
                     title=title,
                     court=court,
                     revid=revinfo.get(title, 0),
-                    wikitext=wikitext,
-                    categories=cats,
+                    snippet=snippet,
                     url=f"https://www.rettspraksis.no/wiki/{title.replace(' ', '_')}",
                 )
-            fetched_new += len(wikitext_map)
+            fetched_new += len(snippet_map)
 
         print(
             f"  {court}: {len(members)} sider, "
