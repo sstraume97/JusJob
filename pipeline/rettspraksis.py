@@ -147,7 +147,8 @@ def iter_decisions(
             needs_fetch = needs_fetch[:remaining]
 
         # Batch-hent snippet for nye/endrede sider
-        for i in range(0, len(needs_fetch), BATCH_SIZE):
+        total_needs = len(needs_fetch)
+        for i in range(0, total_needs, BATCH_SIZE):
             batch = needs_fetch[i : i + BATCH_SIZE]
             title_map = {m["title"]: m for m in batch}
             snippet_map = _pages_snippet_batch(session, list(title_map.keys()))
@@ -162,6 +163,8 @@ def iter_decisions(
                     url=f"https://www.rettspraksis.no/wiki/{title.replace(' ', '_')}",
                 )
             fetched_new += len(snippet_map)
+            if (i // BATCH_SIZE) % 50 == 0:
+                print(f"    {court}: {i + len(batch)}/{total_needs} hentet ...", flush=True)
 
         print(
             f"  {court}: {len(members)} sider, "
