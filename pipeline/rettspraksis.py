@@ -72,15 +72,19 @@ def _category_members(session: requests.Session, category: str) -> Iterator[dict
             break
 
 
-def _pages_revinfo(session: requests.Session, titles: list[str]) -> dict[str, int]:
+def _pages_revinfo(session: requests.Session, titles: list[str], label: str = "") -> dict[str, int]:
     """Henter siste revisjons-id for opp til mange titler – ingen sideinnhold."""
     result: dict[str, int] = {}
-    for i in range(0, len(titles), BATCH_SIZE):
+    total = len(titles)
+    for i in range(0, total, BATCH_SIZE):
         batch = titles[i : i + BATCH_SIZE]
         data = _api_get(session, action="query", prop="info", titles="|".join(batch))
         for page in data["query"]["pages"].values():
             if "lastrevid" in page:
                 result[page["title"]] = page["lastrevid"]
+        done = min(i + BATCH_SIZE, total)
+        print(f"\r  [{label}] Sjekker revisjoner: {done}/{total} ({100*done//total}%)", end="", flush=True)
+    print(flush=True)
     return result
 
 
@@ -128,8 +132,11 @@ def iter_decisions(
             break
 
         court = subcategory.removeprefix("Kategori:")
+        print(f"\n=== {court} ===", flush=True)
+        print(f"  Henter sideliste ...", end="", flush=True)
         members = [m for m in _category_members(session, subcategory) if m["ns"] == 0]
-        revinfo = _pages_revinfo(session, [m["title"] for m in members])
+        print(f" {len(members)} sider funnet", flush=True)
+        revinfo = _pages_revinfo(session, [m["title"] for m in members], label=court)
 
         # Yield cached pages umiddelbart
         needs_fetch: list[dict] = []
@@ -147,7 +154,10 @@ def iter_decisions(
             needs_fetch = needs_fetch[:remaining]
 
         # Batch-hent snippet for nye/endrede sider
-        for i in range(0, len(needs_fetch), BATCH_SIZE):
+        total_needs = len(needs_fetch)
+        cached_count = len(members) - total_needs
+        print(f"  {cached_count} uendrede (gjenbrukes), {total_needs} nye/endrede hentes", flush=True)
+        for i in range(0, total_needs, BATCH_SIZE):
             batch = needs_fetch[i : i + BATCH_SIZE]
             title_map = {m["title"]: m for m in batch}
             snippet_map = _pages_snippet_batch(session, list(title_map.keys()))
@@ -162,12 +172,11 @@ def iter_decisions(
                     url=f"https://www.rettspraksis.no/wiki/{title.replace(' ', '_')}",
                 )
             fetched_new += len(snippet_map)
+            done = min(i + BATCH_SIZE, total_needs)
+            print(f"\r  [{court}] Henter innhold: {done}/{total_needs} ({100*done//total_needs if total_needs else 0}%)", end="", flush=True)
 
-        print(
-            f"  {court}: {len(members)} sider, "
-            f"{len(needs_fetch)} nye/endrede hentet",
-            flush=True,
-        )
+        print(flush=True)
+        print(f"  {court} ferdig: {len(members)} sider totalt", flush=True)
 
 
 def _load_existing(path) -> dict[int, Decision]:
@@ -190,8 +199,14 @@ def main() -> None:
     from pathlib import Path
 
     max_new = int(os.environ.get("MAX_NEW_PAGES", "0"))
+    print("=" * 50, flush=True)
+    print("JusJob — henter rettsavgjørelser fra rettspraksis.no", flush=True)
+    print(f"Kategorier: {', '.join(c.removeprefix('Kategori:') for c in DECISION_SUBCATEGORIES)}", flush=True)
     if max_new:
-        print(f"MAX_NEW_PAGES={max_new} (begrenser nye innholdshentinger denne kjøringen)")
+        print(f"Maks nye sider denne kjøringen: {max_new}")
+    else:
+        print("Maks nye sider: ubegrenset (full bootstrap)")
+    print("=" * 50, flush=True)
 
     out_path = Path(__file__).resolve().parent.parent / "data" / "rettspraksis.jsonl.gz"
     out_path.parent.mkdir(parents=True, exist_ok=True)
