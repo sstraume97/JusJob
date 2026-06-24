@@ -101,6 +101,11 @@ Alle data-filer committes til repoet og publiseres som statiske filer via GitHub
 | [Trygderetten](https://www.trygderetten.no) | Kjennelser | ⏳ Ikke startet | HTML-skraping |
 | [Pasientskadenemnda (NPE)](https://www.npe.no) | Vedtak | ⏳ Ikke startet | HTML-skraping |
 | [Husleietvistutvalget](https://www.htu.no) | Avgjørelser | ⏳ Ikke startet | HTML-skraping |
+| [Klagenemdsekretariatet](https://www.klagenemndssekretariatet.no/) [^1] | Avgjørelser | ⏳ Ikke startet | |
+
+
+
+
 
 ### Andre forvaltningskilder
 
@@ -232,3 +237,6 @@ MAX_NEW_PAGES=500 python pipeline/rettspraksis.py
 2. Under "Build and deployment" → Source: velg **GitHub Actions**
 3. Kjør `bootstrap-rettspraksis.yml` manuelt én gang via Actions-fanen
 4. Deretter kjører `update.yml` daglig automatisk
+
+# Fotnote
+[^1]: KOFA - Klagenemnda for Offentlige Anskaffelser, Konkurranseklagenemnda, Medieklagenemnda, Energiklagenemnda, Markedsrådet, Lotterinemnda, Stiftelsesklagenemnda, Frivillighetsregisternemnda, Finanstilsynsklagenemnda, Klagenemnda for godkjenning av utenlandsk utdanning og yrkesgodkjenning.
