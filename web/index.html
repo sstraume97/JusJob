@@ -152,11 +152,11 @@
         <div class="label">dokumenter i søkeindeksen</div>
       </div>
       <div class="card">
-        <div class="num">4</div>
+        <div class="num">9</div>
         <div class="label">aktive datakilder</div>
       </div>
       <div class="card">
-        <div class="num">15+</div>
+        <div class="num">40+</div>
         <div class="label">planlagte kilder</div>
       </div>
       <div class="card">
@@ -315,82 +315,82 @@
       Se <a href="https://github.com/sstraume97/JusJob/blob/main/docs/kilder.md">teknisk vurdering og integrasjonsplan</a> for detaljer om scraping-tilnærming per kilde.
     </p>
 
-    <h3>Rettsavgjørelser</h3>
+    <p style="margin-bottom:0.75rem; color:var(--muted); font-size:0.85rem;">
+      Rettsområde-taksonomi: <a href="https://github.com/sondreskarsten/norwegian-laws">sondreskarsten/norwegian-laws</a> (35 rettsområder).
+      Full integrasjonsplan: <a href="https://github.com/sstraume97/JusJob/blob/main/docs/kilder.md">docs/kilder.md</a>.
+    </p>
+
+    <h3>✅ Aktive kilder</h3>
     <table>
-      <tr><th>Kilde</th><th>Type</th><th>Status</th><th>Metode</th></tr>
-      <tr><td><a href="https://www.rettspraksis.no">rettspraksis.no</a></td><td>Høyesterett, lagmannsretter, tingretter (~70 000)</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>MediaWiki API</td></tr>
-      <tr><td><a href="https://www.domstol.no">Domstol.no</a></td><td>Fritt tilgjengelige dommer</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.eftacourt.int">EFTA/EU-domstolen</a></td><td>EØS-avgjørelser</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>API</td></tr>
-      <tr><td><a href="https://hudoc.echr.coe.int">EMD / HUDOC</a></td><td>Menneskerettsdomstolen</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HUDOC JSON API</td></tr>
+      <tr><th>Kilde</th><th>Rettsområde</th><th>Type</th><th>Metode</th></tr>
+      <tr><td><a href="https://www.rettspraksis.no">rettspraksis.no</a></td><td>Alle</td><td>Høyesterett, lagmannsretter, tingretter (~70 000)</td><td>MediaWiki API</td></tr>
+      <tr><td><a href="https://data.stortinget.no">Stortinget</a></td><td>Alle</td><td>Saker, Prop., Innst., vedtak (~17 000)</td><td>XML-API</td></tr>
+      <tr><td><a href="https://www.sivilombudet.no">Sivilombudet</a></td><td>Forvaltnings- og kommunalrett</td><td>Uttalelser (~1 950)</td><td>Sitemap + HTML</td></tr>
+      <tr><td><a href="https://kudos.dfo.no">KUDOS (DFØ)</a></td><td>Alle (offentlig sektor)</td><td>NOU-er, studier, rapporter (~44 000)</td><td>REST API</td></tr>
+      <tr><td><a href="https://lovdata.no">Lovdata — gjeldende lover</a></td><td>Alle</td><td>~782 konsoliderte lover (autoritativ fulltekst, XML)</td><td>api.lovdata.no tar.bz2</td></tr>
+      <tr><td><a href="https://lovdata.no">Lovdata — sentrale forskrifter</a></td><td>Alle</td><td>~3 733 sentrale forskrifter (fulltekst, XML)</td><td>api.lovdata.no tar.bz2</td></tr>
+      <tr><td><a href="https://lovdata.no/tjenester/lovtiend">Norsk Lovtiend avd. 1 (løpende)</a></td><td>Alle</td><td>Kunngjøringer: nye og endrede lover + sentrale forskrifter</td><td>api.lovdata.no tar.bz2</td></tr>
+      <tr><td><a href="https://lovdata.no/tjenester/lovtiend">Norsk Lovtiend avd. 1 (2001–2024)</a></td><td>Alle</td><td>Historisk arkiv Lovtiend avd. 1</td><td>api.lovdata.no tar.bz2</td></tr>
+      <tr><td><a href="https://www.forbrukertilsynet.no/lov-og-rett/vedtak">Forbrukertilsynet</a></td><td>Forbruker-, kjøps- og konkurranserett</td><td>Vedtak (FOV-ref), Markedsrådet, FKU, veiledninger</td><td>HTML-skraping</td></tr>
     </table>
 
-    <h3>Lovverk og forarbeider</h3>
+    <h3>⏳ Planlagte — høy prioritet</h3>
     <table>
-      <tr><th>Kilde</th><th>Type</th><th>Status</th><th>Metode</th></tr>
-      <tr><td><a href="https://lovdata.no">Lovdata — gjeldende lover</a></td><td>~782 konsoliderte lover (autoritativ fulltekst, XML)</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>api.lovdata.no tar.bz2</td></tr>
-      <tr><td><a href="https://lovdata.no">Lovdata — sentrale forskrifter</a></td><td>~3 733 sentrale forskrifter (fulltekst, XML)</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>api.lovdata.no tar.bz2</td></tr>
-      <tr><td><a href="https://lovdata.no/tjenester/lovtiend">Norsk Lovtiend avd. 1</a></td><td>Kunngjøringer: nye og endrede lover + sentrale forskrifter</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>api.lovdata.no tar.bz2</td></tr>
-      <tr><td><a href="https://lovdata.no/tjenester/lovtiend">Norsk Lovtiend avd. 2</a></td><td>Kunngjøringer: lokale og private forskrifter</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>api.lovdata.no tar.bz2</td></tr>
-      <tr><td><a href="https://data.stortinget.no">Stortinget</a></td><td>Saker, Prop., Innst., vedtak (~17 000)</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>XML-API</td></tr>
-      <tr><td><a href="https://github.com/sondreskarsten/norwegian-laws">norwegian-laws</a></td><td>Metadata: ELI, departement, rettsområde (supplement)</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>GitHub Pages JSON</td></tr>
-      <tr><td><a href="https://www.regjeringen.no">Regjeringen.no</a></td><td>NOU-er, høringer, proposisjoner, rundskriv</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://lovdata.no/nav/">Lovdata NAV</a></td><td>NAV-rundskriv og retningslinjer</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://eur-lex.europa.eu">EUR-Lex</a></td><td>EU-forordninger, direktiver, EØS</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>SPARQL / REST API</td></tr>
+      <tr><th>Kilde</th><th>Rettsområde</th><th>Type</th><th>Metode</th></tr>
+      <tr><td><a href="https://github.com/sondreskarsten/norwegian-laws">norwegian-laws</a></td><td>Alle</td><td>Metadata: ELI, departement, rettsområde (supplement)</td><td>GitHub Pages JSON</td></tr>
+      <tr><td><a href="https://www.datatilsynet.no">Datatilsynet</a></td><td>IKT- og medierett</td><td>Vedtak, veiledere, høringsuttalelser (GDPR)</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.helsetilsynet.no">Helsetilsynet</a></td><td>Helse- og omsorgsrett</td><td>Tilsynsrapporter, vedtak, publikasjoner</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.une.no/praksis">UNE — Utlendingsnemnda</a></td><td>Utlendingsrett</td><td>Praksis (utlendingsrett)</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.kofa.no/praksis">KOFA</a></td><td>Anskaffelser, avtaler, bygg og entrepriser</td><td>Praksis — offentlige anskaffelser</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.skatteklagenemnda.no">Skatteklagenemnda</a></td><td>Skatte- og avgiftsrett</td><td>Vedtak (skatterett)</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.finanstilsynet.no/nyheter-og-publikasjoner">Finanstilsynet</a></td><td>Bank, finans og regnskapsrett</td><td>Vedtak, rundskriv (finansrett)</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.konkurransetilsynet.no/vedtak-og-uttalelser">Konkurransetilsynet</a></td><td>Forbruker-, kjøps- og konkurranserett; Næringsrett</td><td>Vedtak (konkurranserett)</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.skatteetaten.no/rettskilder/">Skatteetaten rettskilder</a></td><td>Skatte- og avgiftsrett</td><td>BFU, vedtak, håndbøker, høringer, retningslinjer</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.helsedirektoratet.no/lov-og-forskrift">Helsedirektoratet</a></td><td>Helse- og omsorgsrett</td><td>Rundskriv, veiledere, lovfortolkninger</td><td>HTML + mulig API</td></tr>
+      <tr><td><a href="https://www.regjeringen.no">Regjeringen.no</a></td><td>Alle</td><td>NOU-er, høringer, proposisjoner, tolkningsuttalelser</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.domstol.no">Domstol.no</a></td><td>Alle</td><td>Fritt tilgjengelige dommer</td><td>HTML-skraping</td></tr>
     </table>
 
-    <h3>Forvaltning og offentlige dokumenter</h3>
+    <h3>⏳ Planlagte — middels prioritet</h3>
     <table>
-      <tr><th>Kilde</th><th>Type</th><th>Status</th><th>Metode</th></tr>
-      <tr><td><a href="https://kudos.dfo.no">KUDOS (DFØ)</a></td><td>NOU-er, studier, rapporter, evalueringer (~44 000)</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>REST API</td></tr>
-      <tr><td><a href="https://data.norge.no/">data.norge.no</a></td><td>Begrepskatalog, åpne datasett</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>CKAN/Felles API</td></tr>
-      <tr><td><a href="https://www.skatteetaten.no/rettskilder/">Skatteetaten rettskilder</a></td><td>BFU, vedtak, håndbøker, høringer, retningslinjer</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.helsedirektoratet.no/lov-og-forskrift">Helsedirektoratet</a></td><td>Rundskriv, veiledere, lovfortolkninger</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML + mulig API</td></tr>
-      <tr><td><a href="https://www.arbeidstilsynet.no/regelverk/">Arbeidstilsynet</a></td><td>Regelverk, veiledere, HMS</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://udiregelverk.no/no/rettskilder/">UDI regelverk</a></td><td>RS/GI/PN-retningslinjer, instrukser</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.imdi.no/regelverk/">IMDi</a></td><td>Regelverk, integrering og mangfold</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.medietilsynet.no/regelverk/">Medietilsynet</a></td><td>Regelverk, kringkasting, presse</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://lottstift.no/lover-og-regelverk/">Lottstift</a></td><td>Lotteri- og pengespillregelverk</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><th>Kilde</th><th>Rettsområde</th><th>Type</th><th>Metode</th></tr>
+      <tr><td><a href="https://udiregelverk.no/no/rettskilder/">UDI regelverk</a></td><td>Utlendingsrett</td><td>RS/GI/PN-retningslinjer, instrukser</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.arbeidstilsynet.no/regelverk/">Arbeidstilsynet</a></td><td>Arbeidsrett; HMS og beredskaps- og sikkerhetsrett</td><td>Regelverk, veiledere, HMS</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.bufdir.no/fagstotte/">Bufdir</a></td><td>Familie-, person- og barnerett</td><td>Barnevern, saksbehandlingsrundskrivet</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.imdi.no/regelverk/">IMDi</a></td><td>Utlendingsrett</td><td>Regelverk, integrering og mangfold</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.medietilsynet.no/regelverk/">Medietilsynet</a></td><td>IKT- og medierett</td><td>Regelverk, kringkasting, presse</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.nkom.no/vedtak">Nkom</a></td><td>IKT- og medierett</td><td>Vedtak (ekomrett)</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.nve.no/juridiske-dokumenter">NVE</a></td><td>Energirett; Miljøvern, natur og friluftsliv</td><td>Juridiske dokumenter (energirett)</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.patentstyret.no">Patentstyret</a></td><td>Immaterialrett</td><td>Vedtak (immaterialrett)</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.trygderetten.no">Trygderetten</a></td><td>Pensjons- og trygderett</td><td>Kjennelser</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.npe.no">NPE / Pasientskadenemnda</a></td><td>Helse- og omsorgsrett; Erstatnings- og forsikringsrett</td><td>Vedtak, erstatningsutmålinger</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.htu.no">Husleietvistutvalget</a></td><td>Fast eiendoms rettsforhold</td><td>Avgjørelser</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.statsforvalteren.no">Statsforvalteren</a></td><td>Forvaltnings- og kommunalrett</td><td>Vedtak, klagebehandling</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.riksrevisjonen.no">Riksrevisjonen</a></td><td>Forvaltnings- og kommunalrett</td><td>Revisjonsrapporter</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.diskrimineringsnemnda.no">LDO / Diskrimineringsnemnda</a></td><td>Menneskerettigheter; Arbeidsrett</td><td>Vedtak, uttalelser</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.klagenemndssekretariatet.no">Klagenemdsekretariatet</a></td><td>Anskaffelser; Forbruker-, kjøps- og konkurranserett</td><td>Konkurranseklagenemnda, Medieklagenemnda m.fl.</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://lovdata.no/nav/">Lovdata NAV</a></td><td>Pensjons- og trygderett</td><td>NAV-rundskriv og retningslinjer</td><td>HTML-skraping</td></tr>
     </table>
 
-    <h3>Tilsyn og ombud</h3>
+    <h3>⏳ Planlagte — lavere prioritet</h3>
     <table>
-      <tr><th>Kilde</th><th>Type</th><th>Status</th><th>Metode</th></tr>
-      <tr><td><a href="https://www.sivilombudet.no">Sivilombudet</a></td><td>Uttalelser (~1 950)</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>Sitemap + HTML</td></tr>
-      <tr><td><a href="https://www.datatilsynet.no">Datatilsynet</a></td><td>Vedtak, veiledere, høringsuttalelser (GDPR)</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.helsetilsynet.no">Helsetilsynet</a></td><td>Tilsynsrapporter, vedtak, publikasjoner</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.finanstilsynet.no/nyheter-og-publikasjoner">Finanstilsynet</a></td><td>Vedtak, rundskriv (finansrett)</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.konkurransetilsynet.no/vedtak-og-uttalelser">Konkurransetilsynet</a></td><td>Vedtak (konkurranserett)</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.riksrevisjonen.no">Riksrevisjonen</a></td><td>Revisjonsrapporter</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.diskrimineringsnemnda.no">LDO / Diskrimineringsnemnda</a></td><td>Vedtak, uttalelser</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.nve.no/juridiske-dokumenter">NVE</a></td><td>Juridiske dokumenter (energirett)</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.nkom.no/vedtak">Nkom</a></td><td>Vedtak (ekomrett)</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.patentstyret.no">Patentstyret</a></td><td>Vedtak (immaterialrett)</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><th>Kilde</th><th>Rettsområde</th><th>Type</th><th>Metode</th></tr>
+      <tr><td><a href="https://lottstift.no/lover-og-regelverk/">Lottstift</a></td><td>Næringsrett</td><td>Lotteri- og pengespillregelverk</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.kriminalomsorgen.no">Kriminalomsorgen</a></td><td>Strafferett</td><td>Rundskriv, retningslinjer</td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.eftacourt.int">EFTA-domstolen</a></td><td>EU/EØS-rett</td><td>EØS-avgjørelser</td><td>API</td></tr>
+      <tr><td><a href="https://hudoc.echr.coe.int">EMD / HUDOC</a></td><td>Menneskerettigheter</td><td>Menneskerettsdomstolen</td><td>HUDOC JSON API</td></tr>
+      <tr><td><a href="https://eur-lex.europa.eu">EUR-Lex</a></td><td>EU/EØS-rett</td><td>EU-forordninger, direktiver, EØS</td><td>SPARQL / REST API</td></tr>
+      <tr><td><a href="https://data.norge.no/">data.norge.no</a></td><td>Alle (begrepskatalog)</td><td>Åpne datasett, begrepskataloger</td><td>CKAN/Felles API</td></tr>
     </table>
 
-    <h3>Klage- og nemndsorganer</h3>
+    <h3>🚫 Utilgjengelig (bekreftet)</h3>
     <table>
-      <tr><th>Kilde</th><th>Type</th><th>Status</th><th>Metode</th></tr>
-      <tr><td><a href="https://www.forbrukertilsynet.no/lov-og-rett/vedtak">Forbrukertilsynet</a></td><td>Vedtak (FOV-ref), Markedsrådet, FKU, veiledninger</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.kofa.no/praksis">KOFA</a></td><td>Praksis — offentlige anskaffelser</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.skatteklagenemnda.no">Skatteklagenemnda</a></td><td>Vedtak (skatterett)</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.une.no/praksis">UNE — Utlendingsnemnda</a></td><td>Praksis (utlendingsrett)</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.klagenemndssekretariatet.no">Klagenemdsekretariatet</a></td><td>Konkurranseklagenemnda, Medieklagenemnda m.fl.</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.trygderetten.no">Trygderetten</a></td><td>Kjennelser</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.npe.no">NPE / Pasientskadenemnda</a></td><td>Vedtak, erstatningsutmålinger</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.htu.no">Husleietvistutvalget</a></td><td>Avgjørelser</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.statsforvalteren.no">Statsforvalteren</a></td><td>Vedtak, klagebehandling</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-    </table>
-
-    <h3>Fagdirektorater</h3>
-    <table>
-      <tr><th>Kilde</th><th>Type</th><th>Status</th><th>Metode</th></tr>
-      <tr><td><a href="https://www.helsedirektoratet.no/lov-og-forskrift">Helsedirektoratet</a></td><td>Rundskriv, veiledere, lovfortolkninger</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML + mulig API</td></tr>
-      <tr><td><a href="https://www.arbeidstilsynet.no/regelverk/">Arbeidstilsynet</a></td><td>Regelverk, veiledere, HMS</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.bufdir.no/fagstotte/">Bufdir</a></td><td>Barnevern, saksbehandlingsrundskrivet</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://udiregelverk.no/no/rettskilder/">UDI regelverk</a></td><td>RS/GI/PN-retningslinjer</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.imdi.no/regelverk/">IMDi</a></td><td>Integrering og mangfold</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://www.medietilsynet.no/regelverk/">Medietilsynet</a></td><td>Medierett</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
-      <tr><td><a href="https://lottstift.no/lover-og-regelverk/">Lottstift</a></td><td>Pengespill og lotteri</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><th>Kilde</th><th>Årsak</th></tr>
+      <tr><td>Norsk Lovtiend avd. 2</td><td>Ikke i åpent API — krever Lovdata-abonnement</td></tr>
+      <tr><td>Domstolene direkte API</td><td>Kun innsendingstjeneste, ingen bulk-API</td></tr>
+      <tr><td>Lovdata HR/LG/TRS (bulk)</td><td>Krever Lovdata-abonnement</td></tr>
+      <tr><td>Sivilrett.no</td><td>403 Forbidden</td></tr>
+      <tr><td>Juridika.no / Idunn.no</td><td>Betalt tjeneste</td></tr>
     </table>
   </div>
 
