@@ -200,9 +200,14 @@ def _write_jsonl_gz(path: Path, docs: list[dict]) -> None:
 # ── Pakke-til-fil-mapping ─────────────────────────────────────────────────────
 
 def _output_file(filename: str) -> Path:
-    if filename.startswith("gjeldende-lover"):
+    # Faktiske filnavn fra api.lovdata.no/v1/publicData/list (bekreftet nov 2025):
+    #   gjeldende-lover.tar.bz2
+    #   gjeldende-sentrale-forskrifter.tar.bz2   ← NB: ikke "sentrale-forskrifter"
+    #   lovtidend-avd1-2025.tar.bz2              ← løpende år
+    #   lovtidend-avd1-2001-2024.tar.bz2         ← historisk arkiv
+    if "gjeldende-lover" in filename:
         return DATA_DIR / "lovdata-lover.jsonl.gz"
-    if filename.startswith("sentrale-forskrifter"):
+    if "gjeldende-sentrale-forskrifter" in filename or "sentrale-forskrifter" in filename:
         return DATA_DIR / "lovdata-forskrifter.jsonl.gz"
     if "avd1" in filename or "avd-1" in filename:
         return DATA_DIR / "lovdata-lovtiend1.jsonl.gz"

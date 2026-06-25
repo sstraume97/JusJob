@@ -8,6 +8,9 @@ Vurdert 2026-06-25. Relevans og gjenbruksvurdering for JusJob.
 
 | Repo | Relevans | Kategori | Gjenbruk |
 |---|---|---|---|
+| [NationalLibraryOfNorway/lovdata-public-conversion-script](https://github.com/NationalLibraryOfNorway/lovdata-public-conversion-script) | ⭐⭐⭐ Kritisk | Lovdata XML → JSONL | XPath-parser, JSONL-skjema — studer før lovdata.py ferdigstilles |
+| [HNygard/lovdata-openapi-copy](https://github.com/HNygard/lovdata-openapi-copy) | ⭐⭐⭐ Høy | Lovdata pakkeliste | Bekrefter alle filnavn + OpenAPI-spec |
+| [sstraume97/Rettskildesok](https://github.com/sstraume97/Rettskildesok) | ⭐⭐⭐ Høy | 65-kilde katalog | sources.js: autoritativ liste over alle norske rettskilder med URL-mønster |
 | [sondreskarsten/norwegian-laws](https://github.com/sondreskarsten/norwegian-laws) | ⭐⭐⭐ Kritisk | Lovkilde | Konsumeres direkte som datakilde |
 | [khjohns/paragraf-mcp](https://github.com/khjohns/paragraf-mcp) | ⭐⭐⭐ Høy | Lovdata-parser + MCP | XML-parser, alias-løser, søkelogikk |
 | [bartoszkobylinski/lovspor](https://github.com/bartoszkobylinski/lovspor) | ⭐⭐⭐ Høy | Endringshistorikk + MCP | Endringshistorikk-mønster, MCP-verktøy |
@@ -26,8 +29,14 @@ Vurdert 2026-06-25. Relevans og gjenbruksvurdering for JusJob.
 | [doantumy/LegSum](https://github.com/doantumy/Efficiently-Summarizing-Norwegian-Legal-Texts) | ⭐ Delvis | ML/summering | Lovdata XML-struktur |
 | [tullebulle/intellegal](https://github.com/tullebulle/intellegal) | ⭐ Delvis | Ukjent legal app | Inspiser Python-backend — mulig norsk kildedekning |
 | [sondrele/etterlevelse](https://github.com/sondrele/etterlevelse) | ⭐ Delvis | NAV compliance-tracker | Loven→system-mapping som referansekatalog |
+| [HNygard/sivilombudet-uttalelser](https://github.com/HNygard/sivilombudet-uttalelser) | ⭐⭐ God | Sivilombudet-data | 1000+ uttalelser JSON-datasett + skraperdesign |
+| [HNygard/norsk-lovtidend](https://github.com/HNygard/norsk-lovtidend) | ⭐⭐ God | Lovtiend-arkiv | JSON/CSV med endringshistorikk + lisensavklaring |
 | [digdir/nasjonal-arkitektur](https://github.com/digdir/nasjonal-arkitektur) | ⭐ Delvis | Digital arkitektur | Kartlegger autoritative datakilder i offentlig sektor |
+| [GizzZmo/loven](https://github.com/GizzZmo/loven) | ⭐ Delvis | Lovdata søke-API | LovDataClient-mønster for api.lovdata.no søk |
+| [ZachLaik/LegalFactory](https://github.com/ZachLaik/LegalFactory) | ⭐ Delvis | EU-scraper | Pipeline-arkitektur (YAML konfig, CI dry-run) |
+| [HNygard/open-norwegian-law](https://github.com/HNygard/open-norwegian-law) | ⭐ Delvis | Java-lib (2022) | Utdatert, ikke portabel |
 | [GmailHelene/rettbot](https://github.com/GmailHelene/rettbot) | – Ikke relevant | Kryptert PWA | Ingen gjenbrukbar kode |
+| [HNygard/offpost](https://github.com/HNygard/offpost) | – Ikke relevant | E-post til offentlige | Ingen relevans |
 | [openlegaldata/awesome-legal-data](https://github.com/openlegaldata/awesome-legal-data) | – Ikke relevant | Liste | Lite norsk dekning |
 | [JoelNiklaus/LegalDatasets](https://github.com/JoelNiklaus/LegalDatasets) | – Ukjent | ML-datasett | Mulig norsk dekning ubekreftet |
 | [fpvetleseter/mike](https://github.com/fpvetleseter/mike) | – Ikke relevant | Fork av mike | Ingen tillegg over upstream |
@@ -223,13 +232,105 @@ GitHub Pages-nettsted for Juss-AI med whitepaper (`JussaiWhitepaperV5.pdf`). Ing
 
 ---
 
+### [NationalLibraryOfNorway/lovdata-public-conversion-script](https://github.com/NationalLibraryOfNorway/lovdata-public-conversion-script)
+**Relevans: ⭐⭐⭐ Kritisk — studer før lovdata.py ferdigstilles**
+
+Offisielt Python-script fra Nasjonalbiblioteket som konverterer Lovdata XML → JSONL med lxml/XPath. Produsert av Stiftelsen Lovdata / Nasjonalbiblioteket.
+
+**JSONL-skjema (alle felter):**
+- `datokode` — dato-kode
+- `dokumentID` — "NL/lov/2005-06-17-62"
+- `departement` — ansvarlig departement
+- `title` / `titleShort` — fulltittel og korttittel
+- `fulltext` — innhold som tekstarray (seksjonsnivå)
+- `lastChangeInForce` — ikrafttredelse av siste endring
+- `lastupdated` — sist oppdatert
+
+**Handling:** Tilpass XPath-logikken fra `convert_lovdata_xpath.py` til vår `pipeline/lovdata.py` for mer robust XML-parsing.
+
+---
+
+### [HNygard/lovdata-openapi-copy](https://github.com/HNygard/lovdata-openapi-copy)
+**Relevans: ⭐⭐⭐ Høy — bekrefter faktiske filnavn**
+
+Shell-downloader + kopi av Lovdata OpenAPI-spec og pakkeliste. Bekrefter at de faktiske filnavnene fra `api.lovdata.no/v1/publicData/list` er:
+
+| Filnavn | Beskrivelse |
+|---|---|
+| `gjeldende-lover.tar.bz2` | Gjeldende lover, ajourført |
+| `gjeldende-sentrale-forskrifter.tar.bz2` | **NB: ikke** `sentrale-forskrifter.tar.bz2` |
+| `lovtidend-avd1-YYYY.tar.bz2` | Norsk Lovtidend avd. I (løpende år) |
+| `lovtidend-avd1-2001-2024.tar.bz2` | **Historisk arkiv 2001–2024** (vi manglet denne!) |
+
+**Merknad:** Avdeling 2 (lokale/private forskrifter) er *ikke* i det åpne API-et — kun avdeling 1. Vår `lovdata.py` er korrigert for riktige filnavn.
+
+---
+
+### [sstraume97/Rettskildesok](https://github.com/sstraume97/Rettskildesok)
+**Relevans: ⭐⭐⭐ Høy — eget prosjekt med 65-kilde katalog**
+
+Brukerens eget prosjekt: statisk søkeaggregator (GitHub Pages, Vanilla JS) som bygger Boolean-søkstrenger mot 65+ norske og internasjonale rettskilder via URL deep-linking. `js/sources.js` er den sentrale ressursen.
+
+**Alle 65 kilder fordelt på 8 kategorier i sources.js:**
+
+*Lover og lovsamlinger (6):* Lovdata NL, SF, LTI, HIST, Norgeslover, SNL Jus
+
+*Forarbeider og stortingsdokumenter (8):* Regjeringen NOU, Prop./Meld., Ot.prp., tolkningsuttalelser; Stortinget innst./saker og forhandlinger; KUDOS, Riksrevisjonen
+
+*Domstolsinstanser (7):* Lovdata HR, lagmannsrett, tingrett, Arbeidsretten, Trygderetten; Høyesterett.no; rettspraksis.no
+
+*Nemnder og tilsynsorganer (18):* Sivilombudet, KOFA, Skatteetaten, **Skatteklagenemnda**, Arbeidstilsynet, NAV, **UNE (Utlendingsnemnda)**, Diskrimineringsnemnda, Datatilsynet, **Finanstilsynet**, **Konkurransetilsynet**, Forbrukertilsynet, Forbrukerklageutvalget, **Nkom**, **NVE**, **Patentstyret**, **Statsforvalteren**, Lovdata Rundskriv
+
+*Akademisk (5):* Juridika, Idunn, UiO Jus, UiB BORA, Cristin
+
+*EU/EØS (4):* EUR-Lex, Curia, EFTA-domstolen, ESA
+
+*Menneskerettigheter (4):* HUDOC/EMD, Europarådet, UN Treaty, OHCHR
+
+*Internasjonal/komparativ (5):* ICJ, ITLOS, WTO, Retsinformation.dk, Riksdagen.se
+
+**Nye kilder vi mangler i JusJob** (uthevet over): Skatteklagenemnda, UNE, Finanstilsynet, Konkurransetilsynet, Nkom, NVE, Patentstyret, Statsforvalteren
+
+---
+
+### [HNygard/sivilombudet-uttalelser](https://github.com/HNygard/sivilombudet-uttalelser)
+**Relevans: ⭐⭐ God — seed-datasett og skraperdesign**
+
+PHP-scraper + JSON/CSV-datasett med 1000+ sivilombudet-uttalelser. Lisensavklaring: åpent. Nyttig som testfikstur for vår `pipeline/sivilombudet.py` og som sammenligningsdata. PHP-koden er ikke portabel, men skrapemønsteret (paginering, lovhenvisningsekstraksjon) er relevant.
+
+---
+
+### [HNygard/norsk-lovtidend](https://github.com/HNygard/norsk-lovtidend)
+**Relevans: ⭐⭐ God — historisk endringshistorikk**
+
+~250 MB datadump av alle Lovtiend-kunngjøringer i CSV/JSON. Bekrefter at kunngjøringstekster er fritt brukbare (NLOD, bekreftet av Lovdata i e-post sitert i README) mens konsoliderte/ajourførte tekster ikke er det. `norsk-lovtidend.json` gir amendment-historikk per lov — relevant for endringshistorikk-varsling.
+
+---
+
 ## Anbefalt handlingsplan
 
-1. **Nå:** Studer `lovradar.py` (Majac999) — fungerende Lovdata API-integrasjon under NLOD 2.0
-2. **Nå:** Studer `lovsonar.py` (Majac999) — Stortinget/reg.no RSS-scraping og horisontskanning
-3. **Nå:** Hent `laws.json` fra `norwegian-laws` som primær lovkilde
-4. **Nå:** Bruk `aiantech/legal-sources/sources/NO` som gapanalyse-sjekkliste
-5. **Hent og les:** Juss-AI whitepaper manuelt
-6. **Etter alle kilder er på plass:** Implementer `validate_citation` og `verify_quote` fra `lovspor`-mønsteret
-7. **Fremtidig:** Eksponer `search-index.json` som MCP-server (ref. `ngu-tek` og `lovspor`-arkitektur)
-8. **Fremtidig:** EUR-Lex SPARQL-integrasjon med ELI-spørringer (ref. EULex.NET som referanse)
+### Umiddelbart
+1. **Studer `convert_lovdata_xpath.py`** (NationalLibraryOfNorway) — tilpass XPath-logikken til `pipeline/lovdata.py` for robust XML-parsing
+2. **Fiks lovdata.py** — riktig filnavn `gjeldende-sentrale-forskrifter.tar.bz2` (allerede fikset), legg til `lovtidend-avd1-2001-2024.tar.bz2` (historisk arkiv)
+3. **Mine `sources.js`** (Rettskildesok) — bruk som autoritativ sjekkliste for hvilke sources som mangler i JusJob
+
+### Nye kilder å legge til (fra Rettskildesok-katalogen)
+- Skatteklagenemnda (`skatteklagenemnda.no`)
+- UNE — Utlendingsnemnda (`une.no/praksis`)
+- Finanstilsynet (`finanstilsynet.no/nyheter-og-publikasjoner`)
+- Konkurransetilsynet (`konkurransetilsynet.no/vedtak-og-uttalelser`)
+- Nkom (`nkom.no/vedtak`)
+- NVE (`nve.no/juridiske-dokumenter`)
+- Patentstyret
+- Statsforvalteren
+- Justisdep. tolkningsuttalelser (`regjeringen.no/no/dokumenter/tolkningsuttalelser`)
+- Stortingstidende (forhandlinger)
+- Arbeidsretten (Lovdata ARD)
+- KOFA (`kofa.no/praksis`)
+
+### Etter pipeline-utvidelse
+4. **Studer `lovradar.py`** (Majac999) — endringshistorikk-mønster for `endringshistorikk-varsling`
+5. **Studer `lovsonar.py`** (Majac999) — horisontskanning av lovforslag
+6. **Les Juss-AI whitepaper** manuelt
+7. **Implementer `validate_citation`** (ref. lovspor-mønsteret)
+8. **EUR-Lex SPARQL-integrasjon** med ELI-spørringer (ref. EULex.NET)

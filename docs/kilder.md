@@ -15,7 +15,8 @@ Sist oppdatert: 2026-06-25.
 | Lovdata gjeldende lover | ~782 konsoliderte lover (XML, NLOD 2.0) | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
 | Lovdata sentrale forskrifter | ~3 733 konsoliderte forskrifter (XML) | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
 | Norsk Lovtiend avd. 1 | Kunngjøringer: lover + sentrale forskrifter | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
-| Norsk Lovtiend avd. 2 | Kunngjøringer: lokale + private forskrifter | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
+| Norsk Lovtiend avd. 1 (historisk 2001–2024) | Alle kunngjøringer fra 2001 til 2024 | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
+| Norsk Lovtiend avd. 2 | Kunngjøringer: lokale + private forskrifter | ℹ️ Ikke i åpent API | — ikke tilgjengelig | Ikke mulig |
 | Forbrukertilsynet | Vedtak, markedsråd, FKU, veiledninger | ✅ Implementert | HTML-scraping | Ferdig |
 | norwegian-laws (GitHub) | Metadata: ELI, departement, rettsområde | 🔲 Planlagt | GitHub Pages JSON | Middels (metadata-beriker) |
 | Skatteetaten rettsinformasjon API | Skattehåndboken, MVA-håndboken m.fl. | 🔲 Planlagt | Maskinporten REST API | Høy (krever org.nr.) |
@@ -302,6 +303,27 @@ Domstolene publiserer sine dommer gjennom Lovdata-samarbeidet — ikke via egne 
 **Type:** Sivilrettslig database  
 **Tilgang:** Returnerte 403 — muligens krever innlogging eller er blokkert for crawler  
 **Status:** Blokkert — undersøk manuelt om det er gratis tilgang.
+
+---
+
+### Nye kilder identifisert via Rettskildesok (sources.js)
+
+Rettskildesok-katalogen avdekket følgende planlagte kilder som ikke var i opprinnelig liste:
+
+| Kilde | URL | Type | Prioritet |
+|---|---|---|---|
+| Skatteklagenemnda | skatteklagenemnda.no | Vedtak (skatterett) | Høy |
+| UNE — Utlendingsnemnda | une.no/praksis | Praksis (utlendingsrett) | Høy |
+| Finanstilsynet | finanstilsynet.no | Vedtak, rundskriv (finansrett) | Høy |
+| Konkurransetilsynet | konkurransetilsynet.no | Vedtak (konkurranserett) | Høy |
+| KOFA | kofa.no/praksis | Praksis (offentlige anskaffelser) | Middels |
+| Nkom | nkom.no/vedtak | Vedtak (ekomrett) | Middels |
+| NVE | nve.no/juridiske-dokumenter | Juridiske dokumenter (energirett) | Middels |
+| Patentstyret | patentstyret.no | Vedtak (immaterialrett) | Middels |
+| Statsforvalteren | statsforvalteren.no | Vedtak, klagebehandling | Middels |
+| Justisdep. tolkningsuttalelser | regjeringen.no/no/dokumenter/tolkningsuttalelser | Tolkningsuttalelser | Middels |
+| Stortingstidende | stortinget.no/Stortingstidende | Stortingsforhandlinger | Lav |
+| Arbeidsretten | lovdata.no/dokument/ARD | Arbeidsrettsdommer | Lav |
 
 ---
 
