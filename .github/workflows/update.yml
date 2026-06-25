@@ -56,13 +56,15 @@ jobs:
           git pull --rebase
           git push
 
-      - name: Kopier nettside inn i data/
-        run: cp -r web/. data/
+      - name: Kopier datafiler inn i web/ for Pages-publisering
+        run: |
+          cp data/search-index.json web/
+          cp data/*.jsonl.gz web/ 2>/dev/null || true
 
       - name: Last opp til GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: data
+          path: web
 
   deploy-pages:
     needs: scrape-and-build
