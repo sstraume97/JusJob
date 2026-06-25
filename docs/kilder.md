@@ -62,16 +62,28 @@ Rettsområde-taksonomi: [sondreskarsten/norwegian-laws](https://github.com/sondr
 | Norsk Lovtiend avd. 1 (løpende) | Alle | api.lovdata.no tar.bz2 | `lovdata-lovtiend1.jsonl.gz` |
 | Norsk Lovtiend avd. 1 (2001–2024) | Alle | api.lovdata.no tar.bz2 | `lovdata-lovtiend1.jsonl.gz` |
 | Forbrukertilsynet | Forbruker-, kjøps- og konkurranserett | HTML-scraping | `forbrukertilsynet.jsonl.gz` |
+| Regjeringen.no | Alle | HTML-scraping | `regjeringen.jsonl.gz` |
+| Datatilsynet | IKT- og medierett | HTML-scraping | `datatilsynet.jsonl.gz` |
+| Helsetilsynet | Helse- og omsorgsrett | HTML-scraping | `helsetilsynet.jsonl.gz` |
+| UNE — Utlendingsnemnda | Utlendingsrett | HTML-scraping | `une.jsonl.gz` |
+| KOFA | Anskaffelser, avtaler, bygg og entrepriser | HTML-scraping | `kofa.jsonl.gz` |
+| Konkurransetilsynet | Forbruker-, kjøps- og konkurranserett; Næringsrett | HTML-scraping | `konkurransetilsynet.jsonl.gz` |
+| Finanstilsynet | Bank, finans og regnskapsrett | HTML-scraping | `finanstilsynet.jsonl.gz` |
+| Skatteklagenemnda | Skatte- og avgiftsrett | HTML-scraping | `skatteklagenemnda.jsonl.gz` |
+| Skatteetaten | Skatte- og avgiftsrett | HTML-scraping | `skatteetaten.jsonl.gz` |
+| LDO + Diskrimineringsnemnda | Menneskerettigheter | HTML-scraping | `diskriminering.jsonl.gz` |
+| KFIR | Immaterialrett | HTML-scraping | `kfir.jsonl.gz` |
+| Arbeidstilsynet | Arbeidsrett; HMS og beredskaps- og sikkerhetsrett | HTML-scraping | `arbeidstilsynet.jsonl.gz` |
+| Riksrevisjonen | Stats-, statsforfatnings- og statsborgerrett; Forvaltnings- og kommunalrett | HTML-scraping | `riksrevisjonen.jsonl.gz` |
+
+**Note:** Regjeringen.no dekker proposisjoner, NOU-er, meldinger til Stortinget, rundskriv og høringer i én scraper (`pipeline/regjeringen.py`).
 
 ### 🔲 Planlagte kilder
 
 | Kilde | Rettsområde(r) | Tilgang | Prioritet |
 |---|---|---|---|
 | **Lovverk og forarbeider** | | | |
-| norwegian-laws (metadata) | Alle | GitHub Pages JSON | Høy |
-| Regjeringen NOU | Alle | HTML-scraping | Høy |
-| Regjeringen Prop./Meld. | Alle | HTML-scraping | Høy |
-| Regjeringen Ot.prp. | Alle | HTML-scraping | Middels |
+| norwegian-laws (metadata) | Alle | GitHub Pages JSON | Implementert som subjects-berikelse i `lovdata.py` |
 | Justisdep. tolkningsuttalelser | Forvaltnings- og kommunalrett; Strafferett | HTML-scraping | Middels |
 | Lovdata Rundskriv | Alle | HTML-scraping | Middels |
 | Lovdata NAV-rundskriv | Pensjons- og trygderett | HTML-scraping | Middels |
@@ -83,39 +95,25 @@ Rettsområde-taksonomi: [sondreskarsten/norwegian-laws](https://github.com/sondr
 | EFTA-domstolen | EU/EØS-rett | API | Lav |
 | EMD / HUDOC | Menneskerettigheter | HUDOC JSON API | Lav |
 | **Skatt og finans** | | | |
-| Skatteetaten rettskilder | Skatte- og avgiftsrett | HTML-scraping | Høy |
-| Skatteetaten rettsinformasjon API | Skatte- og avgiftsrett | Maskinporten | Høy (krever org.nr.) |
-| Skatteklagenemnda | Skatte- og avgiftsrett | HTML-scraping | Høy |
-| Finanstilsynet | Bank, finans og regnskapsrett | HTML-scraping | Høy |
-| **Konkurranse og forbrukere** | | | |
-| Konkurransetilsynet | Forbruker-, kjøps- og konkurranserett; Næringsrett | HTML-scraping | Høy |
-| KOFA | Anskaffelser, avtaler, bygg og entrepriser | HTML-scraping | Høy |
+| Skatteetaten rettsinformasjon API | Skatte- og avgiftsrett | Maskinporten | Supplement (krever org.nr.) |
 | **Utlendingsrett** | | | |
-| UNE — Utlendingsnemnda | Utlendingsrett | HTML-scraping | Høy |
 | UDI regelverk | Utlendingsrett | HTML-scraping | Middels |
 | IMDi | Utlendingsrett | HTML-scraping | Middels |
 | **Helse og omsorg** | | | |
 | Helsedirektoratet | Helse- og omsorgsrett | HTML + mulig API | Høy |
-| Helsetilsynet | Helse- og omsorgsrett | HTML-scraping | Høy |
 | NPE / Pasientskadenemnda | Helse- og omsorgsrett; Erstatnings- og forsikringsrett | HTML-scraping | Middels |
 | **Personvern og IKT** | | | |
-| Datatilsynet | IKT- og medierett | HTML-scraping | Høy |
 | Nkom | IKT- og medierett | HTML-scraping | Middels |
 | Medietilsynet | IKT- og medierett | HTML-scraping | Middels |
-| **Arbeid og HMS** | | | |
-| Arbeidstilsynet | Arbeidsrett; HMS og beredskaps- og sikkerhetsrett | HTML-scraping | Middels |
 | **Familie og barn** | | | |
 | Bufdir | Familie-, person- og barnerett | HTML-scraping | Middels |
 | **Eiendom og husleie** | | | |
 | Husleietvistutvalget | Fast eiendoms rettsforhold | HTML-scraping | Middels |
-| **Immaterialrett** | | | |
-| Patentstyret | Immaterialrett | HTML-scraping | Middels |
 | **Energi og miljø** | | | |
 | NVE | Energirett; Miljøvern, natur og friluftsliv | HTML-scraping | Middels |
+| Patentstyret | Immaterialrett | HTML-scraping | Lav (KFIR dekker klageinstans) |
 | **Forvaltning og kommunalrett** | | | |
 | Statsforvalteren | Forvaltnings- og kommunalrett | HTML-scraping | Middels |
-| Riksrevisjonen | Forvaltnings- og kommunalrett | HTML-scraping | Middels |
-| LDO / Diskrimineringsnemnda | Menneskerettigheter; Arbeidsrett | HTML-scraping | Middels |
 | Klagenemdsekretariatet | Anskaffelser, avtaler, bygg og entrepriser; Forbruker-, kjøps- og konkurranserett | HTML-scraping | Middels |
 | **Nærings- og sektortilsyn** | | | |
 | Lottstift | Næringsrett | HTML-scraping | Lav |
@@ -190,26 +188,31 @@ Domstolene tilbyr ingen API for henting av dommer. Dommer distribueres via Lovda
 
 ## Implementeringsrekkefølge
 
-### Gruppe 1 — Neste (enkelt, høy verdi)
-1. **norwegian-laws** — ett API-kall, beriker rettsområde-feltet
-2. **Datatilsynet vedtak** — HTML-liste
-3. **Helsetilsynet publikasjoner** — HTML-liste
-4. **UNE praksisbase** — strukturert søkbar base
-5. **KOFA praksisbase** — strukturert søkbar base
-6. **Skatteklagenemnda** — vedtaksliste
-7. **Finanstilsynet** — vedtaksliste
-8. **Konkurransetilsynet** — vedtaksliste
+### Gruppe 1 — ✅ Ferdig
+1. ✅ **norwegian-laws** — beriker rettsområde-feltet (`subjects`) i `lovdata.py`
+2. ✅ **Datatilsynet** — vedtak, varsler, uttalelser
+3. ✅ **Helsetilsynet** — tilsynsrapporter, publikasjoner
+4. ✅ **UNE praksisbase** — praksisnotater, referansevedtak
+5. ✅ **KOFA praksisbase** — vedtak offentlige anskaffelser
+6. ✅ **Skatteklagenemnda** — vedtaksliste
+7. ✅ **Finanstilsynet** — vedtak, tillatelser, rundskriv
+8. ✅ **Konkurransetilsynet** — vedtak, uttalelser, brev
 
-### Gruppe 2 — Deretter
-9. Skatteetaten rettskilder (BFU, uttalelser)
-10. Helsedirektoratet rundskriv
-11. Regjeringen.no (NOU, Prop., tolkningsuttalelser)
-12. UDI retningslinjer (RS/GI/PN)
-13. Arbeidsretten (Lovdata ARD)
+### Gruppe 2 — ✅ Ferdig
+9. ✅ **Regjeringen.no** — proposisjoner, NOU-er, meldinger, rundskriv, høringer
+10. ✅ **Skatteetaten** — BFU, prinsipputtalelser, uttalelser
+11. ✅ **LDO + Diskrimineringsnemnda** — uttalelser og vedtak
+12. ✅ **KFIR** — avgjørelser immaterialrett
+13. ✅ **Arbeidstilsynet** — vedtak, tilsynsrapporter
+14. ✅ **Riksrevisjonen** — forvaltningsrevisjoner, rapporter
 
-### Gruppe 3 — Lavere prioritet
-14. Bufdir, Arbeidstilsynet, IMDi, Medietilsynet, Nkom, NVE, Patentstyret
-15. Lovdata NAV, Trygderetten, NPE, Husleietvistutvalget, Statsforvalteren
-16. Stortingstidende, Lovdata HIST, Lovdata Rundskriv
-17. EUR-Lex (SPARQL), EFTA-domstolen, HUDOC/EMD
-18. Komparative kilder (DK, SE)
+### Gruppe 3 — Neste (gjenstående)
+15. Helsedirektoratet rundskriv, Domstol.no (Høyesterett)
+16. UDI retningslinjer (RS/GI/PN), Arbeidsretten (Lovdata ARD)
+17. Bufdir, IMDi, Medietilsynet, Nkom, NVE, Patentstyret
+18. Lovdata NAV, Trygderetten, NPE, Husleietvistutvalget, Statsforvalteren
+19. Stortingstidende, Lovdata HIST, Lovdata Rundskriv
+20. EUR-Lex (SPARQL), EFTA-domstolen, HUDOC/EMD
+21. Komparative kilder (DK, SE)
+
+**Merknad:** Skatteetaten `rettsinformasjon`-API (Maskinporten) er fortsatt et mulig supplement, men krever org.nr. og Altinn-delegering. Gjeldende `skatteetaten.py` bruker åpen HTML-scraping av `/rettskilder/`.

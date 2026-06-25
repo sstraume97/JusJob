@@ -10,30 +10,27 @@ Et verktøy for juridisk research som henter og indekserer norske rettskilder au
 
 ```mermaid
 flowchart TD
-    subgraph Kilder["📚 Rettskilder"]
+    subgraph Kilder["📚 Rettskilder (23 aktive)"]
         A1([rettspraksis.no\nMediaWiki API])
         A2([data.stortinget.no\nXML-API])
-        A3([sivilombudet.no\nSitemap + HTML])
         A4([kudos.dfo.no\nREST API])
-        A5([norwegian-laws\nGitHub Pages JSON])
+        A5([api.lovdata.no\ntar.bz2 + XML])
+        A6([regjeringen.no\nProp./NOU/Meld./rundskriv])
+        A7([14 tilsyn og nemnder\nDatatilsynet, UNE, KOFA,\nFinanstilsynet, KFIR, m.fl.])
     end
 
     subgraph Actions["⚙️ GitHub Actions"]
-        B1[pipeline/rettspraksis.py]
-        B2[pipeline/stortinget.py]
-        B3[pipeline/sivilombudet.py]
-        B4[pipeline/kudos.py]
-        B5[pipeline/lovdata.py]
-        B6[pipeline/build_index.py]
+        B1[rettspraksis.py / stortinget.py\nsivilombudet.py / kudos.py]
+        B5[lovdata.py + norwegian_laws.py\nsubjects-berikelse]
+        B6[regjeringen.py + 14 tilsyn-scrapere]
+        B7[pipeline/build_index.py]
     end
 
     subgraph Data["💾 data/  ← committes til repo"]
-        C1[(rettspraksis.jsonl.gz\n~70 000 avgjørelser)]
-        C2[(stortinget.jsonl.gz\n~17 000 saker)]
-        C3[(sivilombudet.jsonl.gz\n~1 950 uttalelser)]
-        C4[(kudos.jsonl.gz\n~44 000 dokumenter)]
-        C5[(lovdata.jsonl.gz\n794 lover + 3 438 forskrifter)]
-        C6[(search-index.json)]
+        C1[(rettspraksis / stortinget /\nsivilombudet / kudos .jsonl.gz)]
+        C5[(lovdata-lover / -forskrifter /\n-lovtiend1 .jsonl.gz)]
+        C6[(regjeringen, datatilsynet, une,\nkofa … .jsonl.gz — 15 filer)]
+        C9[(search-index.json)]
     end
 
     subgraph Pages["🌐 GitHub Pages"]
@@ -45,22 +42,18 @@ flowchart TD
         F[Importer som Zotero-item]
     end
 
-    A1 -->|inkrementell, revid-cache| B1
-    A2 -->|5 siste sesjoner| B2
-    A3 -->|inkrementell via lastmod| B3
-    A4 -->|inkrementell via UUID-cache| B4
-    A5 -->|laws.json daglig| B5
+    A1 & A2 & A4 -->|inkrementell cache| B1
+    A5 -->|daglig, lastModified-cache| B5
+    A6 & A7 -->|inkrementell URL-cache| B6
 
     B1 --> C1
-    B2 --> C2
-    B3 --> C3
-    B4 --> C4
     B5 --> C5
-
-    C1 & C2 & C3 & C4 & C5 --> B6
     B6 --> C6
 
-    C6 -->|publiseres| D
+    C1 & C5 & C6 --> B7
+    B7 --> C9
+
+    C9 -->|publiseres| D
     D -->|fetch over HTTPS| E
     E -->|velg treff| F
 ```
@@ -71,27 +64,35 @@ Alle datafiler committes til repoet og publiseres via GitHub Pages. Zotero-plugi
 
 ## Kilder
 
-| Kilde | Type | Status | Kategori |
-|---|---|---|---|
-| [rettspraksis.no](https://www.rettspraksis.no) | Høyesterett, lagmannsretter, tingretter | ✅ | Rettsavgjørelser |
-| [Stortinget](https://data.stortinget.no) | Saker, Prop., Innst., vedtak | ✅ | Lovverk og forarbeider |
-| [Sivilombudet](https://www.sivilombudet.no) | Uttalelser | ✅ | Tilsyn og ombud |
-| [KUDOS (DFØ)](https://kudos.dfo.no) | NOU-er, studier, rapporter | ✅ | Forvaltning |
-| [norwegian-laws](https://github.com/sondreskarsten/norwegian-laws) | 794 lover + 3 438 forskrifter | ⏳ | Lovverk |
-| [Regjeringen.no](https://www.regjeringen.no) | NOU-er, høringer, rundskriv | ⏳ | Lovverk og forarbeider |
-| [Domstol.no](https://www.domstol.no) | Fritt tilgjengelige dommer | ⏳ | Rettsavgjørelser |
-| [Datatilsynet](https://www.datatilsynet.no) | Vedtak, veiledninger | ⏳ | Tilsyn |
-| [Helsetilsynet](https://www.helsetilsynet.no) | Tilsynsrapporter, vedtak | ⏳ | Tilsyn |
-| [Riksrevisjonen](https://www.riksrevisjonen.no) | Revisjonsrapporter | ⏳ | Tilsyn |
-| [Forbrukertilsynet](https://www.forbrukertilsynet.no) | Vedtak | ⏳ | Tilsyn |
-| [LDO / Diskrimineringsnemnda](https://www.diskrimineringsnemnda.no) | Vedtak, uttalelser | ⏳ | Tilsyn |
-| [Klagenemdsekretariatet](https://www.klagenemndssekretariatet.no/) | KOFA, Konkurranseklagenemnda m.fl. | ⏳ | Klage og nemnd |
-| [Trygderetten](https://www.trygderetten.no) | Kjennelser | ⏳ | Klage og nemnd |
-| [Pasientskadenemnda (NPE)](https://www.npe.no) | Vedtak | ⏳ | Klage og nemnd |
-| [Husleietvistutvalget](https://www.htu.no) | Avgjørelser | ⏳ | Klage og nemnd |
-| [EMD / HUDOC](https://hudoc.echr.coe.int) | Menneskerettsdomstolen | ⏳ | Internasjonal |
-| [EFTA/EU-domstolen](https://www.eftacourt.int) | EØS-avgjørelser | ⏳ | Internasjonal |
-| [EUR-Lex](https://eur-lex.europa.eu) | EU-forordninger, direktiver | ⏳ | Internasjonal |
+**23 aktive datakilder.** Se [docs/kilder.md](docs/kilder.md) for full integrasjonsplan og teknisk vurdering per kilde.
+
+### ✅ Aktive
+
+| Kilde | Type | Kategori |
+|---|---|---|
+| [rettspraksis.no](https://www.rettspraksis.no) | Høyesterett, lagmannsretter, tingretter (~70 000) | Rettsavgjørelser |
+| [Stortinget](https://data.stortinget.no) | Saker, Prop., Innst., vedtak (~17 000) | Lovverk og forarbeider |
+| [Sivilombudet](https://www.sivilombudet.no) | Uttalelser (~1 950) | Tilsyn og ombud |
+| [KUDOS (DFØ)](https://kudos.dfo.no) | NOU-er, studier, rapporter (~44 000) | Forvaltning |
+| [Lovdata](https://lovdata.no) | ~782 lover, ~3 733 forskrifter, Norsk Lovtiend avd. 1 | Lovverk |
+| [Forbrukertilsynet](https://www.forbrukertilsynet.no) | Vedtak, Markedsrådet, FKU, veiledninger | Tilsyn |
+| [Regjeringen.no](https://www.regjeringen.no) | Proposisjoner, NOU-er, meldinger, rundskriv, høringer | Lovverk og forarbeider |
+| [Datatilsynet](https://www.datatilsynet.no) | Vedtak, varsler, uttalelser | Tilsyn |
+| [Helsetilsynet](https://www.helsetilsynet.no) | Tilsynsrapporter, publikasjoner | Tilsyn |
+| [UNE](https://une.no) | Praksisnotater, referansevedtak | Klage og nemnd |
+| [KOFA](https://www.kofa.no) | Vedtak — offentlige anskaffelser | Klage og nemnd |
+| [Konkurransetilsynet](https://www.konkurransetilsynet.no) | Vedtak, uttalelser, brev | Tilsyn |
+| [Finanstilsynet](https://www.finanstilsynet.no) | Vedtak, tillatelser, rundskriv | Tilsyn |
+| [Skatteklagenemnda](https://www.skatteklagenemnda.no) | Vedtak (skatterett) | Klage og nemnd |
+| [Skatteetaten](https://www.skatteetaten.no/rettskilder/) | BFU, prinsipputtalelser, uttalelser | Skatt |
+| [LDO + Diskrimineringsnemnda](https://www.diskrimineringsnemnda.no) | Uttalelser, vedtak | Klage og nemnd |
+| [KFIR](https://www.kfir.no) | Avgjørelser — patent, varemerke, design | Klage og nemnd |
+| [Arbeidstilsynet](https://www.arbeidstilsynet.no) | Vedtak, tilsynsrapporter | Tilsyn |
+| [Riksrevisjonen](https://www.riksrevisjonen.no) | Forvaltningsrevisjoner, rapporter | Tilsyn |
+
+### ⏳ Planlagte (utvalg)
+
+[Domstol.no](https://www.domstol.no) · [Helsedirektoratet](https://www.helsedirektoratet.no) · [UDI](https://udiregelverk.no) · Arbeidsretten · Trygderetten · NPE · Husleietvistutvalget · [EMD/HUDOC](https://hudoc.echr.coe.int) · [EFTA-domstolen](https://www.eftacourt.int) · [EUR-Lex](https://eur-lex.europa.eu)
 
 Se [docs/indeks-skjema.md](docs/indeks-skjema.md) for detaljert feltdefinisjon og lenkestrategi mellom kilder.
 
@@ -114,11 +115,33 @@ Plugin-en er et skjelett under utvikling. Planlagte funksjoner:
 
 ```bash
 pip install -r requirements.txt
+
+# Lovverk og forarbeider
 python pipeline/stortinget.py
-python pipeline/sivilombudet.py
 python pipeline/kudos.py
-python pipeline/rettspraksis.py   # tar ~30 min første gang
+python pipeline/rettspraksis.py        # tar ~30 min første gang
+python pipeline/norwegian_laws.py      # bygger rettsområde-indeks (kjør før lovdata)
+python pipeline/lovdata.py             # lover, forskrifter, Lovtiend avd. 1
+python pipeline/regjeringen.py         # proposisjoner, NOU, meldinger, rundskriv, høringer
+
+# Tilsyn og nemnder
+python pipeline/sivilombudet.py
+python pipeline/forbrukertilsynet.py
+python pipeline/datatilsynet.py
+python pipeline/helsetilsynet.py
+python pipeline/une.py
+python pipeline/kofa.py
+python pipeline/konkurransetilsynet.py
+python pipeline/finanstilsynet.py
+python pipeline/skatteklagenemnda.py
+python pipeline/skatteetaten.py
+python pipeline/diskriminering.py
+python pipeline/kfir.py
+python pipeline/arbeidstilsynet.py
+python pipeline/riksrevisjonen.py
+
+# Bygg samlet søkeindeks
 python pipeline/build_index.py
 ```
 
-GitHub Actions kjører dette automatisk daglig kl. 03:00 UTC og publiserer til [GitHub Pages](https://sstraume97.github.io/JusJob/).
+GitHub Actions kjører dette automatisk daglig kl. 03:00 UTC og publiserer til [GitHub Pages](https://sstraume97.github.io/JusJob/). Alle scraper-steg er inkrementelle (URL-/cache-basert) og kjører med `continue-on-error`, så én kilde som er nede stopper ikke de andre.
