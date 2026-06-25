@@ -267,9 +267,25 @@ Shell-downloader + kopi av Lovdata OpenAPI-spec og pakkeliste. Bekrefter at de f
 ---
 
 ### [sstraume97/Rettskildesok](https://github.com/sstraume97/Rettskildesok)
-**Relevans: ⭐⭐⭐ Høy — eget prosjekt med 65-kilde katalog**
+**Relevans: ⭐⭐⭐ Høy — eget prosjekt, mulig frontend for JusJob**
 
 Brukerens eget prosjekt: statisk søkeaggregator (GitHub Pages, Vanilla JS) som bygger Boolean-søkstrenger mot 65+ norske og internasjonale rettskilder via URL deep-linking. `js/sources.js` er den sentrale ressursen.
+
+**Rettskildesok som mulig JusJob-frontend:**
+
+Rettskildesok og JusJob er naturlige komplementer. I dag sender Rettskildesok brukeren videre til eksterne søkesider (URL deep-linking) — brukeren forlater tjenesten for hvert søk. JusJob bygger en lokal søkeindeks over de samme kildene. Disse to kan kombineres på minst to måter:
+
+1. **Integrert frontend:** Rettskildesok kan bytte fra URL-dispatching til å søke i JusJobs `search-index.json` for de kildene JusJob har indeksert, og beholde URL-dispatching som fallback for resten. Resultatet: brukeren forblir i grensesnittet, ser faktiske dokumenter, og kan eksportere til Zotero.
+
+2. **UX-inspirasjon for Zotero-plugin:** Rettskildesoks kildekataloger (8 kategorier, Boolean-søk, kilde-filtrering) er direkte relevant som UI-mønster for søkepanelet i Zotero-pluginen. Kategoriseringen (lovverk / forarbeider / domstolsinstanser / nemnder / EU-EØS) er juridisk velfundert og bør speiles i JusJobs kildefilter.
+
+**Viktig:** `sources.js`-katalogen med 65 kilder brukes som autoritativ referanseliste for hvilke rettskilder JusJob bør dekke (se [docs/kilder.md](./kilder.md)).
+
+**Hva som mangler i Rettskildesok som JusJob løser:**
+- Ingen faktisk dokumenthenting — kun videresending
+- Ingen offline-støtte / Zotero-integrasjon
+- Ingen strukturert indeks med metadata (dato, instans, type, snippet)
+- Ingen cross-source lenking via ELI-identifikatorer
 
 **Alle 65 kilder fordelt på 8 kategorier i sources.js:**
 

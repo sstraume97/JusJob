@@ -1,354 +1,282 @@
 # Kilder — teknisk vurdering og integrasjonsplan
 
-Sist oppdatert: 2026-06-25.
+Sist oppdatert: 2026-06-25. Basert på Rettskildesok (sstraume97/Rettskildesok) som autoritativ referanseliste.
 
 ---
 
 ## Status-oversikt
 
-| Kilde | Type | Prioritet | Tilgang | Status |
+### ✅ Aktive kilder (implementert)
+
+| Kilde | Type | Tilgang | Output-fil |
+|---|---|---|---|
+| rettspraksis.no | Rettsavgjørelser (~70 000) | MediaWiki API | `rettspraksis.jsonl.gz` |
+| data.stortinget.no | Stortingssaker/forarbeider (~17 000) | XML-API | `stortinget.jsonl.gz` |
+| sivilombudet.no | Uttalelser (~1 950) | Sitemap + HTML | `sivilombudet.jsonl.gz` |
+| kudos.dfo.no | Offentlige dok. KUDOS (~44 000) | REST API | `kudos.jsonl.gz` |
+| Lovdata gjeldende lover | ~782 konsoliderte lover (XML) | api.lovdata.no tar.bz2 | `lovdata-lover.jsonl.gz` |
+| Lovdata sentrale forskrifter | ~3 733 forskrifter (XML) | api.lovdata.no tar.bz2 | `lovdata-forskrifter.jsonl.gz` |
+| Norsk Lovtiend avd. 1 (løpende) | Kunngjøringer inneværende år | api.lovdata.no tar.bz2 | `lovdata-lovtiend1.jsonl.gz` |
+| Norsk Lovtiend avd. 1 (2001–2024) | Historisk arkiv | api.lovdata.no tar.bz2 | `lovdata-lovtiend1.jsonl.gz` |
+| Forbrukertilsynet | Vedtak, markedsråd, FKU, veiledninger | HTML-scraping | `forbrukertilsynet.jsonl.gz` |
+
+### ℹ️ Utilgjengelig (bekreftet)
+
+| Kilde | Årsak |
+|---|---|
+| Norsk Lovtiend avd. 2 | Ikke i åpent API (kun avd. 1 tilgjengelig) |
+| Domstolene direkte API | Kun innsendingstjeneste (digital-innsending) — ingen henting |
+| Lovdata HR/LG/TRS (bulk) | Krever Lovdata-abonnement — bruk rettspraksis.no i stedet |
+| Sivilrett.no | Returnerer 403 Forbidden |
+
+---
+
+## Planlagte kilder
+
+### Gruppe 1 — Lovtekst og forarbeider (høy prioritet)
+
+| Kilde | URL | Type | Tilgang | Merknad |
 |---|---|---|---|---|
-| rettspraksis.no | Rettsavgjørelser | ✅ Live | MediaWiki API | Ferdig |
-| data.stortinget.no | Stortingssaker/forarbeider | ✅ Live | XML-API | Ferdig |
-| sivilombudet.no | Uttalelser | ✅ Live | Sitemap + HTML | Ferdig |
-| kudos.dfo.no | Offentlige dok. (KUDOS) | ✅ Live | REST API | Ferdig |
-| Lovdata gjeldende lover | ~782 konsoliderte lover (XML, NLOD 2.0) | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
-| Lovdata sentrale forskrifter | ~3 733 konsoliderte forskrifter (XML) | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
-| Norsk Lovtiend avd. 1 | Kunngjøringer: lover + sentrale forskrifter | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
-| Norsk Lovtiend avd. 1 (historisk 2001–2024) | Alle kunngjøringer fra 2001 til 2024 | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
-| Norsk Lovtiend avd. 2 | Kunngjøringer: lokale + private forskrifter | ℹ️ Ikke i åpent API | — ikke tilgjengelig | Ikke mulig |
-| Forbrukertilsynet | Vedtak, markedsråd, FKU, veiledninger | ✅ Implementert | HTML-scraping | Ferdig |
-| norwegian-laws (GitHub) | Metadata: ELI, departement, rettsområde | 🔲 Planlagt | GitHub Pages JSON | Middels (metadata-beriker) |
-| Skatteetaten rettsinformasjon API | Skattehåndboken, MVA-håndboken m.fl. | 🔲 Planlagt | Maskinporten REST API | Høy (krever org.nr.) |
-| Skatteetaten rettskilder (web) | BFU, vedtak, retningslinjer | 🔲 Planlagt | HTML-scraping (fallback) | Høy |
-| Norges domstoler (domstolene) | Dommer (Høyesterett, lagmanns-, tingretter) | ℹ️ Ingen publik API | — kun Lovdata | Ikke mulig direkte |
-| Datatilsynet | Vedtak, veiledere | 🔲 Planlagt | HTML-scraping | Høy |
-| Helsetilsynet | Publikasjoner, regelverk | 🔲 Planlagt | HTML-scraping | Høy |
-| Helsedirektoratet | Rundskriv, lovfortolkninger | 🔲 Planlagt | HTML + mulig API | Høy |
-| Forbrukertilsynet | Vedtak, markedsråd, veiledninger | 🔲 Planlagt | HTML-scraping | Høy |
-| UDI regelverk | Retningslinjer, instrukser | 🔲 Planlagt | HTML-scraping | Middels |
-| Bufdir | Fagstøtte, barnevern | 🔲 Planlagt | HTML-scraping | Middels |
-| Arbeidstilsynet | Regelverk, veiledere | 🔲 Planlagt | HTML-scraping | Middels |
-| IMDi | Regelverk | 🔲 Planlagt | HTML-scraping | Middels |
-| Medietilsynet | Regelverk | 🔲 Planlagt | HTML-scraping | Lav |
-| Lovdata NAV | NAV-praksis | 🔲 Planlagt | HTML-scraping | Lav |
-| Kriminalomsorgen | Lovverk | 🔲 Planlagt | HTML-scraping | Lav |
-| Lottstift | Lover og regelverk | 🔲 Planlagt | HTML-scraping | Lav |
-| NPE | Vedtak/erstatning | 🔲 Planlagt | HTML-scraping | Lav |
-| Helsedirektoratet API | Åpne data | 🔲 Planlagt | REST API | Undersøkes |
-| data.norge.no | Begrepskatalog, datasett | 🔲 Planlagt | CKAN/Felles API | Undersøkes |
-| Sivilrett.no | Juridisk database | 🔲 Planlagt | HTML (403 nå) | Blokkert |
+| norwegian-laws | github.com/sondreskarsten/norwegian-laws | Metadata: ELI, dept., rettsområde | GitHub Pages JSON | Supplement til Lovdata |
+| Regjeringen NOU | regjeringen.no/no/dokumenter/nou | NOU-er | HTML-scraping | |
+| Regjeringen Prop./Meld. | regjeringen.no/no/dokumenter/prop | Proposisjoner, meldinger | HTML-scraping | |
+| Regjeringen Ot.prp. | regjeringen.no/no/dokumenter/otprp | Odelstingsproposisjoner | HTML-scraping | Eldre forarbeider |
+| Justisdep. tolkningsuttalelser | regjeringen.no/no/dokumenter/tolkningsuttalelser | Tolkningsuttalelser | HTML-scraping | |
+| Lovdata Rundskriv | lovdata.no/dokument/RUNDSKRIV | Rundskriv | HTML-scraping | |
+| Lovdata NAV | lovdata.no/nav | NAV-rundskriv og retningslinjer | HTML-scraping | |
+| Stortingstidende | stortinget.no/Stortingstidende | Stortingsforhandlinger | HTML-scraping | |
+
+### Gruppe 2 — Domstolsinstanser (høy prioritet)
+
+| Kilde | URL | Type | Tilgang | Merknad |
+|---|---|---|---|---|
+| Domstol.no (Høyesterett) | domstol.no/no/hoyesterett/avgjorelser | Høyesterettsavgjørelser | HTML-scraping | Supplement til rettspraksis.no |
+| Arbeidsretten | lovdata.no/dokument/ARD | Arbeidsrettsdommer | HTML-scraping | |
+| Trygderetten | trygderetten.no | Kjennelser | HTML-scraping | |
+| EFTA-domstolen | eftacourt.int/cases | EØS-avgjørelser | API | |
+| EMD / HUDOC | hudoc.echr.coe.int | Menneskerettsdomstolen | HUDOC JSON API | |
+
+### Gruppe 3 — Nemnder og tilsyn (høy/middels prioritet)
+
+| Kilde | URL | Type | Tilgang | Merknad |
+|---|---|---|---|---|
+| Datatilsynet | datatilsynet.no/regelverk-og-verktoy | Vedtak, veiledere (GDPR) | HTML-scraping | |
+| Helsetilsynet | helsetilsynet.no | Tilsynsrapporter, vedtak | HTML-scraping | |
+| Skatteetaten rettskilder | skatteetaten.no/rettskilder | BFU, vedtak, håndbøker | HTML-scraping | |
+| Skatteetaten API | skatteetaten.github.io/api-dokumentasjon | Juridiske håndbøker | Maskinporten API | Krever org.nr. |
+| Skatteklagenemnda | skatteklagenemnda.no | Vedtak (skatterett) | HTML-scraping | |
+| UNE — Utlendingsnemnda | une.no/praksis | Praksis (utlendingsrett) | HTML-scraping | |
+| Finanstilsynet | finanstilsynet.no/nyheter-og-publikasjoner | Vedtak, rundskriv (finansrett) | HTML-scraping | |
+| Konkurransetilsynet | konkurransetilsynet.no/vedtak-og-uttalelser | Vedtak (konkurranserett) | HTML-scraping | |
+| LDO / Diskrimineringsnemnda | diskrimineringsnemnda.no | Vedtak, uttalelser | HTML-scraping | |
+| KOFA | kofa.no/praksis | Praksis (offentlige anskaffelser) | HTML-scraping | |
+| Nkom | nkom.no/vedtak | Vedtak (ekomrett) | HTML-scraping | |
+| NVE | nve.no/juridiske-dokumenter | Juridiske dok. (energirett) | HTML-scraping | |
+| Patentstyret | patentstyret.no | Vedtak (immaterialrett) | HTML-scraping | |
+| Riksrevisjonen | riksrevisjonen.no | Revisjonsrapporter | HTML-scraping | |
+| Statsforvalteren | statsforvalteren.no | Vedtak, klagebehandling | HTML-scraping | |
+
+### Gruppe 4 — Fagdirektorater og sektormyndigheter (middels prioritet)
+
+| Kilde | URL | Type | Tilgang | Merknad |
+|---|---|---|---|---|
+| Helsedirektoratet | helsedirektoratet.no/lov-og-forskrift | Rundskriv, lovfortolkninger | HTML + mulig API | Åpent API i footer |
+| Arbeidstilsynet | arbeidstilsynet.no/regelverk | Regelverk, veiledere, HMS | HTML-scraping | |
+| UDI regelverk | udiregelverk.no/no/rettskilder | RS/GI/PN-retningslinjer | HTML-scraping | |
+| Bufdir | bufdir.no/fagstotte | Fagstøtte, barnevern, saksbehandlingsrundskrivet | HTML-scraping | |
+| Klagenemdsekretariatet | klagenemndssekretariatet.no | KOFA, Konkurranseklagenemnda m.fl. | HTML-scraping | |
+| IMDi | imdi.no/regelverk | Regelverk, integrering | HTML-scraping | |
+| Medietilsynet | medietilsynet.no/regelverk | Medierett | HTML-scraping | |
+| Lottstift | lottstift.no/lover-og-regelverk | Pengespill og lotteri | HTML-scraping | |
+| NPE / Pasientskadenemnda | npe.no | Vedtak, erstatningsutmålinger | HTML-scraping | |
+| Husleietvistutvalget | htu.no | Avgjørelser | HTML-scraping | |
+| Kriminalomsorgen | kriminalomsorgen.no | Lovverk | HTML-scraping | Bruk offisiell side |
+
+### Gruppe 5 — Internasjonale og komparative kilder (lav prioritet)
+
+| Kilde | URL | Type | Tilgang | Merknad |
+|---|---|---|---|---|
+| EUR-Lex | eur-lex.europa.eu | EU-forordninger, direktiver, EØS | SPARQL / REST API | ELI-basert |
+| Curia | curia.europa.eu | EU-domstolsavgjørelser | API | |
+| ESA | esa.int | EØS-tilsyn | HTML-scraping | |
+| Europarådet | coe.int | Konvensjoner | HTML-scraping | |
+| UN Treaty Collection | treaties.un.org | FN-traktater | API | |
+| Retsinformation.dk | retsinformation.dk | Dansk lovgivning (komparativ) | API | |
+| Riksdagen.se | riksdagen.se | Svensk lovgivning (komparativ) | API | |
+
+### Gruppe 6 — Åpne datasett og kataloger
+
+| Kilde | URL | Type | Tilgang | Merknad |
+|---|---|---|---|---|
+| data.norge.no | data.norge.no | Begrepskatalog, åpne datasett | CKAN/Felles API | |
+| Lovdata Historiske versjoner | lovdata.no/dokument/HIST | Opphevede og historiske lover | HTML-scraping | |
+
+### Ikke relevant for JusJob
+
+| Kilde | Årsak |
+|---|---|
+| Juridika.no | Betalt tjeneste |
+| Idunn.no | Betalt akademisk database |
+| SNL Jus | Encyklopedi, ikke primærkilder |
+| ICJ / ITLOS / WTO | For spesialisert for generell bruk |
 
 ---
 
-## Detaljerte kildebeskrivelser
+## Kildebeskrivelser
 
-### Skatteetaten — https://www.skatteetaten.no/rettskilder/
+### Lovdata offentlige datapakker
 
-**Type:** Skatterettskilder  
-**Tilgang:** HTML-navigasjon, ingen API  
-**Innhold (6 kategorier):**
-- Regelverk — lover, forskrifter, internasjonale avtaler
-- Høringer — høringsnotater fra Skattedirektoratet
-- Håndbøker — skattehåndboken, MVA, lønns-ABC
-- Uttalelser — bindende forhåndsuttalelser (BFU), direktiver, prinsipputtalelser
-- Vedtak — Skatteklagenemnda, tidligere klageinstanser
-- Retningslinjer — gjennomføringsveiledning
-
-**Scraping-tilnærming:** Hent kategorilister → parse enkeltdokumenter. BFU-ene er særlig relevante (søkbar praksis).
-
----
-
-### data.norge.no — https://data.norge.no/
-
-**Type:** Åpent datakatalog  
-**Tilgang:** Felles datakatalog har SPARQL/REST API  
-**Relevante datasett:**
-- Begrepskatalog (juridiske begreper fra offentlig sektor)
-- Datatilsynet datasett
-- Brønnøysundregistrene
-- Kartverket
-
-**Scraping-tilnærming:** Undersøk `https://data.norge.no/api` og SPARQL-endepunkt for begrepskatalogen. Kan hente strukturerte juridiske begreper.
-
----
-
-### Lovdata offentlige datapakker — https://api.lovdata.no/v1/publicData/list
-
-**Type:** Gjeldende lover, sentrale forskrifter, Norsk Lovtiend  
 **Tilgang:** Åpent REST API, ingen autentisering (NLOD 2.0)  
+**API:** `https://api.lovdata.no/v1/publicData/list`  
 **Status:** ✅ Implementert i `pipeline/lovdata.py`
 
-**Pakker tilgjengelig:**
+Faktiske filnavn (bekreftet via HNygard/lovdata-openapi-copy):
 
-| Filnavn | Innhold | Størrelse |
-|---|---|---|
-| `gjeldende-lover.tar.bz2` | ~782 konsoliderte, gjeldende lover | ~6 MB |
-| `sentrale-forskrifter.tar.bz2` | ~3 733 sentrale forskrifter | ~21 MB |
-| `lovtidend-avd1-YYYY.tar.bz2` | **Norsk Lovtiend avd. 1** — kunngjøringer av lover og sentrale forskrifter (løpende) | varierer |
-| `lovtidend-avd2-YYYY.tar.bz2` | **Norsk Lovtiend avd. 2** — kunngjøringer av lokale og private forskrifter | varierer |
+| Filnavn | Innhold |
+|---|---|
+| `gjeldende-lover.tar.bz2` | ~782 konsoliderte gjeldende lover |
+| `gjeldende-sentrale-forskrifter.tar.bz2` | ~3 733 sentrale forskrifter |
+| `lovtidend-avd1-YYYY.tar.bz2` | Norsk Lovtiend avd. 1, løpende år |
+| `lovtidend-avd1-2001-2024.tar.bz2` | Norsk Lovtiend avd. 1, historisk 2001–2024 |
 
-**Norsk Lovtiend** er den offisielle norske lovtidenden, publisert av Lovdata. Avd. 1 inneholder kunngjøringer av alle nye og endrede lover og sentrale forskrifter. Avd. 2 inneholder lokale og private forskrifter (kommunale forskrifter, vedtekter m.m.).
+**Viktig:** Avdeling 2 er ikke i det åpne API. `gjeldende-sentrale-forskrifter` — ikke `sentrale-forskrifter`.
 
-**XML-struktur:**
-- `doc_id`: "NL/lov/2005-06-17-62" → ELI `/eli/lov/2005-06-17-62`
-- `<title>`: fulltittel
-- `class="kortTittel"`: korttittel/populærnavn
+**XML-struktur (fra NationalLibraryOfNorway/lovdata-public-conversion-script):**
+- `dokumentID`: "NL/lov/2005-06-17-62" → ELI `/eli/lov/2005-06-17-62`
+- `<title>` / `class="kortTittel"`: fulltittel og korttittel
 - `class="departement"`: ansvarlig departement
-- `<article data-name="§ X-Y">`: enkeltparagrafer
+- `fulltext`: seksjonsvis tekst-array
+- `lastChangeInForce`: ikrafttredelse av siste endring
 
-**Inkrementell logikk:** sammenligner `lastModified` fra API mot `data/lovdata_cache.json` — laster kun ned ved endring.
-
-**Output:** `data/lovdata-lover.jsonl.gz`, `data/lovdata-forskrifter.jsonl.gz`, `data/lovdata-lovtiend1.jsonl.gz`, `data/lovdata-lovtiend2.jsonl.gz`
-
-**Lovdata som autoritær kilde:** Lovdata er den juridisk autoritative kilden for norsk lovtekst. `norwegian-laws` er et nyttig metadata-supplement (ELI, departement, rettsområde) men Lovdata-pakkene er primærkilden for faktisk lovtekst.
+**Lovdata som autoritær kilde:** Lovdata er den juridisk autoritative kilden. `norwegian-laws` brukes kun som metadata-supplement (ELI, rettsområde).
 
 ---
 
-### Skatteetaten rettsinformasjon API — https://skatteetaten.github.io/api-dokumentasjon/
+### Skatteetaten rettsinformasjon API
 
-**Type:** Skatterettskilder (juridiske håndbøker)  
-**Tilgang:** Maskinporten REST API (`skatteetaten:rettsinformasjon`-scope)  
-**Autentisering:** Krever norsk organisasjonsnummer + Maskinporten-klientregistrering. Tilgang innvilges av Skatteetaten og kan delegeres via Altinn.  
-**OpenAPI-spec:** Tilgjengelig på SwaggerHub.
+**Tilgang:** Maskinporten REST API (scope: `skatteetaten:rettsinformasjon`)  
+**Autentisering:** Krever norsk org.nr. + Maskinporten-klient + Altinn-delegering.
 
-**Innhold (strukturert JSON med HTML-tekst):**
-- Skatteforvaltningshåndboken — inkl. kap. 6 om BFU (bindende forhåndsuttalelser)
-- Merverdiavgiftshåndboken
-- Skattebetalingshåndboken
-- Folkeregisterhåndboken
-- Innkrevingsloven
-
-**Viktig begrensning:** BFU-beslutninger er *referert til* i håndbokstekst, men finnes ikke som eget søkbart datasett i API-et. Fullstendige BFU-tekster er på Lovdata og skatteetaten.no/rettskilder/.
-
-**Scraping-tilnærming:**
-- Primær: Maskinporten REST API (strukturert, maskinlesbar)
-- Sekundær fallback: HTML-scraping av `skatteetaten.no/rettskilder/` (BFU, vedtak, uttalelser)
-
-**Maskinporten-mønster** — gjelder for alle Maskinporten-sikrede API-er (inkl. fremtidige domstol-API-er):
-```python
-# Krever: org.nr., virksomhetssertifikat (Buypass/Commfides), Maskinporten-klient
-# Flyt: JWS-signert JWT → Maskinporten token → Bearer token i API-kall
-# Scope eksempel: "skatteetaten:rettsinformasjon"
-```
+**Innhold:** Skatteforvaltningshåndboken (inkl. BFU-referanser), MVA-håndboken, Skattebetalingshåndboken, Folkeregisterhåndboken.  
+**Begrensning:** BFU-fulltekster er ikke eget datasett — bruk HTML-scraping av `skatteetaten.no/rettskilder/` som supplement.
 
 ---
 
-### Norges domstoler — https://github.com/orgs/domstolene/repositories
+### Skatteklagenemnda
 
-**Viktig funn:** Domstolene tilbyr **ingen publik API for henting av dommer eller rettsavgjørelser**.
-
-Det eneste publiserte API-et (`domstolene/api-docs`) er `digital-innsending` — en ren *innsendingstjeneste* for å levere dokumenter *til* domstoler via Maskinporten. Det finnes ingen endepunkter for å hente, søke eller laste ned dommer.
-
-**Konsekvens for JusJob:** Norske rettsavgjørelser hentes via:
-1. **rettspraksis.no** (MediaWiki API) — allerede implementert ✅
-2. **Lovdata** (krev. abonnement for bulk; NLOD 2.0 for åpne dokumenter)
-3. **domstol.no** (HTML-scraping av offentlig tilgjengelige dommer)
-
-Domstolene publiserer sine dommer gjennom Lovdata-samarbeidet — ikke via egne API-er.
+**URL:** `https://www.skatteklagenemnda.no`  
+**Type:** Vedtak i skatterettslige klagesaker  
+**Tilgang:** HTML-scraping  
+**Merknad:** Separat organ fra Skatteetaten. Vedtakene er særlig relevante for skatterettslig praksis.
 
 ---
 
-### UDI regelverk — https://udiregelverk.no/no/rettskilder/
+### UNE — Utlendingsnemnda
 
-**Type:** Utlendingsrett  
-**Tilgang:** HTML-navigasjon, ingen API  
-**Innhold:**
-- Lover og forskrifter (utlendingsloven, statsborgerloven)
-- UDI-retningslinjer (RS, GI, PN)
-- Høyesterettsavgjørelser
-- Departementenes rundskriv og instrukser
-- Internasjonale rettskilder (EMD, EF-domstolen)
-
-**Scraping-tilnærming:** Parse retningslinjekategorier, hent RS/GI/PN-dokumenter med tittel + dato + kategori.
+**URL:** `https://www.une.no/praksis`  
+**Type:** Praksisbase for utlendingsrettslige vedtak  
+**Tilgang:** HTML-scraping  
+**Merknad:** Klageorgan for UDI-vedtak. Praksisbasen er søkbar og strukturert.
 
 ---
 
-### Medietilsynet — https://www.medietilsynet.no/regelverk/
+### Finanstilsynet
 
-**Type:** Medierett  
-**Tilgang:** HTML-navigasjon  
-**Scraping-tilnærming:** Hent regelverkssider, lover og forskrifter.
-
----
-
-### Lovdata NAV — https://lovdata.no/nav/
-
-**Type:** NAV-praksis og trygderett  
-**Tilgang:** Lovdata-HTML (krever ikke innlogging for NAV-rundskriv)  
-**Scraping-tilnærming:** Kategorisidene på lovdata.no/nav/ har lister med rundskriv og retningslinjer som er åpent tilgjengelige.
+**URL:** `https://www.finanstilsynet.no/nyheter-og-publikasjoner`  
+**Type:** Vedtak, rundskriv, tolkningsuttalelser (finansrett)  
+**Tilgang:** HTML-scraping
 
 ---
 
-### Arbeidstilsynet — https://www.arbeidstilsynet.no/regelverk/
+### Konkurransetilsynet
 
-**Type:** Arbeidsrett og HMS  
-**Tilgang:** HTML-navigasjon  
-**Innhold:** Regelverk, veiledere, tilsynsrapporter  
-**Scraping-tilnærming:** Parse regelverkssider etter seksjonstype.
-
----
-
-### Bufdir — https://www.bufdir.no/fagstotte/
-
-**Type:** Barnevern, familie og likestilling  
-**Tilgang:** HTML-navigasjon  
-**Relevante undersider:**
-- `/fagstotte/produkter/` — faglige produkter
-- `/fagstotte/barnevern-oppvekst/lover-og-regelverk/` — lover og regelverk
-- `/fagstotte/produkter/saksbehandlingsrundskrivet/` — saksbehandlingsrundskrivet (særlig viktig)
-
-**Scraping-tilnærming:** Hent saksbehandlingsrundskrivet kapittelvis. Parse regelverkssider for lenkelister.
+**URL:** `https://www.konkurransetilsynet.no/vedtak-og-uttalelser`  
+**Type:** Vedtak i konkurranserettslige saker  
+**Tilgang:** HTML-scraping
 
 ---
 
-### Datatilsynet — https://www.datatilsynet.no/
+### KOFA — Klagenemnda for offentlige anskaffelser
 
-**Type:** Personvern og GDPR  
-**Tilgang:** HTML-navigasjon  
-**Innhold:**
-- Lover og regler (personopplysningsloven, politiregisterloven, pasientjournalloven)
-- Sentrale avgjørelser
-- Sentrale høringsuttalelser
-- Veiledere og verktøy
-
-**Scraping-tilnærming:** Parse `https://www.datatilsynet.no/regelverk-og-verktoy/` → avgjørelser og veiledere.
+**URL:** `https://www.kofa.no/praksis`  
+**Type:** Praksis for offentlige anskaffelser  
+**Tilgang:** HTML-scraping  
+**Merknad:** Strukturert praksisbase med søkefunksjon.
 
 ---
 
-### Forbrukertilsynet — https://www.forbrukertilsynet.no/
+### Nkom — Nasjonal kommunikasjonsmyndighet
 
-**Type:** Forbrukerrett  
-**Tilgang:** HTML-lister + mulig Onacos/wfinnsyn-API  
-
-**Undersider og innhold:**
-- `/lov-og-rett/vedtak` — vedtak siste 5 år, kronologisk liste, ref-format: `FOV-2025-235041`
-- `/lov-og-rett/markedsradets-vedtak` — Markedsrådets vedtak
-- `/forbrukerklageutvalget/vedtak-i-forbrukerklageutvalget-etter-mai-2025-2` — Forbrukerklageutvalget
-- `/lov-og-rett/veiledninger-og-retningslinjer` — veiledninger
-
-**Onacos/wfinnsyn-API:**  
-- Prod: `https://innsyn.onacos.no/forbrukertilsynet/prod/wfinnsyn.ashx`
-- Hist: `https://innsyn.onacos.no/forbrukertilsynet/hist/wfinnsyn.ashx`
-- API-dokumentasjon: https://acosas.github.io/index.html — REST, trolig JSON-retur, minimal autentisering
-- Status: API returnerte 500 ved første test — prøv videre med korrekte parametere
-
-**Scraping-tilnærming:** Prøv Onacos-API først. Fallback: parse HTML-lister for vedtak.
+**URL:** `https://www.nkom.no/vedtak`  
+**Type:** Vedtak (ekomrett, post)  
+**Tilgang:** HTML-scraping
 
 ---
 
-### IMDi — https://www.imdi.no/regelverk/
+### NVE — Norges vassdrags- og energidirektorat
 
-**Type:** Integrering og mangfold  
-**Tilgang:** HTML-navigasjon  
-**Scraping-tilnærming:** Parse regelverkssider.
-
----
-
-### Kriminalomsorgen — https://kriminalomsorgen.vercel.app/ressurser
-
-**Type:** Straffegjennomføring  
-**Tilgang:** Uoffisiell Vercel-app — kan forsvinne  
-**Merknad:** Bør hentes direkte fra Kriminalomsorgens offisielle nettside i stedet.
+**URL:** `https://www.nve.no/juridiske-dokumenter`  
+**Type:** Juridiske dokumenter (energirett, vassdragsrett)  
+**Tilgang:** HTML-scraping
 
 ---
 
-### Helsedirektoratet — https://www.helsedirektoratet.no/lov-og-forskrift
+### Patentstyret
 
-**Type:** Helserett  
-**Tilgang:** HTML + mulig åpent API  
-**Innhold:**
-- Lov og forskrift
-- Rundskriv og veiledere til lov og forskrift
-- Lovfortolkninger
-
-**Merknad:** Footeren på helsedirektoratet.no nevner "Åpne data (API)" — undersøk dette endepunktet nærmere. URL-kandidat: `https://www.helsedirektoratet.no/api/`.
-
-**Scraping-tilnærming:** Undersøk API-dokumentasjon → parse rundskriv/veilederliste.
+**URL:** `https://www.patentstyret.no`  
+**Type:** Vedtak (patent, varemerke, design — immaterialrett)  
+**Tilgang:** HTML-scraping
 
 ---
 
-### Lottstift — https://lottstift.no/lover-og-regelverk/
+### Statsforvalteren
 
-**Type:** Lotteri og pengespill  
-**Tilgang:** HTML-navigasjon  
-**Scraping-tilnærming:** Parse regelverkssider.
-
----
-
-### NPE — https://www.npe.no/
-
-**Type:** Pasientskadeerstatning  
-**Tilgang:** HTML-navigasjon  
-**Innhold:** Vedtak, erstatningsutmålinger, statistikk  
-**Scraping-tilnærming:** Finn vedtakslister og statistikksider.
+**URL:** `https://www.statsforvalteren.no`  
+**Type:** Vedtak og klagebehandling på vegne av departementene  
+**Tilgang:** HTML-scraping  
+**Merknad:** 15 statsforvaltere — bør aggregeres per embete eller samles via nasjonal portal.
 
 ---
 
-### Helsetilsynet — https://www.helsetilsynet.no/
+### Justisdepartementet tolkningsuttalelser
 
-**Type:** Tilsyn med helse- og omsorgstjenester  
-**Tilgang:** HTML-navigasjon  
-**Undersider:**
-- `/regelverk/` — kategorisert etter virksomhetstype (barnevern, sosiale tjenester, helse)
-- `/publikasjoner/` — rapporter og tilsynsresultater
-- `/rettigheter-klagemuligheter/` — pasientrettigheter
-
-**Scraping-tilnærming:** Parse `/regelverk/` og `/publikasjoner/` for lenkelister.
+**URL:** `https://www.regjeringen.no/no/dokumenter/tolkningsuttalelser`  
+**Type:** Tolkningsuttalelser fra Justis- og beredskapsdepartementet  
+**Tilgang:** HTML-scraping  
+**Merknad:** Særlig relevante for forvaltningsrett og offentlig rett.
 
 ---
 
-### Sivilrett.no — https://www.sivilrett.no/
+### Norges domstoler — ingen publik API
 
-**Type:** Sivilrettslig database  
-**Tilgang:** Returnerte 403 — muligens krever innlogging eller er blokkert for crawler  
-**Status:** Blokkert — undersøk manuelt om det er gratis tilgang.
-
----
-
-### Nye kilder identifisert via Rettskildesok (sources.js)
-
-Rettskildesok-katalogen avdekket følgende planlagte kilder som ikke var i opprinnelig liste:
-
-| Kilde | URL | Type | Prioritet |
-|---|---|---|---|
-| Skatteklagenemnda | skatteklagenemnda.no | Vedtak (skatterett) | Høy |
-| UNE — Utlendingsnemnda | une.no/praksis | Praksis (utlendingsrett) | Høy |
-| Finanstilsynet | finanstilsynet.no | Vedtak, rundskriv (finansrett) | Høy |
-| Konkurransetilsynet | konkurransetilsynet.no | Vedtak (konkurranserett) | Høy |
-| KOFA | kofa.no/praksis | Praksis (offentlige anskaffelser) | Middels |
-| Nkom | nkom.no/vedtak | Vedtak (ekomrett) | Middels |
-| NVE | nve.no/juridiske-dokumenter | Juridiske dokumenter (energirett) | Middels |
-| Patentstyret | patentstyret.no | Vedtak (immaterialrett) | Middels |
-| Statsforvalteren | statsforvalteren.no | Vedtak, klagebehandling | Middels |
-| Justisdep. tolkningsuttalelser | regjeringen.no/no/dokumenter/tolkningsuttalelser | Tolkningsuttalelser | Middels |
-| Stortingstidende | stortinget.no/Stortingstidende | Stortingsforhandlinger | Lav |
-| Arbeidsretten | lovdata.no/dokument/ARD | Arbeidsrettsdommer | Lav |
+Domstolene tilbyr **ingen API for henting av dommer**. `domstolene/api-docs` (GitHub) er en ren innsendingstjeneste. Dommer distribueres via Lovdata. JusJob henter via:
+1. **rettspraksis.no** (MediaWiki API) ✅
+2. **domstol.no** (HTML-scraping, planlagt)
 
 ---
 
-## Implementeringsrekkefølge (forslag)
+## Implementeringsrekkefølge
 
-### Gruppe 1 — Høy verdi, enkelt å scrape
-1. **norwegian-laws** (GitHub Pages JSON) — ett API-kall
-2. **Forbrukertilsynet vedtak** — enkel HTML-liste med ref-numre
-3. **Datatilsynet vedtak** — HTML-liste
-4. **Helsetilsynet publikasjoner** — HTML-liste
+### Neste steg (bygger på eksisterende pipeline)
+1. **norwegian-laws** — ett API-kall, beriker ELI-kobling
+2. **Datatilsynet vedtak** — enkel HTML-liste
+3. **Helsetilsynet publikasjoner** — enkel HTML-liste
+4. **UNE praksisbase** — strukturert søkbar base
+5. **KOFA praksisbase** — strukturert søkbar base
+6. **Skatteklagenemnda** — vedtaksliste
+7. **Finanstilsynet** — vedtaksliste
+8. **Konkurransetilsynet** — vedtaksliste
 
-### Gruppe 2 — Høy verdi, litt mer kompleks
-5. **Skatteetaten uttalelser/vedtak** — BFU + Skatteklagenemnda
-6. **Helsedirektoratet rundskriv** — undersøk API først
-7. **UDI retningslinjer** — RS/GI/PN-format
+### Deretter
+9. **Skatteetaten rettskilder** (BFU, uttalelser)
+10. **Helsedirektoratet rundskriv**
+11. **Regjeringen.no** (NOU, Prop., tolkningsuttalelser)
+12. **UDI retningslinjer** (RS/GI/PN)
+13. **Arbeidsretten** (Lovdata ARD)
 
-### Gruppe 3 — Middels verdi
-8. **Bufdir saksbehandlingsrundskrivet**
-9. **Arbeidstilsynet regelverk**
-10. **IMDi regelverk**
-
-### Gruppe 4 — Lavere prioritet
-11. **Medietilsynet**
-12. **Lovdata NAV**
-13. **Kriminalomsorgen** (finn offisiell kilde)
-14. **Lottstift**
-15. **NPE**
-16. **data.norge.no begrepskatalog**
+### Lavere prioritet
+14. Bufdir, Arbeidstilsynet, IMDi, Medietilsynet, Nkom, NVE, Patentstyret
+15. Lovdata NAV, Trygderetten, NPE, Husleietvistutvalget, Statsforvalteren
+16. Stortingstidende, Lovdata HIST, Lovdata Rundskriv
+17. EUR-Lex (SPARQL), EFTA-domstolen, HUDOC/EMD
+18. Komparative kilder (DK, SE)
