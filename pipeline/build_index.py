@@ -65,10 +65,24 @@ def _sivilombudet_entries():
         }
 
 
+def _kudos_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "kudos.jsonl.gz"):
+        yield {
+            "id": f"kudos-{d['uuid']}",
+            "source": "kudos.dfo.no",
+            "type": d["type"],
+            "title": d["title"],
+            "court_or_body": d["owners"] or "Ukjent virksomhet",
+            "url": d["url"] or "",
+            "snippet": d["abstract"] or "",
+        }
+
+
 SOURCE_BUILDERS = [
     _rettspraksis_entries,
     _stortinget_entries,
     _sivilombudet_entries,
+    _kudos_entries,
 ]
 
 

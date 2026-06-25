@@ -31,6 +31,9 @@ jobs:
       - name: Hent alle sider fra rettspraksis.no (ingen MAX_NEW_PAGES-grense)
         run: python pipeline/rettspraksis.py
 
+      - name: Hent KUDOS (DFØ) — alle dokumenter
+        run: python pipeline/kudos.py
+
       - name: Bygg søkeindeks
         run: python pipeline/build_index.py
 
