@@ -13,7 +13,9 @@ Sist oppdatert: 2026-06-25.
 | sivilombudet.no | Uttalelser | ✅ Live | Sitemap + HTML | Ferdig |
 | kudos.dfo.no | Offentlige dok. (KUDOS) | ✅ Live | REST API | Ferdig |
 | norwegian-laws (GitHub) | Lover + forskrifter | 🔲 Planlagt | GitHub Pages JSON | Høy |
-| Skatteetaten rettskilder | Uttalelser, vedtak, håndbøker | 🔲 Planlagt | HTML-scraping | Høy |
+| Skatteetaten rettsinformasjon API | Skattehåndboken, MVA-håndboken m.fl. | 🔲 Planlagt | Maskinporten REST API | Høy (krever org.nr.) |
+| Skatteetaten rettskilder (web) | BFU, vedtak, retningslinjer | 🔲 Planlagt | HTML-scraping (fallback) | Høy |
+| Norges domstoler (domstolene) | Dommer (Høyesterett, lagmanns-, tingretter) | ℹ️ Ingen publik API | — kun Lovdata | Ikke mulig direkte |
 | Datatilsynet | Vedtak, veiledere | 🔲 Planlagt | HTML-scraping | Høy |
 | Helsetilsynet | Publikasjoner, regelverk | 🔲 Planlagt | HTML-scraping | Høy |
 | Helsedirektoratet | Rundskriv, lovfortolkninger | 🔲 Planlagt | HTML + mulig API | Høy |
@@ -62,6 +64,50 @@ Sist oppdatert: 2026-06-25.
 - Kartverket
 
 **Scraping-tilnærming:** Undersøk `https://data.norge.no/api` og SPARQL-endepunkt for begrepskatalogen. Kan hente strukturerte juridiske begreper.
+
+---
+
+### Skatteetaten rettsinformasjon API — https://skatteetaten.github.io/api-dokumentasjon/
+
+**Type:** Skatterettskilder (juridiske håndbøker)  
+**Tilgang:** Maskinporten REST API (`skatteetaten:rettsinformasjon`-scope)  
+**Autentisering:** Krever norsk organisasjonsnummer + Maskinporten-klientregistrering. Tilgang innvilges av Skatteetaten og kan delegeres via Altinn.  
+**OpenAPI-spec:** Tilgjengelig på SwaggerHub.
+
+**Innhold (strukturert JSON med HTML-tekst):**
+- Skatteforvaltningshåndboken — inkl. kap. 6 om BFU (bindende forhåndsuttalelser)
+- Merverdiavgiftshåndboken
+- Skattebetalingshåndboken
+- Folkeregisterhåndboken
+- Innkrevingsloven
+
+**Viktig begrensning:** BFU-beslutninger er *referert til* i håndbokstekst, men finnes ikke som eget søkbart datasett i API-et. Fullstendige BFU-tekster er på Lovdata og skatteetaten.no/rettskilder/.
+
+**Scraping-tilnærming:**
+- Primær: Maskinporten REST API (strukturert, maskinlesbar)
+- Sekundær fallback: HTML-scraping av `skatteetaten.no/rettskilder/` (BFU, vedtak, uttalelser)
+
+**Maskinporten-mønster** — gjelder for alle Maskinporten-sikrede API-er (inkl. fremtidige domstol-API-er):
+```python
+# Krever: org.nr., virksomhetssertifikat (Buypass/Commfides), Maskinporten-klient
+# Flyt: JWS-signert JWT → Maskinporten token → Bearer token i API-kall
+# Scope eksempel: "skatteetaten:rettsinformasjon"
+```
+
+---
+
+### Norges domstoler — https://github.com/orgs/domstolene/repositories
+
+**Viktig funn:** Domstolene tilbyr **ingen publik API for henting av dommer eller rettsavgjørelser**.
+
+Det eneste publiserte API-et (`domstolene/api-docs`) er `digital-innsending` — en ren *innsendingstjeneste* for å levere dokumenter *til* domstoler via Maskinporten. Det finnes ingen endepunkter for å hente, søke eller laste ned dommer.
+
+**Konsekvens for JusJob:** Norske rettsavgjørelser hentes via:
+1. **rettspraksis.no** (MediaWiki API) — allerede implementert ✅
+2. **Lovdata** (krev. abonnement for bulk; NLOD 2.0 for åpne dokumenter)
+3. **domstol.no** (HTML-scraping av offentlig tilgjengelige dommer)
+
+Domstolene publiserer sine dommer gjennom Lovdata-samarbeidet — ikke via egne API-er.
 
 ---
 
