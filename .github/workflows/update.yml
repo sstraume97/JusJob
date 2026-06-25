@@ -27,9 +27,11 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Hent Stortinget
+        continue-on-error: true
         run: python pipeline/stortinget.py
 
       - name: Hent Sivilombudet
+        continue-on-error: true
         run: python pipeline/sivilombudet.py
 
       - name: Hent rettspraksis.no (maks 2000 nye sider per daglig kjøring)
