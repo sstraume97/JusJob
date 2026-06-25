@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JusJob — Norske rettskilder</title>
+  <style>
+    :root {
+      --bg: #f8f9fa;
+      --surface: #ffffff;
+      --border: #dee2e6;
+      --text: #212529;
+      --muted: #6c757d;
+      --accent: #1a4f8a;
+      --accent-light: #e8f0fb;
+      --green: #198754;
+      --yellow: #ffc107;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+
+    header {
+      background: var(--accent);
+      color: white;
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header h1 { font-size: 1.6rem; font-weight: 700; }
+    header p { font-size: 0.9rem; opacity: 0.85; }
+
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      display: flex;
+      gap: 0;
+    }
+    nav a {
+      display: inline-block;
+      padding: 0.75rem 1.25rem;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-bottom: 3px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    nav a:hover, nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+    main { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+
+    .page { display: none; }
+    .page.active { display: block; }
+
+    h2 { font-size: 1.3rem; margin-bottom: 1rem; color: var(--accent); }
+    h3 { font-size: 1rem; margin: 1.5rem 0 0.5rem; color: var(--text); }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+    .card .num { font-size: 2rem; font-weight: 700; color: var(--accent); }
+    .card .label { font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
+
+    .diagram-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { background: var(--accent-light); color: var(--accent); text-align: left; padding: 0.6rem 0.8rem; }
+    td { padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--border); }
+    tr:last-child td { border-bottom: none; }
+    td a { color: var(--accent); text-decoration: none; }
+    td a:hover { text-decoration: underline; }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .badge-ok { background: #d1e7dd; color: #0a3622; }
+    .badge-wip { background: #fff3cd; color: #664d03; }
+
+    .schema-block {
+      background: #f1f3f5;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      font-family: monospace;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    .link-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .link-list a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .link-list a:hover { text-decoration: underline; }
+    .link-list .desc { color: var(--muted); font-size: 0.85rem; }
+
+    footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>JusJob</h1>
+    <p>Automatisk indeksering av norske rettskilder — søkbart i Zotero</p>
+  </div>
+</header>
+
+<nav>
+  <a href="#" class="active" onclick="show('oversikt', this)">Oversikt</a>
+  <a href="#" onclick="show('arkitektur', this)">Arkitektur</a>
+  <a href="#" onclick="show('kilder', this)">Kilder</a>
+  <a href="#" onclick="show('skjema', this)">Indeks-skjema</a>
+  <a href="#" onclick="show('data', this)">Data</a>
+  <a href="#" onclick="show('ressurser', this)">Ressurser</a>
+</nav>
+
+<main>
+
+  <!-- OVERSIKT -->
+  <div id="oversikt" class="page active">
+    <h2>Oversikt</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="num" id="stat-total">–</div>
+        <div class="label">dokumenter i søkeindeksen</div>
+      </div>
+      <div class="card">
+        <div class="num">4</div>
+        <div class="label">aktive datakilder</div>
+      </div>
+      <div class="card">
+        <div class="num">15+</div>
+        <div class="label">planlagte kilder</div>
+      </div>
+      <div class="card">
+        <div class="num" id="stat-updated">–</div>
+        <div class="label">sist oppdatert</div>
+      </div>
+    </div>
+
+    <h3>Hva er JusJob?</h3>
+    <p style="line-height:1.7; margin-bottom:1rem;">
+      JusJob henter automatisk data fra norske rettskilder, bygger en søkeindeks og publiserer den via GitHub Pages.
+      En Zotero-plugin lar deg søke i alle kildene samlet og importere treff direkte til Zotero-biblioteket ditt.
+    </p>
+
+    <h3>Lenker</h3>
+    <ul class="link-list">
+      <li><a href="search-index.json">📄 search-index.json</a> <span class="desc">— maskinlesbar søkeindeks (JSON)</span></li>
+      <li><a href="https://github.com/sstraume97/JusJob">📦 GitHub-repo</a> <span class="desc">— kildekode, pipeline og plugin</span></li>
+      <li><a href="https://github.com/sstraume97/JusJob/blob/main/docs/indeks-skjema.md">📐 Indeks-skjema</a> <span class="desc">— feltdefinisjon og lenkestrategi</span></li>
+      <li><a href="https://github.com/sstraume97/JusJob/blob/main/docs/relaterte-ressurser.md">🔗 Relaterte ressurser</a> <span class="desc">— referanserepoer og eksterne datakilder</span></li>
+    </ul>
+  </div>
+
+  <!-- ARKITEKTUR -->
+  <div id="arkitektur" class="page">
+    <h2>Arkitektur</h2>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 820 560" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;">
+        <defs>
+          <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#888"/>
+          </marker>
+        </defs>
+
+        <!-- Bakgrunner for grupper -->
+        <rect x="10" y="10" width="180" height="210" rx="8" fill="#e8f0fb" stroke="#a8c0e8" stroke-width="1.5"/>
+        <text x="100" y="28" text-anchor="middle" font-weight="700" font-size="11" fill="#1a4f8a">📚 Rettskilder</text>
+
+        <rect x="220" y="10" width="180" height="210" rx="8" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="1.5"/>
+        <text x="310" y="28" text-anchor="middle" font-weight="700" font-size="11" fill="#1b5e20">⚙ GitHub Actions</text>
+
+        <rect x="430" y="10" width="180" height="210" rx="8" fill="#fff8e1" stroke="#ffe082" stroke-width="1.5"/>
+        <text x="520" y="28" text-anchor="middle" font-weight="700" font-size="11" fill="#7c4700">💾 data/ (repo)</text>
+
+        <rect x="640" y="10" width="170" height="90" rx="8" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1.5"/>
+        <text x="725" y="28" text-anchor="middle" font-weight="700" font-size="11" fill="#4a148c">🌐 GitHub Pages</text>
+
+        <rect x="640" y="130" width="170" height="90" rx="8" fill="#fce4ec" stroke="#f48fb1" stroke-width="1.5"/>
+        <text x="725" y="148" text-anchor="middle" font-weight="700" font-size="11" fill="#880e4f">🔍 Zotero-plugin</text>
+
+        <!-- Kilder -->
+        <rect x="22" y="40" width="156" height="24" rx="12" fill="#fff" stroke="#a8c0e8"/>
+        <text x="100" y="56" text-anchor="middle" fill="#1a4f8a">rettspraksis.no</text>
+
+        <rect x="22" y="72" width="156" height="24" rx="12" fill="#fff" stroke="#a8c0e8"/>
+        <text x="100" y="88" text-anchor="middle" fill="#1a4f8a">data.stortinget.no</text>
+
+        <rect x="22" y="104" width="156" height="24" rx="12" fill="#fff" stroke="#a8c0e8"/>
+        <text x="100" y="120" text-anchor="middle" fill="#1a4f8a">sivilombudet.no</text>
+
+        <rect x="22" y="136" width="156" height="24" rx="12" fill="#fff" stroke="#a8c0e8"/>
+        <text x="100" y="152" text-anchor="middle" fill="#1a4f8a">kudos.dfo.no</text>
+
+        <rect x="22" y="168" width="156" height="24" rx="12" fill="#fff" stroke="#a8c0e8"/>
+        <text x="100" y="184" text-anchor="middle" fill="#1a4f8a">norwegian-laws</text>
+
+        <!-- Pipeline -->
+        <rect x="232" y="40" width="156" height="24" rx="4" fill="#fff" stroke="#a5d6a7"/>
+        <text x="310" y="56" text-anchor="middle" fill="#1b5e20">rettspraksis.py</text>
+
+        <rect x="232" y="72" width="156" height="24" rx="4" fill="#fff" stroke="#a5d6a7"/>
+        <text x="310" y="88" text-anchor="middle" fill="#1b5e20">stortinget.py</text>
+
+        <rect x="232" y="104" width="156" height="24" rx="4" fill="#fff" stroke="#a5d6a7"/>
+        <text x="310" y="120" text-anchor="middle" fill="#1b5e20">sivilombudet.py</text>
+
+        <rect x="232" y="136" width="156" height="24" rx="4" fill="#fff" stroke="#a5d6a7"/>
+        <text x="310" y="152" text-anchor="middle" fill="#1b5e20">kudos.py</text>
+
+        <rect x="232" y="168" width="156" height="24" rx="4" fill="#fff" stroke="#a5d6a7"/>
+        <text x="310" y="184" text-anchor="middle" fill="#1b5e20">lovdata.py</text>
+
+        <rect x="232" y="230" width="156" height="24" rx="4" fill="#c8e6c9" stroke="#a5d6a7"/>
+        <text x="310" y="246" text-anchor="middle" font-weight="600" fill="#1b5e20">build_index.py</text>
+
+        <!-- Data -->
+        <rect x="442" y="40" width="156" height="20" rx="4" fill="#fff" stroke="#ffe082"/>
+        <text x="520" y="54" text-anchor="middle" fill="#7c4700">rettspraksis.jsonl.gz</text>
+
+        <rect x="442" y="68" width="156" height="20" rx="4" fill="#fff" stroke="#ffe082"/>
+        <text x="520" y="82" text-anchor="middle" fill="#7c4700">stortinget.jsonl.gz</text>
+
+        <rect x="442" y="96" width="156" height="20" rx="4" fill="#fff" stroke="#ffe082"/>
+        <text x="520" y="110" text-anchor="middle" fill="#7c4700">sivilombudet.jsonl.gz</text>
+
+        <rect x="442" y="124" width="156" height="20" rx="4" fill="#fff" stroke="#ffe082"/>
+        <text x="520" y="138" text-anchor="middle" fill="#7c4700">kudos.jsonl.gz</text>
+
+        <rect x="442" y="152" width="156" height="20" rx="4" fill="#fff" stroke="#ffe082"/>
+        <text x="520" y="166" text-anchor="middle" fill="#7c4700">lovdata.jsonl.gz</text>
+
+        <rect x="442" y="220" width="156" height="24" rx="4" fill="#fff3cd" stroke="#ffe082"/>
+        <text x="520" y="236" text-anchor="middle" font-weight="600" fill="#7c4700">search-index.json</text>
+
+        <!-- Pages og Zotero -->
+        <rect x="652" y="40" width="146" height="44" rx="4" fill="#fff" stroke="#ce93d8"/>
+        <text x="725" y="58" text-anchor="middle" fill="#4a148c">search-index.json</text>
+        <text x="725" y="75" text-anchor="middle" font-size="10" fill="#888">sstraume97.github.io</text>
+
+        <rect x="652" y="148" width="146" height="24" rx="4" fill="#fff" stroke="#f48fb1"/>
+        <text x="725" y="164" text-anchor="middle" fill="#880e4f">Søkepanel</text>
+
+        <rect x="652" y="180" width="146" height="24" rx="4" fill="#fff" stroke="#f48fb1"/>
+        <text x="725" y="196" text-anchor="middle" fill="#880e4f">Importer til Zotero</text>
+
+        <!-- Piler: Kilder → Pipeline -->
+        <line x1="178" y1="52" x2="230" y2="52" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+        <line x1="178" y1="84" x2="230" y2="84" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+        <line x1="178" y1="116" x2="230" y2="116" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+        <line x1="178" y1="148" x2="230" y2="148" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+        <line x1="178" y1="180" x2="230" y2="180" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+        <!-- Piler: Pipeline → Data -->
+        <line x1="388" y1="52" x2="440" y2="50" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+        <line x1="388" y1="84" x2="440" y2="78" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+        <line x1="388" y1="116" x2="440" y2="106" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+        <line x1="388" y1="148" x2="440" y2="134" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+        <line x1="388" y1="180" x2="440" y2="162" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+        <!-- Data → build_index (samlingslinjer) -->
+        <line x1="520" y1="176" x2="520" y2="218" stroke="#bbb" stroke-width="1" stroke-dasharray="4,2"/>
+        <line x1="310" y1="196" x2="310" y2="228" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+        <!-- build_index → search-index -->
+        <line x1="388" y1="242" x2="440" y2="232" stroke="#e67e00" stroke-width="2" marker-end="url(#arr)"/>
+
+        <!-- search-index → Pages -->
+        <line x1="598" y1="232" x2="650" y2="62" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+        <text x="630" y="155" font-size="10" fill="#888" transform="rotate(-65,630,155)">publiseres</text>
+
+        <!-- Pages → Søkepanel -->
+        <line x1="725" y1="84" x2="725" y2="146" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+        <text x="733" y="120" font-size="10" fill="#888">fetch HTTPS</text>
+
+        <!-- Søkepanel → Importer -->
+        <line x1="725" y1="172" x2="725" y2="178" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- KILDER -->
+  <div id="kilder" class="page">
+    <h2>Kilder</h2>
+
+    <h3>Rettsavgjørelser</h3>
+    <table>
+      <tr><th>Kilde</th><th>Type</th><th>Status</th><th>Metode</th></tr>
+      <tr><td><a href="https://www.rettspraksis.no">rettspraksis.no</a></td><td>Høyesterett, lagmannsretter, tingretter</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>MediaWiki API</td></tr>
+      <tr><td><a href="https://www.domstol.no">Domstol.no</a></td><td>Fritt tilgjengelige dommer</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.eftacourt.int">EFTA/EU-domstolen</a></td><td>EØS-avgjørelser</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>API</td></tr>
+      <tr><td><a href="https://hudoc.echr.coe.int">EMD / HUDOC</a></td><td>Menneskerettsdomstolen</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HUDOC JSON API</td></tr>
+    </table>
+
+    <h3>Lovverk og forarbeider</h3>
+    <table>
+      <tr><th>Kilde</th><th>Type</th><th>Status</th><th>Metode</th></tr>
+      <tr><td><a href="https://github.com/sondreskarsten/norwegian-laws">norwegian-laws</a></td><td>794 lover + 3 438 forskrifter</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>GitHub Pages JSON</td></tr>
+      <tr><td><a href="https://data.stortinget.no">Stortinget</a></td><td>Saker, Prop., Innst., vedtak</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>XML-API</td></tr>
+      <tr><td><a href="https://www.regjeringen.no">Regjeringen.no</a></td><td>NOU-er, høringer, rundskriv</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://eur-lex.europa.eu">EUR-Lex</a></td><td>EU-forordninger, direktiver, EØS</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>REST API</td></tr>
+    </table>
+
+    <h3>Tilsyn og ombud</h3>
+    <table>
+      <tr><th>Kilde</th><th>Type</th><th>Status</th><th>Metode</th></tr>
+      <tr><td><a href="https://www.sivilombudet.no">Sivilombudet</a></td><td>Uttalelser</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>Sitemap + HTML</td></tr>
+      <tr><td><a href="https://www.datatilsynet.no">Datatilsynet</a></td><td>Vedtak, veiledninger</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.helsetilsynet.no">Helsetilsynet</a></td><td>Tilsynsrapporter, vedtak</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.riksrevisjonen.no">Riksrevisjonen</a></td><td>Revisjonsrapporter</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.forbrukertilsynet.no">Forbrukertilsynet</a></td><td>Vedtak</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.diskrimineringsnemnda.no">LDO / Diskrimineringsnemnda</a></td><td>Vedtak, uttalelser</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+    </table>
+
+    <h3>Klage- og nemndsorganer</h3>
+    <table>
+      <tr><th>Kilde</th><th>Type</th><th>Status</th><th>Merknad</th></tr>
+      <tr><td><a href="https://www.klagenemndssekretariatet.no">Klagenemdsekretariatet</a></td><td>KOFA, Konkurranseklagenemnda, Medieklagenemnda m.fl.</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.trygderetten.no">Trygderetten</a></td><td>Kjennelser</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.npe.no">Pasientskadenemnda (NPE)</a></td><td>Vedtak</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+      <tr><td><a href="https://www.htu.no">Husleietvistutvalget</a></td><td>Avgjørelser</td><td><span class="badge badge-wip">⏳ Planlagt</span></td><td>HTML-skraping</td></tr>
+    </table>
+
+    <h3>Forvaltning</h3>
+    <table>
+      <tr><th>Kilde</th><th>Type</th><th>Status</th><th>Metode</th></tr>
+      <tr><td><a href="https://kudos.dfo.no">KUDOS (DFØ)</a></td><td>NOU-er, studier, rapporter, evalueringer</td><td><span class="badge badge-ok">✅ Aktiv</span></td><td>REST API</td></tr>
+    </table>
+  </div>
+
+  <!-- SKJEMA -->
+  <div id="skjema" class="page">
+    <h2>Indeks-skjema</h2>
+    <p style="margin-bottom:1rem; color:var(--muted);">Felles feltformat for alle kilder i <code>search-index.json</code>. Se <a href="https://github.com/sstraume97/JusJob/blob/main/docs/indeks-skjema.md">full dokumentasjon</a> for per-kilde-detaljer og lenkestrategi.</p>
+
+    <div class="schema-block">{
+  "id":           "rettspraksis-12345",      // unik ID: {kilde}-{nøkkel}
+  "source":       "rettspraksis.no",         // kildenavn
+  "type":         "rettsavgjørelse",         // dokumenttype
+  "title":        "HR-2020-123-A",           // tittel
+  "court_or_body": "Høyesterett",            // instans / organ / departement
+  "url":          "https://...",             // lenke til dokument
+  "snippet":      "Første 300 tegn ...",     // tekstutdrag / sammendrag
+
+  // Planlagte felt (under implementasjon):
+  "date":         "2020-03-15",              // dato (avgjørelse / ikrafttredelse / publisering)
+  "eli":          "/eli/lov/1902/05/22",     // europeisk lovidenfikator (kun lover/forskrifter)
+  "citation":     "HR-2020-123-A",           // offisiell sitering (Rt., HR-, RG-, NOU, Prop.)
+  "keywords":     ["erstatning", "..."],     // stikkord
+  "pdf_url":      "https://...",             // direktelenke til PDF
+  "authors":      "Dommer Bergsjø",          // forfatter / dommere
+
+  "links": {
+    "eli":        "/eli/lov/2001/06/15-59",  // lov dette dokumentet gjelder
+    "hjemmel":    ["LOV-2001-06-15-59-§7"],  // hjemmelsreferanser (forskrifter)
+    "relaterte":  ["stortinget-12345"]       // relaterte saker i indeksen
+  }
+}</div>
+
+    <h3>Lenkestrategi</h3>
+    <p style="line-height:1.7; margin-top:0.5rem;">
+      Dokumenter lenkes via felles <code>eli</code>-identifikatorer:
+      Lov ↔ Forskrift (via <code>hjemmel</code>) ↔ Stortingssak (via tittelmatching) ↔ Innstilling/Lovvedtak (via tilknyttede saker) ↔ Rettsavgjørelse (via lovhenvisninger i tekst).
+      Implementeres trinnvis i <code>build_index.py</code> etter at alle kilder er på plass.
+    </p>
+  </div>
+
+  <!-- DATA -->
+  <div id="data" class="page">
+    <h2>Datafiler</h2>
+    <p style="margin-bottom:1rem; color:var(--muted);">Alle filer er åpent tilgjengelige og kan lastes ned direkte.</p>
+    <table>
+      <tr><th>Fil</th><th>Innhold</th><th>Nedlasting</th></tr>
+      <tr><td><code>search-index.json</code></td><td>Alle kilder samlet — brukes av Zotero-pluginen</td><td><a href="search-index.json">Last ned</a></td></tr>
+      <tr><td><code>rettspraksis.jsonl.gz</code></td><td>~70 000 rettsavgjørelser (Høyesterett, lagmannsretter, tingretter)</td><td><a href="rettspraksis.jsonl.gz">Last ned</a></td></tr>
+      <tr><td><code>stortinget.jsonl.gz</code></td><td>~17 000 stortingssaker (5 siste sesjoner)</td><td><a href="stortinget.jsonl.gz">Last ned</a></td></tr>
+      <tr><td><code>sivilombudet.jsonl.gz</code></td><td>~1 950 uttalelser fra Sivilombudet</td><td><a href="sivilombudet.jsonl.gz">Last ned</a></td></tr>
+      <tr><td><code>kudos.jsonl.gz</code></td><td>~44 000 offentlige dokumenter (DFØ)</td><td><a href="kudos.jsonl.gz">Last ned</a></td></tr>
+    </table>
+    <p style="margin-top:1rem; color:var(--muted); font-size:0.85rem;">Oppdateres daglig kl. 03:00 UTC via GitHub Actions. Lisens: åpne data (NLOD 2.0 / CC-BY der angitt).</p>
+  </div>
+
+  <!-- RESSURSER -->
+  <div id="ressurser" class="page">
+    <h2>Relaterte ressurser</h2>
+    <p style="margin-bottom:1rem; color:var(--muted);">Se <a href="https://github.com/sstraume97/JusJob/blob/main/docs/relaterte-ressurser.md">full vurdering</a> i repo-dokumentasjonen.</p>
+    <table>
+      <tr><th>Repo</th><th>Relevans</th></tr>
+      <tr><td><a href="https://github.com/sondreskarsten/norwegian-laws">sondreskarsten/norwegian-laws</a></td><td>Integreres direkte — 794 lover + 3 438 forskrifter med eli-IDer</td></tr>
+      <tr><td><a href="https://github.com/ngu-tek/Norwegian-law-mcp">ngu-tek/Norwegian-law-mcp</a></td><td>MCP-server for norske lover — aktuell for fremtidig AI-integrasjon</td></tr>
+      <tr><td><a href="https://github.com/StianOby/claude-legal-tools">StianOby/claude-legal-tools</a></td><td>Dokumenterer Lovdata API (api.lovdata.no)</td></tr>
+      <tr><td><a href="https://github.com/worldwidelaw/legal-sources">worldwidelaw/legal-sources</a></td><td>Arkitekturinspirasjon, modulær pipeline for 110+ land</td></tr>
+      <tr><td><a href="https://github.com/KevinJohannesen/catchwise-backend">KevinJohannesen/catchwise-backend</a></td><td>Norwegian-aware BM25-tokenisering for juridisk søk</td></tr>
+      <tr><td><a href="https://github.com/doantumy/Efficiently-Summarizing-Norwegian-Legal-Texts">doantumy/LegSum</a></td><td>Automatisk summering av norske rettsavgjørelser (ML)</td></tr>
+      <tr><td><a href="https://github.com/JoelNiklaus/LegalDatasets">JoelNiklaus/LegalDatasets</a></td><td>Juridiske ML-datasett — mulig norsk dekning</td></tr>
+    </table>
+  </div>
+
+</main>
+
+<footer>
+  JusJob — åpen kildekode · <a href="https://github.com/sstraume97/JusJob">GitHub</a> · Oppdateres daglig
+</footer>
+
+<script>
+  function show(id, el) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    el.classList.add('active');
+    return false;
+  }
+
+  // Last statistikk fra search-index.json
+  fetch('search-index.json')
+    .then(r => r.json())
+    .then(data => {
+      document.getElementById('stat-total').textContent = data.length.toLocaleString('no');
+    })
+    .catch(() => {});
+
+  // Sist oppdatert
+  fetch('search-index.json', { method: 'HEAD' })
+    .then(r => {
+      const lm = r.headers.get('last-modified');
+      if (lm) {
+        const d = new Date(lm);
+        document.getElementById('stat-updated').textContent =
+          d.toLocaleDateString('no', { day:'numeric', month:'short', year:'numeric' });
+      }
+    })
+    .catch(() => {});
+
+</script>
+</body>
+</html>
