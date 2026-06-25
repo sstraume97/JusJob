@@ -78,11 +78,59 @@ def _kudos_entries():
         }
 
 
+def _lovdata_entries(filename: str, source_label: str):
+    for d in _read_jsonl_gz(DATA_DIR / filename):
+        yield {
+            "id": f"lovdata-{d['doc_id'].replace('/', '-')}",
+            "source": "lovdata.no",
+            "type": d.get("type", "lov"),
+            "title": d["title"],
+            "court_or_body": d.get("ministry") or "Lovdata",
+            "url": d["url"],
+            "snippet": d.get("snippet") or d.get("short_title") or "",
+            "eli": d.get("eli") or "",
+        }
+
+
+def _lovdata_lover_entries():
+    yield from _lovdata_entries("lovdata-lover.jsonl.gz", "Gjeldende lover")
+
+
+def _lovdata_forskrifter_entries():
+    yield from _lovdata_entries("lovdata-forskrifter.jsonl.gz", "Sentrale forskrifter")
+
+
+def _lovdata_lovtiend1_entries():
+    yield from _lovdata_entries("lovdata-lovtiend1.jsonl.gz", "Norsk Lovtiend avd. 1")
+
+
+def _lovdata_lovtiend2_entries():
+    yield from _lovdata_entries("lovdata-lovtiend2.jsonl.gz", "Norsk Lovtiend avd. 2")
+
+
+def _forbrukertilsynet_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "forbrukertilsynet.jsonl.gz"):
+        yield {
+            "id": f"forbrukertilsynet-{d['ref_id']}",
+            "source": "forbrukertilsynet.no",
+            "type": d.get("type") or "vedtak",
+            "title": d["title"],
+            "court_or_body": "Forbrukertilsynet",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+
+
 SOURCE_BUILDERS = [
     _rettspraksis_entries,
     _stortinget_entries,
     _sivilombudet_entries,
     _kudos_entries,
+    _lovdata_lover_entries,
+    _lovdata_forskrifter_entries,
+    _lovdata_lovtiend1_entries,
+    _lovdata_lovtiend2_entries,
+    _forbrukertilsynet_entries,
 ]
 
 

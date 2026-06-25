@@ -12,7 +12,12 @@ Sist oppdatert: 2026-06-25.
 | data.stortinget.no | Stortingssaker/forarbeider | ✅ Live | XML-API | Ferdig |
 | sivilombudet.no | Uttalelser | ✅ Live | Sitemap + HTML | Ferdig |
 | kudos.dfo.no | Offentlige dok. (KUDOS) | ✅ Live | REST API | Ferdig |
-| norwegian-laws (GitHub) | Lover + forskrifter | 🔲 Planlagt | GitHub Pages JSON | Høy |
+| Lovdata gjeldende lover | ~782 konsoliderte lover (XML, NLOD 2.0) | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
+| Lovdata sentrale forskrifter | ~3 733 konsoliderte forskrifter (XML) | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
+| Norsk Lovtiend avd. 1 | Kunngjøringer: lover + sentrale forskrifter | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
+| Norsk Lovtiend avd. 2 | Kunngjøringer: lokale + private forskrifter | ✅ Implementert | api.lovdata.no tar.bz2 | Ferdig |
+| Forbrukertilsynet | Vedtak, markedsråd, FKU, veiledninger | ✅ Implementert | HTML-scraping | Ferdig |
+| norwegian-laws (GitHub) | Metadata: ELI, departement, rettsområde | 🔲 Planlagt | GitHub Pages JSON | Middels (metadata-beriker) |
 | Skatteetaten rettsinformasjon API | Skattehåndboken, MVA-håndboken m.fl. | 🔲 Planlagt | Maskinporten REST API | Høy (krever org.nr.) |
 | Skatteetaten rettskilder (web) | BFU, vedtak, retningslinjer | 🔲 Planlagt | HTML-scraping (fallback) | Høy |
 | Norges domstoler (domstolene) | Dommer (Høyesterett, lagmanns-, tingretter) | ℹ️ Ingen publik API | — kun Lovdata | Ikke mulig direkte |
@@ -64,6 +69,38 @@ Sist oppdatert: 2026-06-25.
 - Kartverket
 
 **Scraping-tilnærming:** Undersøk `https://data.norge.no/api` og SPARQL-endepunkt for begrepskatalogen. Kan hente strukturerte juridiske begreper.
+
+---
+
+### Lovdata offentlige datapakker — https://api.lovdata.no/v1/publicData/list
+
+**Type:** Gjeldende lover, sentrale forskrifter, Norsk Lovtiend  
+**Tilgang:** Åpent REST API, ingen autentisering (NLOD 2.0)  
+**Status:** ✅ Implementert i `pipeline/lovdata.py`
+
+**Pakker tilgjengelig:**
+
+| Filnavn | Innhold | Størrelse |
+|---|---|---|
+| `gjeldende-lover.tar.bz2` | ~782 konsoliderte, gjeldende lover | ~6 MB |
+| `sentrale-forskrifter.tar.bz2` | ~3 733 sentrale forskrifter | ~21 MB |
+| `lovtidend-avd1-YYYY.tar.bz2` | **Norsk Lovtiend avd. 1** — kunngjøringer av lover og sentrale forskrifter (løpende) | varierer |
+| `lovtidend-avd2-YYYY.tar.bz2` | **Norsk Lovtiend avd. 2** — kunngjøringer av lokale og private forskrifter | varierer |
+
+**Norsk Lovtiend** er den offisielle norske lovtidenden, publisert av Lovdata. Avd. 1 inneholder kunngjøringer av alle nye og endrede lover og sentrale forskrifter. Avd. 2 inneholder lokale og private forskrifter (kommunale forskrifter, vedtekter m.m.).
+
+**XML-struktur:**
+- `doc_id`: "NL/lov/2005-06-17-62" → ELI `/eli/lov/2005-06-17-62`
+- `<title>`: fulltittel
+- `class="kortTittel"`: korttittel/populærnavn
+- `class="departement"`: ansvarlig departement
+- `<article data-name="§ X-Y">`: enkeltparagrafer
+
+**Inkrementell logikk:** sammenligner `lastModified` fra API mot `data/lovdata_cache.json` — laster kun ned ved endring.
+
+**Output:** `data/lovdata-lover.jsonl.gz`, `data/lovdata-forskrifter.jsonl.gz`, `data/lovdata-lovtiend1.jsonl.gz`, `data/lovdata-lovtiend2.jsonl.gz`
+
+**Lovdata som autoritær kilde:** Lovdata er den juridisk autoritative kilden for norsk lovtekst. `norwegian-laws` er et nyttig metadata-supplement (ELI, departement, rettsområde) men Lovdata-pakkene er primærkilden for faktisk lovtekst.
 
 ---
 
