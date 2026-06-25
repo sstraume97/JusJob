@@ -125,6 +125,121 @@ def _forbrukertilsynet_entries():
         }
 
 
+def _datatilsynet_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "datatilsynet.jsonl.gz"):
+        entry = {
+            "id": f"datatilsynet-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": "datatilsynet.no",
+            "type": d.get("doc_type") or "vedtak",
+            "title": d["title"],
+            "court_or_body": "Datatilsynet",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _helsetilsynet_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "helsetilsynet.jsonl.gz"):
+        entry = {
+            "id": f"helsetilsynet-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": "helsetilsynet.no",
+            "type": d.get("doc_type") or "rapport",
+            "title": d["title"],
+            "court_or_body": "Helsetilsynet",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _une_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "une.jsonl.gz"):
+        title = d["title"]
+        if d.get("tema"):
+            title = f"{title} – {d['tema']}"
+        entry = {
+            "id": f"une-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": "une.no",
+            "type": d.get("doc_type") or "praksisnotat",
+            "title": title,
+            "court_or_body": "Utlendingsnemnda",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _kofa_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "kofa.jsonl.gz"):
+        entry = {
+            "id": f"kofa-{d.get('case_number') or d['url'].rstrip('/').split('/')[-1]}",
+            "source": "kofa.no",
+            "type": "vedtak",
+            "title": d["title"],
+            "court_or_body": "KOFA",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _konkurransetilsynet_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "konkurransetilsynet.jsonl.gz"):
+        entry = {
+            "id": f"ktil-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": "konkurransetilsynet.no",
+            "type": d.get("doc_type") or "vedtak",
+            "title": d["title"],
+            "court_or_body": "Konkurransetilsynet",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _finanstilsynet_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "finanstilsynet.jsonl.gz"):
+        entry = {
+            "id": f"finanstilsynet-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": "finanstilsynet.no",
+            "type": d.get("doc_type") or "vedtak",
+            "title": d["title"],
+            "court_or_body": "Finanstilsynet",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _skatteklagenemnda_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "skatteklagenemnda.jsonl.gz"):
+        entry = {
+            "id": f"skn-{d.get('case_ref') or d['url'].rstrip('/').split('/')[-1]}",
+            "source": "skatteklagenemnda.no",
+            "type": "vedtak",
+            "title": d["title"],
+            "court_or_body": "Skatteklagenemnda",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
 def _regjeringen_entries():
     for d in _read_jsonl_gz(DATA_DIR / "regjeringen.jsonl.gz"):
         entry = {
@@ -153,6 +268,13 @@ SOURCE_BUILDERS = [
     _lovdata_lovtiend1_entries,
     _lovdata_lovtiend2_entries,
     _forbrukertilsynet_entries,
+    _datatilsynet_entries,
+    _helsetilsynet_entries,
+    _une_entries,
+    _kofa_entries,
+    _konkurransetilsynet_entries,
+    _finanstilsynet_entries,
+    _skatteklagenemnda_entries,
     _regjeringen_entries,
 ]
 

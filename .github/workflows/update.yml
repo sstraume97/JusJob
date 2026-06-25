@@ -60,6 +60,34 @@ jobs:
         continue-on-error: true
         run: python pipeline/regjeringen.py
 
+      - name: Hent Datatilsynet (vedtak, varsler, uttalelser)
+        continue-on-error: true
+        run: python pipeline/datatilsynet.py
+
+      - name: Hent Helsetilsynet (tilsynsrapporter, publikasjoner)
+        continue-on-error: true
+        run: python pipeline/helsetilsynet.py
+
+      - name: Hent UNE (praksisnotater, referansevedtak)
+        continue-on-error: true
+        run: python pipeline/une.py
+
+      - name: Hent KOFA (vedtak offentlige anskaffelser)
+        continue-on-error: true
+        run: python pipeline/kofa.py
+
+      - name: Hent Konkurransetilsynet (vedtak, uttalelser)
+        continue-on-error: true
+        run: python pipeline/konkurransetilsynet.py
+
+      - name: Hent Finanstilsynet (vedtak, tillatelser, rundskriv)
+        continue-on-error: true
+        run: python pipeline/finanstilsynet.py
+
+      - name: Hent Skatteklagenemnda (vedtak)
+        continue-on-error: true
+        run: python pipeline/skatteklagenemnda.py
+
       - name: Bygg søkeindeks
         run: python pipeline/build_index.py
 
