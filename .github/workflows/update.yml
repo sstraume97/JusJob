@@ -56,10 +56,16 @@ jobs:
           git pull --rebase
           git push
 
+      - name: Bygg Pages-mappe (data + nettside)
+        run: |
+          mkdir -p _site
+          cp -r data/. _site/
+          cp -r web/. _site/
+
       - name: Last opp til GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: data
+          path: _site
 
   deploy-pages:
     needs: scrape-and-build
