@@ -4,16 +4,19 @@ Kilde: api.lovdata.no/v1/publicData/list (åpent, ingen autentisering)
 Data:  tar.bz2-pakker med XML-filer i Lovdata-format (NLOD 2.0)
 
 Pakker som hentes:
-  gjeldende-lover.tar.bz2       — konsoliderte gjeldende lover (~6 MB)
-  sentrale-forskrifter.tar.bz2  — sentrale forskrifter (~21 MB)
-  lovtidend-avd1-YYYY.tar.bz2   — Norsk Lovtiend avd. 1 (kunngjøringer, løpende)
-  lovtidend-avd2-YYYY.tar.bz2   — Norsk Lovtiend avd. 2 (lokale/private forskrifter)
+  gjeldende-lover.tar.bz2                — konsoliderte gjeldende lover (~6 MB)
+  gjeldende-sentrale-forskrifter.tar.bz2 — sentrale forskrifter (~21 MB)
+  lovtidend-avd1-YYYY.tar.bz2            — Norsk Lovtiend avd. 1 (løpende)
+  lovtidend-avd1-2001-2024.tar.bz2       — Norsk Lovtiend avd. 1 (historisk)
+
+Rettsområde-berikelse: laster norwegian_laws_index.json (bygget av
+norwegian_laws.py) og tilføyer subjects-felt til gjeldende lover.
 
 Inkrementell: sammenligner lastModified fra API mot cache, laster bare ned
 hvis endret siden sist.
 
 Output: data/lovdata-lover.jsonl.gz, data/lovdata-forskrifter.jsonl.gz,
-        data/lovdata-lovtiend1.jsonl.gz, data/lovdata-lovtiend2.jsonl.gz
+        data/lovdata-lovtiend1.jsonl.gz
 """
 from __future__ import annotations
 
@@ -27,6 +30,8 @@ from io import BytesIO
 from pathlib import Path
 
 import requests
+
+from norwegian_laws import load_index as _load_nlo_index
 
 API_LIST_URL = "https://api.lovdata.no/v1/publicData/list"
 DOWNLOAD_BASE = "https://api.lovdata.no/v1/publicData/"
@@ -131,6 +136,8 @@ def parse_xml(xml_bytes: bytes) -> dict | None:
         "ministry": ministry,
         "url": url,
         "snippet": snippet,
+        # subjects berikes fra norwegian_laws_index etter parsing (se main())
+        "subjects": [],
     }
 
 
@@ -218,12 +225,44 @@ def _output_file(filename: str) -> Path:
 
 # ── Hovedflyt ─────────────────────────────────────────────────────────────────
 
+def _make_refid(doc_id: str) -> str:
+    """Konverter Lovdata doc_id til norwegian-laws refid-format.
+
+    "NL/lov/2005-06-17-62"  → "lov/2005-06-17-62"
+    "SF/forskrift/2001-..."  → "forskrift/2001-..."
+    """
+    # Fjern landkode-prefiks (NL/, SF/, osv.)
+    parts = doc_id.split("/", 1)
+    return parts[1] if len(parts) == 2 else doc_id
+
+
+def _enrich_with_subjects(docs: list[dict], nlo_index: dict[str, list[str]]) -> list[dict]:
+    """Berik hvert dokument med rettsområder fra norwegian_laws_index."""
+    enriched = 0
+    for doc in docs:
+        refid = _make_refid(doc.get("doc_id", ""))
+        subjects = nlo_index.get(refid, [])
+        doc["subjects"] = subjects
+        if subjects:
+            enriched += 1
+    if docs:
+        print(f"  Rettsområde-berikelse: {enriched}/{len(docs)} dokumenter fikk subjects", flush=True)
+    return docs
+
+
 def main() -> None:
     DATA_DIR.mkdir(exist_ok=True)
     session = _session()
     cache = _load_cache()
 
-    print("Henter Lovdata pakkeliste ...", flush=True)
+    # Last rettsområde-indeks fra norwegian_laws.py (kjøres separat i workflow)
+    nlo_index = _load_nlo_index()
+    if nlo_index:
+        print(f"Lastet norwegian-laws indeks: {len(nlo_index)} lover med rettsområde", flush=True)
+    else:
+        print("Ingen norwegian-laws indeks funnet — kjører uten subjects-berikelse", flush=True)
+
+    print("\nHenter Lovdata pakkeliste ...", flush=True)
     packages = _list_packages(session)
     print(f"  {len(packages)} pakker tilgjengelig", flush=True)
 
@@ -243,6 +282,10 @@ def main() -> None:
 
         print(f"\n📦 {description} ({filename})", flush=True)
         docs = _download_and_parse(session, filename)
+
+        # Berik gjeldende lover med rettsområde (forskrifter og lovtiend har ikke refid i indeksen)
+        if "gjeldende-lover" in filename and nlo_index:
+            docs = _enrich_with_subjects(docs, nlo_index)
 
         out_path = _output_file(filename)
         _write_jsonl_gz(out_path, docs)

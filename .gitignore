@@ -4,3 +4,4 @@ __pycache__/
 # Lovdata-tarballer (store binærfiler, skal ikke committes)
 *.tar.bz2
 data/lovdata_cache.json
+data/norwegian_laws_index.json

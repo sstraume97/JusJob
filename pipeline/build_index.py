@@ -80,7 +80,7 @@ def _kudos_entries():
 
 def _lovdata_entries(filename: str, source_label: str):
     for d in _read_jsonl_gz(DATA_DIR / filename):
-        yield {
+        entry = {
             "id": f"lovdata-{d['doc_id'].replace('/', '-')}",
             "source": "lovdata.no",
             "type": d.get("type", "lov"),
@@ -90,6 +90,10 @@ def _lovdata_entries(filename: str, source_label: str):
             "snippet": d.get("snippet") or d.get("short_title") or "",
             "eli": d.get("eli") or "",
         }
+        subjects = d.get("subjects")
+        if subjects:
+            entry["subjects"] = subjects
+        yield entry
 
 
 def _lovdata_lover_entries():

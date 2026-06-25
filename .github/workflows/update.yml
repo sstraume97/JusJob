@@ -44,7 +44,11 @@ jobs:
           MAX_NEW_PAGES: "2000"
         run: python pipeline/rettspraksis.py
 
-      - name: Hent Lovdata (lover, forskrifter, Norsk Lovtiend avd. 1 og 2)
+      - name: Hent norwegian-laws rettsområde-indeks
+        continue-on-error: true
+        run: python pipeline/norwegian_laws.py
+
+      - name: Hent Lovdata (lover, forskrifter, Norsk Lovtiend avd. 1)
         continue-on-error: true
         run: python pipeline/lovdata.py
 
