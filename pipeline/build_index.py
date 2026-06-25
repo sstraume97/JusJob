@@ -324,6 +324,103 @@ def _riksrevisjonen_entries():
         yield entry
 
 
+def _domstol_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "domstol.jsonl.gz"):
+        yield {
+            "id": f"domstol-{d.get('case_number') or d['url'].rstrip('/').split('/')[-1]}",
+            "source": "domstol.no",
+            "type": d.get("doc_type") or "avgjørelse",
+            "title": d["title"],
+            "court_or_body": d.get("court") or "Norges domstoler",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+
+
+def _helsedirektoratet_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "helsedirektoratet.jsonl.gz"):
+        entry = {
+            "id": f"helsedir-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": "helsedirektoratet.no",
+            "type": d.get("doc_type") or "rundskriv",
+            "title": d["title"],
+            "court_or_body": "Helsedirektoratet",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _trygderetten_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "trygderetten.jsonl.gz"):
+        entry = {
+            "id": f"trygderetten-{d.get('case_number') or d['url'].rstrip('/').split('/')[-1]}",
+            "source": "trygderetten.no",
+            "type": d.get("doc_type") or "kjennelse",
+            "title": d["title"],
+            "court_or_body": "Trygderetten",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _husleietvistutvalget_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "husleietvistutvalget.jsonl.gz"):
+        entry = {
+            "id": f"htu-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": "htu.no",
+            "type": d.get("doc_type") or "avgjørelse",
+            "title": d["title"],
+            "court_or_body": "Husleietvistutvalget",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _udi_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "udi.jsonl.gz"):
+        title = d["title"]
+        if d.get("doc_ref"):
+            title = f"{d['doc_ref']} {title}"
+        entry = {
+            "id": f"udi-{d.get('doc_ref') or d['url'].rstrip('/').split('/')[-1]}",
+            "source": "udiregelverk.no",
+            "type": d.get("doc_type") or "rundskriv",
+            "title": title,
+            "court_or_body": "UDI",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _npe_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "npe.jsonl.gz"):
+        body = "Pasientskadenemnda" if "helseklage.no" in d["url"] else "NPE"
+        entry = {
+            "id": f"npe-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": d["url"].split("/")[2],
+            "type": d.get("doc_type") or "vedtak",
+            "title": d["title"],
+            "court_or_body": body,
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
 def _regjeringen_entries():
     for d in _read_jsonl_gz(DATA_DIR / "regjeringen.jsonl.gz"):
         entry = {
@@ -364,6 +461,12 @@ SOURCE_BUILDERS = [
     _kfir_entries,
     _arbeidstilsynet_entries,
     _riksrevisjonen_entries,
+    _domstol_entries,
+    _helsedirektoratet_entries,
+    _trygderetten_entries,
+    _husleietvistutvalget_entries,
+    _udi_entries,
+    _npe_entries,
     _regjeringen_entries,
 ]
 

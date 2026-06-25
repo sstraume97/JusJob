@@ -16,7 +16,7 @@ env:
 jobs:
   scrape-and-build:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -107,6 +107,30 @@ jobs:
       - name: Hent Riksrevisjonen (forvaltningsrevisjoner, rapporter)
         continue-on-error: true
         run: python pipeline/riksrevisjonen.py
+
+      - name: Hent Domstol.no (utvalgte avgjørelser)
+        continue-on-error: true
+        run: python pipeline/domstol.py
+
+      - name: Hent Helsedirektoratet (rundskriv, veiledere, tolkninger)
+        continue-on-error: true
+        run: python pipeline/helsedirektoratet.py
+
+      - name: Hent Trygderetten (kjennelser)
+        continue-on-error: true
+        run: python pipeline/trygderetten.py
+
+      - name: Hent Husleietvistutvalget (avgjørelser)
+        continue-on-error: true
+        run: python pipeline/husleietvistutvalget.py
+
+      - name: Hent UDI regelverk (RS, PN, instrukser)
+        continue-on-error: true
+        run: python pipeline/udi.py
+
+      - name: Hent NPE / Pasientskadenemnda (vedtak)
+        continue-on-error: true
+        run: python pipeline/npe.py
 
       - name: Bygg søkeindeks
         run: python pipeline/build_index.py

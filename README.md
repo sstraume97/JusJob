@@ -10,26 +10,26 @@ Et verktøy for juridisk research som henter og indekserer norske rettskilder au
 
 ```mermaid
 flowchart TD
-    subgraph Kilder["📚 Rettskilder (23 aktive)"]
+    subgraph Kilder["📚 Rettskilder (30 aktive)"]
         A1([rettspraksis.no\nMediaWiki API])
         A2([data.stortinget.no\nXML-API])
         A4([kudos.dfo.no\nREST API])
         A5([api.lovdata.no\ntar.bz2 + XML])
         A6([regjeringen.no\nProp./NOU/Meld./rundskriv])
-        A7([14 tilsyn og nemnder\nDatatilsynet, UNE, KOFA,\nFinanstilsynet, KFIR, m.fl.])
+        A7([20 tilsyn, nemnder og domstoler\nDatatilsynet, UNE, KOFA, Domstol.no,\nTrygderetten, NPE, UDI, m.fl.])
     end
 
     subgraph Actions["⚙️ GitHub Actions"]
         B1[rettspraksis.py / stortinget.py\nsivilombudet.py / kudos.py]
         B5[lovdata.py + norwegian_laws.py\nsubjects-berikelse]
-        B6[regjeringen.py + 14 tilsyn-scrapere]
+        B6[regjeringen.py + 20 tilsyn-scrapere\n(deler _scraper_base.py)]
         B7[pipeline/build_index.py]
     end
 
     subgraph Data["💾 data/  ← committes til repo"]
         C1[(rettspraksis / stortinget /\nsivilombudet / kudos .jsonl.gz)]
         C5[(lovdata-lover / -forskrifter /\n-lovtiend1 .jsonl.gz)]
-        C6[(regjeringen, datatilsynet, une,\nkofa … .jsonl.gz — 15 filer)]
+        C6[(regjeringen, datatilsynet, une,\nkofa, domstol, npe … — 21 filer)]
         C9[(search-index.json)]
     end
 
@@ -64,7 +64,7 @@ Alle datafiler committes til repoet og publiseres via GitHub Pages. Zotero-plugi
 
 ## Kilder
 
-**23 aktive datakilder.** Se [docs/kilder.md](docs/kilder.md) for full integrasjonsplan og teknisk vurdering per kilde.
+**30 aktive datakilder.** Se [docs/kilder.md](docs/kilder.md) for full integrasjonsplan og teknisk vurdering per kilde.
 
 ### ✅ Aktive
 
@@ -89,10 +89,16 @@ Alle datafiler committes til repoet og publiseres via GitHub Pages. Zotero-plugi
 | [KFIR](https://www.kfir.no) | Avgjørelser — patent, varemerke, design | Klage og nemnd |
 | [Arbeidstilsynet](https://www.arbeidstilsynet.no) | Vedtak, tilsynsrapporter | Tilsyn |
 | [Riksrevisjonen](https://www.riksrevisjonen.no) | Forvaltningsrevisjoner, rapporter | Tilsyn |
+| [Domstol.no](https://www.domstol.no) | Utvalgte/prinsipielle avgjørelser | Rettsavgjørelser |
+| [Helsedirektoratet](https://www.helsedirektoratet.no) | Rundskriv, veiledere, lovfortolkninger | Forvaltning |
+| [Trygderetten](https://www.trygderetten.no) | Kjennelser | Klage og nemnd |
+| [Husleietvistutvalget](https://www.htu.no) | Avgjørelser i husleietvister | Klage og nemnd |
+| [UDI regelverk](https://udiregelverk.no) | Rundskriv (RS), praksisnotater (PN), instrukser (GI) | Forvaltning |
+| [NPE / Pasientskadenemnda](https://www.helseklage.no) | Vedtak, erstatningsutmålinger | Klage og nemnd |
 
 ### ⏳ Planlagte (utvalg)
 
-[Domstol.no](https://www.domstol.no) · [Helsedirektoratet](https://www.helsedirektoratet.no) · [UDI](https://udiregelverk.no) · Arbeidsretten · Trygderetten · NPE · Husleietvistutvalget · [EMD/HUDOC](https://hudoc.echr.coe.int) · [EFTA-domstolen](https://www.eftacourt.int) · [EUR-Lex](https://eur-lex.europa.eu)
+Arbeidsretten · Statsforvalteren · Bufdir · IMDi · Medietilsynet · Nkom · NVE · Patentstyret · Lovdata NAV · [EMD/HUDOC](https://hudoc.echr.coe.int) · [EFTA-domstolen](https://www.eftacourt.int) · [EUR-Lex](https://eur-lex.europa.eu)
 
 Se [docs/indeks-skjema.md](docs/indeks-skjema.md) for detaljert feltdefinisjon og lenkestrategi mellom kilder.
 
@@ -139,6 +145,12 @@ python pipeline/diskriminering.py
 python pipeline/kfir.py
 python pipeline/arbeidstilsynet.py
 python pipeline/riksrevisjonen.py
+python pipeline/domstol.py
+python pipeline/helsedirektoratet.py
+python pipeline/trygderetten.py
+python pipeline/husleietvistutvalget.py
+python pipeline/udi.py
+python pipeline/npe.py
 
 # Bygg samlet søkeindeks
 python pipeline/build_index.py

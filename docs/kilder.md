@@ -75,8 +75,14 @@ Rettsområde-taksonomi: [sondreskarsten/norwegian-laws](https://github.com/sondr
 | KFIR | Immaterialrett | HTML-scraping | `kfir.jsonl.gz` |
 | Arbeidstilsynet | Arbeidsrett; HMS og beredskaps- og sikkerhetsrett | HTML-scraping | `arbeidstilsynet.jsonl.gz` |
 | Riksrevisjonen | Stats-, statsforfatnings- og statsborgerrett; Forvaltnings- og kommunalrett | HTML-scraping | `riksrevisjonen.jsonl.gz` |
+| Domstol.no | Alle | HTML-scraping | `domstol.jsonl.gz` |
+| Helsedirektoratet | Helse- og omsorgsrett | HTML-scraping | `helsedirektoratet.jsonl.gz` |
+| Trygderetten | Pensjons- og trygderett | HTML-scraping | `trygderetten.jsonl.gz` |
+| Husleietvistutvalget | Fast eiendoms rettsforhold | HTML-scraping | `husleietvistutvalget.jsonl.gz` |
+| UDI regelverk | Utlendingsrett | HTML-scraping | `udi.jsonl.gz` |
+| NPE / Pasientskadenemnda | Helse- og omsorgsrett; Erstatnings- og forsikringsrett | HTML-scraping | `npe.jsonl.gz` |
 
-**Note:** Regjeringen.no dekker proposisjoner, NOU-er, meldinger til Stortinget, rundskriv og høringer i én scraper (`pipeline/regjeringen.py`).
+**Note:** Regjeringen.no dekker proposisjoner, NOU-er, meldinger til Stortinget, rundskriv og høringer i én scraper (`pipeline/regjeringen.py`). De nyeste scraperne deler oppsett via `pipeline/_scraper_base.py` (session, cache, henting med 404-håndtering).
 
 ### 🔲 Planlagte kilder
 
@@ -89,19 +95,13 @@ Rettsområde-taksonomi: [sondreskarsten/norwegian-laws](https://github.com/sondr
 | Lovdata NAV-rundskriv | Pensjons- og trygderett | HTML-scraping | Middels |
 | Stortingstidende | Stats-, statsforfatnings- og statsborgerrett | HTML-scraping | Lav |
 | **Domstolsinstanser** | | | |
-| Domstol.no (Høyesterett) | Alle | HTML-scraping | Høy |
 | Arbeidsretten (ARD) | Arbeidsrett | HTML-scraping | Middels |
-| Trygderetten | Pensjons- og trygderett | HTML-scraping | Middels |
 | EFTA-domstolen | EU/EØS-rett | API | Lav |
 | EMD / HUDOC | Menneskerettigheter | HUDOC JSON API | Lav |
 | **Skatt og finans** | | | |
 | Skatteetaten rettsinformasjon API | Skatte- og avgiftsrett | Maskinporten | Supplement (krever org.nr.) |
 | **Utlendingsrett** | | | |
-| UDI regelverk | Utlendingsrett | HTML-scraping | Middels |
 | IMDi | Utlendingsrett | HTML-scraping | Middels |
-| **Helse og omsorg** | | | |
-| Helsedirektoratet | Helse- og omsorgsrett | HTML + mulig API | Høy |
-| NPE / Pasientskadenemnda | Helse- og omsorgsrett; Erstatnings- og forsikringsrett | HTML-scraping | Middels |
 | **Personvern og IKT** | | | |
 | Nkom | IKT- og medierett | HTML-scraping | Middels |
 | Medietilsynet | IKT- og medierett | HTML-scraping | Middels |
@@ -206,13 +206,19 @@ Domstolene tilbyr ingen API for henting av dommer. Dommer distribueres via Lovda
 13. ✅ **Arbeidstilsynet** — vedtak, tilsynsrapporter
 14. ✅ **Riksrevisjonen** — forvaltningsrevisjoner, rapporter
 
-### Gruppe 3 — Neste (gjenstående)
-15. Helsedirektoratet rundskriv, Domstol.no (Høyesterett)
-16. UDI retningslinjer (RS/GI/PN), Arbeidsretten (Lovdata ARD)
-17. Bufdir, IMDi, Medietilsynet, Nkom, NVE, Patentstyret
-18. Lovdata NAV, Trygderetten, NPE, Husleietvistutvalget, Statsforvalteren
-19. Stortingstidende, Lovdata HIST, Lovdata Rundskriv
-20. EUR-Lex (SPARQL), EFTA-domstolen, HUDOC/EMD
-21. Komparative kilder (DK, SE)
+### Gruppe 3 — ✅ Ferdig (delvis)
+15. ✅ **Domstol.no** — utvalgte avgjørelser
+16. ✅ **Helsedirektoratet** — rundskriv, veiledere, tolkninger
+17. ✅ **Trygderetten** — kjennelser
+18. ✅ **Husleietvistutvalget** — avgjørelser
+19. ✅ **UDI regelverk** — RS/PN/GI
+20. ✅ **NPE / Pasientskadenemnda** — vedtak
+
+### Gruppe 4 — Neste (gjenstående)
+21. Arbeidsretten (Lovdata ARD), Statsforvalteren
+22. Bufdir, IMDi, Medietilsynet, Nkom, NVE, Patentstyret
+23. Lovdata NAV, Stortingstidende, Lovdata HIST, Lovdata Rundskriv
+24. EUR-Lex (SPARQL), EFTA-domstolen, HUDOC/EMD
+25. Komparative kilder (DK, SE)
 
 **Merknad:** Skatteetaten `rettsinformasjon`-API (Maskinporten) er fortsatt et mulig supplement, men krever org.nr. og Altinn-delegering. Gjeldende `skatteetaten.py` bruker åpen HTML-scraping av `/rettskilder/`.
