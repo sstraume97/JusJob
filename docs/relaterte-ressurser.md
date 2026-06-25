@@ -35,6 +35,11 @@ Vurdert 2026-06-25. Relevans og gjenbruksvurdering for JusJob.
 | [GizzZmo/loven](https://github.com/GizzZmo/loven) | ⭐ Delvis | Lovdata søke-API | LovDataClient-mønster for api.lovdata.no søk |
 | [ZachLaik/LegalFactory](https://github.com/ZachLaik/LegalFactory) | ⭐ Delvis | EU-scraper | Pipeline-arkitektur (YAML konfig, CI dry-run) |
 | [HNygard/open-norwegian-law](https://github.com/HNygard/open-norwegian-law) | ⭐ Delvis | Java-lib (2022) | Utdatert, ikke portabel |
+| [legalize-dev/legalize-pipeline](https://github.com/legalize-dev/legalize-pipeline) | ⭐⭐⭐ Høy | Lovdata HTML-parser | `parser.py` for Norge: henter `legalArea` → `subjects`-felt; mønster for subjects-utledning |
+| [legalize-dev/legalize-no](https://github.com/legalize-dev/legalize-no) | ⭐⭐ God | Norsk lovkilde (Markdown) | Viser feltene legalize-pipeline produserer; Grunnlov til i dag; supplert av legalize-dev API |
+| [Jakobkoding2/legalize-no](https://github.com/Jakobkoding2/legalize-no) | ⭐ Delvis | Tidlig fork av legalize-no | Samme konsept som legalize-dev/legalize-no, men enklere build.py (BeautifulSoup); ikke oppdatert |
+| [legalize-dev/legalize](https://github.com/legalize-dev/legalize) | ⭐⭐ God | Spec + multi-land arkitektur | SPEC.md v0.2: generisk YAML-frontmatter-format; `subjects: tuple[str]` er definert i models.py |
+| [legalize-dev/legalize-sdks](https://github.com/legalize-dev/legalize-sdks) | ⭐ Delvis | API-klientbibliotek | Betalt legalize.dev API; ikke aktuelt for JusJob, men OpenAPI-schema er referanse |
 | [GmailHelene/rettbot](https://github.com/GmailHelene/rettbot) | – Ikke relevant | Kryptert PWA | Ingen gjenbrukbar kode |
 | [HNygard/offpost](https://github.com/HNygard/offpost) | – Ikke relevant | E-post til offentlige | Ingen relevans |
 | [openlegaldata/awesome-legal-data](https://github.com/openlegaldata/awesome-legal-data) | – Ikke relevant | Liste | Lite norsk dekning |
@@ -345,8 +350,152 @@ PHP-scraper + JSON/CSV-datasett med 1000+ sivilombudet-uttalelser. Lisensavklari
 - KOFA (`kofa.no/praksis`)
 
 ### Etter pipeline-utvidelse
-4. **Studer `lovradar.py`** (Majac999) — endringshistorikk-mønster for `endringshistorikk-varsling`
-5. **Studer `lovsonar.py`** (Majac999) — horisontskanning av lovforslag
-6. **Les Juss-AI whitepaper** manuelt
-7. **Implementer `validate_citation`** (ref. lovspor-mønsteret)
-8. **EUR-Lex SPARQL-integrasjon** med ELI-spørringer (ref. EULex.NET)
+4. **Tilpass `legalArea`-uttrekk** (legalize-dev/legalize-pipeline) — legg til `subjects`-felt i `lovdata.py` ved å skrape Lovdata HTML-sider for enkeltlover (se eget avsnitt under)
+5. **Studer `lovradar.py`** (Majac999) — endringshistorikk-mønster for `endringshistorikk-varsling`
+6. **Studer `lovsonar.py`** (Majac999) — horisontskanning av lovforslag
+7. **Les Juss-AI whitepaper** manuelt
+8. **Implementer `validate_citation`** (ref. lovspor-mønsteret)
+9. **EUR-Lex SPARQL-integrasjon** med ELI-spørringer (ref. EULex.NET)
+
+---
+
+### [legalize-dev/legalize-pipeline](https://github.com/legalize-dev/legalize-pipeline)
+**Relevans: ⭐⭐⭐ Høy — konkret lærdom om `subjects`-utledning**
+
+Internasjonal pipeline-plattform (30+ land) som konverterer offisiell lovgivning til versjonskontrollerte Markdown-filer. For Norge henter den fra `api.lovdata.no/v1/publicData/` og produserer `legalize-dev/legalize-no`.
+
+**Arkitektur:**
+```
+src/legalize/
+├── fetcher/no/          ← norsk-spesifikk logikk
+│   ├── parser.py        ← HTML-parser, henter legalArea → subjects
+│   ├── discovery.py     ← oppdager pakker fra API-manifest
+│   └── client.py        ← HTTP-klient
+├── models.py            ← NormMetadata dataclass
+├── pipeline.py          ← orkestrering
+└── committer/           ← git commit per lovendring
+```
+
+**`models.py` — `NormMetadata`:**
+```python
+@dataclass
+class NormMetadata:
+    title: str
+    identifier: str          # "LOV-2005-06-17-62"
+    country: str             # "no"
+    rank: str                # "lov" / "forskrift" / "grunnlov"
+    publication_date: date
+    last_updated: date
+    status: str              # "in_force" | "repealed" | ...
+    source: str              # Lovdata-URL
+    subjects: tuple[str, ...] = ()   # ← rettsområder
+    department: str = ""
+    jurisdiction: Optional[str] = None
+    extra: tuple[tuple[str, str], ...] = ()  # country-specific key-value
+```
+
+**`parser.py` — slik hentes `subjects` / `legalArea`:**
+
+Parseren skraper **HTML-siden** til den individuelle loven på lovdata.no, ikke tar.bz2-XML-filen. Lovdata HTML inneholder en `<dl class="data-document-key-info">` med feltene. Subjects hentes slik:
+
+```python
+subjects = tuple(_get_dd_list(dl, "legalArea"))
+```
+
+`_get_dd_list()` finner `<dt class="legalArea">`, tar `<dd>`-elementet etter det, og henter alle `<li>`-barn:
+
+```html
+<!-- Lovdata HTML-side for en lov: -->
+<dl class="data-document-key-info">
+  <dt class="legalArea">Rettsområde</dt>
+  <dd>
+    <ul>
+      <li>Arbeidsrett</li>
+      <li>HMS og beredskaps- og sikkerhetsrett</li>
+    </ul>
+  </dd>
+  <dt class="departement">Departement</dt>
+  <dd>Arbeids- og inkluderingsdepartementet</dd>
+</dl>
+```
+
+**`legalArea`-verdiene i Lovdata tilsvarer nøyaktig de 35 rettsområdene fra sondreskarsten/norwegian-laws.** Dette er den kanoniske kilden for rettsområde-klassifisering.
+
+**Andre felt legalize-pipeline henter fra Lovdata HTML (via `extra`):**
+- `dokid` → `NL/lov/2005-06-17-62`
+- `refid` → `lov/2005-06-17-62`
+- `last_changed_by` → `lov/2025-06-20-45 fra 2026-01-01`
+- `changes_to` → `lov/1977-02-04-4`
+- `eea_references` → "EØS-avtalen vedlegg XVIII."
+- `date_in_force` → ikrafttredelsesdato
+
+**Legg merke til:** `legalArea` er **kun** i Lovdata HTML-sider, **ikke** i tar.bz2-XML. Derfor har vår nåværende `pipeline/lovdata.py` ikke subjects-feltet.
+
+**Gjenbruk for JusJob — to strategier:**
+
+*Strategi A (enkel, anbefalt):* Berik fra `norwegian-laws/laws.json`. Filen har `rettsomrade`-feltet for alle ~782 lover, kryssjointet på ELI/identifier. Én nedlasting, ingen ekstra HTTP-kall.
+
+*Strategi B (komplett, men kostbar):* Etter tar.bz2-parsing, lag en batch av Lovdata HTML-kall (én per lov) for å hente `legalArea`. Legalize-pipeline gjør dette på CI, men det er 782+ HTTP-kall som tar tid.
+
+**Anbefaling: Implementer Strategi A** — norsk-laws `laws.json` er tilgjengelig, er basert på de samme Lovdata-dataene, og har allerede gjort jobben.
+
+---
+
+### [legalize-dev/legalize-no](https://github.com/legalize-dev/legalize-no)
+**Relevans: ⭐⭐ God — referanseimplementasjon**
+
+Offisiell norsk branch av legalize-prosjektet. 781 lover som versjonskontrollerte Markdown-filer med YAML frontmatter.
+
+**YAML frontmatter (faktisk output):**
+```yaml
+title: "Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)"
+identifier: "LOV-2005-06-17-62"
+country: "no"
+rank: "lov"
+publication_date: "2005-06-17"
+last_updated: "2005-06-17"
+status: "in_force"
+source: "https://lovdata.no/dokument/NL/lov/2005-06-17-62"
+department: "Arbeids- og inkluderingsdepartementet"
+dokid: "NL/lov/2005-06-17-62"
+refid: "lov/2005-06-17-62"
+date_in_force: "2006-01-01"
+last_changed_by: "lov/2025-06-20-45 fra 2026-01-01"
+changes_to: "lov/1977-02-04-4"
+eea_references: "EØS-avtalen vedlegg XVIII."
+misc_information: "..."
+```
+
+Merk: `subjects`/`legalArea` er **ikke** med i output-filene — dette er en bug/mangel i legalize-dev/legalize-no, trolig fordi legalArea krever ekstra HTML-kall som ikke er implementert for Norway-branchen ennå.
+
+**Gjenbruk for JusJob:** Feltstrategien (`dokid`, `refid`, `changes_to`, `eea_references`) er referanse for hva vi bør inkludere i `lovdata-lover.jsonl.gz`. Legg til `changes_to` og `eea_references` i `pipeline/lovdata.py`.
+
+---
+
+### [Jakobkoding2/legalize-no](https://github.com/Jakobkoding2/legalize-no)
+**Relevans: ⭐ Delvis — tidlig personlig implementasjon**
+
+Tilsynelatende den originale inspirasjonen for legalize-dev/legalize-no. Inneholder `build.py` (BeautifulSoup-basert), men bygger i praksis det samme som legalize-dev gjør med sin pipeline.
+
+Kildekoden (`build.py`) ikke tilgjengelig som raw-fil — trolig på en ikke-standard branch. Repo er ikke vesentlig forskjellig fra legalize-dev/legalize-no i output. Bruk legalize-dev i stedet.
+
+---
+
+### [legalize-dev/legalize](https://github.com/legalize-dev/legalize)
+**Relevans: ⭐⭐ God — spec og multi-land-arkitektur**
+
+Paraply-repo med `SPEC.md` (format-spesifikasjon) og `README` for hele legalize-prosjektet (31 land, inkl. Norge).
+
+**SPEC.md v0.2 — obligatoriske felt:**
+`title`, `identifier`, `country`, `rank`, `publication_date`, `last_updated`, `status`, `source`
+
+`subjects` er **ikke** i spekken — det er et country-specific extension. For Norge: hentes fra Lovdata `legalArea`.
+
+**Gjenbruk for JusJob:** SPEC.md er nyttig som inspirasjon for vår indeks-skjema-dokumentasjon. Feltnavnene `identifier`, `rank`, `status`, `source` samsvarer bra med JusJob-feltene.
+
+---
+
+### [legalize-dev/legalize-sdks](https://github.com/legalize-dev/legalize-sdks)
+**Relevans: ⭐ Delvis — betalt API, ikke direkte brukbart**
+
+SDK-biblioteker (Python, TypeScript, Go) for legalize.dev-API-et. Gir typed tilgang til norske lover via `client.laws.iter(country="no")`. API-et er betalt — ikke aktuelt for JusJob pipeline. Men `openapi.json` i repoet er referanse for hva slags API-skjema vi burde eksponere fra JusJob på sikt.
