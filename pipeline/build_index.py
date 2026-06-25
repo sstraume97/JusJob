@@ -240,6 +240,90 @@ def _skatteklagenemnda_entries():
         yield entry
 
 
+def _skatteetaten_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "skatteetaten.jsonl.gz"):
+        entry = {
+            "id": f"skatteetaten-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": "skatteetaten.no",
+            "type": d.get("doc_type") or "uttalelse",
+            "title": d["title"],
+            "court_or_body": "Skatteetaten",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _diskriminering_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "diskriminering.jsonl.gz"):
+        body = "LDO" if "ldo.no" in d["url"] else "Diskrimineringsnemnda"
+        entry = {
+            "id": f"diskriminering-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": d["url"].split("/")[2],
+            "type": d.get("doc_type") or "uttalelse",
+            "title": d["title"],
+            "court_or_body": body,
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _kfir_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "kfir.jsonl.gz"):
+        entry = {
+            "id": f"kfir-{d.get('case_number') or d['url'].rstrip('/').split('/')[-1]}",
+            "source": "kfir.no",
+            "type": d.get("doc_type") or "avgjørelse",
+            "title": d["title"],
+            "court_or_body": "KFIR",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _arbeidstilsynet_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "arbeidstilsynet.jsonl.gz"):
+        entry = {
+            "id": f"arbeidstilsynet-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": "arbeidstilsynet.no",
+            "type": d.get("doc_type") or "vedtak",
+            "title": d["title"],
+            "court_or_body": "Arbeidstilsynet",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
+def _riksrevisjonen_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "riksrevisjonen.jsonl.gz"):
+        title = d["title"]
+        if d.get("doc_number"):
+            title = f"{d['doc_number']}: {title}"
+        entry = {
+            "id": f"riksrevisjonen-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": "riksrevisjonen.no",
+            "type": d.get("doc_type") or "rapport",
+            "title": title,
+            "court_or_body": "Riksrevisjonen",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+        }
+        if d.get("subjects"):
+            entry["subjects"] = d["subjects"]
+        yield entry
+
+
 def _regjeringen_entries():
     for d in _read_jsonl_gz(DATA_DIR / "regjeringen.jsonl.gz"):
         entry = {
@@ -275,6 +359,11 @@ SOURCE_BUILDERS = [
     _konkurransetilsynet_entries,
     _finanstilsynet_entries,
     _skatteklagenemnda_entries,
+    _skatteetaten_entries,
+    _diskriminering_entries,
+    _kfir_entries,
+    _arbeidstilsynet_entries,
+    _riksrevisjonen_entries,
     _regjeringen_entries,
 ]
 

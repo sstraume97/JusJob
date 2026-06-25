@@ -88,6 +88,26 @@ jobs:
         continue-on-error: true
         run: python pipeline/skatteklagenemnda.py
 
+      - name: Hent Skatteetaten (BFU, prinsipputtalelser, uttalelser)
+        continue-on-error: true
+        run: python pipeline/skatteetaten.py
+
+      - name: Hent LDO og Diskrimineringsnemnda (uttalelser, vedtak)
+        continue-on-error: true
+        run: python pipeline/diskriminering.py
+
+      - name: Hent KFIR (avgjørelser immaterialrett)
+        continue-on-error: true
+        run: python pipeline/kfir.py
+
+      - name: Hent Arbeidstilsynet (vedtak, tilsynsrapporter)
+        continue-on-error: true
+        run: python pipeline/arbeidstilsynet.py
+
+      - name: Hent Riksrevisjonen (forvaltningsrevisjoner, rapporter)
+        continue-on-error: true
+        run: python pipeline/riksrevisjonen.py
+
       - name: Bygg søkeindeks
         run: python pipeline/build_index.py
 
