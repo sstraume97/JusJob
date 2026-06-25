@@ -23,9 +23,10 @@ import requests
 API_URL = "https://www.rettspraksis.no/w/api.php"
 USER_AGENT = "JusJob-DataPipeline/0.1 (+https://github.com/sstraume97/JusJob)"
 DECISION_SUBCATEGORIES = {"Kategori:Høyesterett", "Kategori:Lagmannsretter", "Kategori:Tingretter"}
-CONTENT_DELAY_SECONDS = 2.0   # mellom batch-kall med sideinnhold
-INFO_DELAY_SECONDS = 0.5      # mellom billige revinfo/kategorikall
-BATCH_SIZE = 10               # mindre batch for å unngå timeout på store responser
+CONTENT_DELAY_SECONDS = 2.0   # mellom batch-kall med sideinnhold (tunge kall)
+INFO_DELAY_SECONDS = 0.1      # mellom billige revinfo/kategorikall
+REVINFO_BATCH_SIZE = 50       # MediaWikis maks — revinfo er lett metadata
+CONTENT_BATCH_SIZE = 10       # mindre batch for innhold pga. store responser
 
 
 SNIPPET_LENGTH = 300  # lagrer kun de første tegnene av sideteksten
@@ -76,13 +77,13 @@ def _pages_revinfo(session: requests.Session, titles: list[str], label: str = ""
     """Henter siste revisjons-id for opp til mange titler – ingen sideinnhold."""
     result: dict[str, int] = {}
     total = len(titles)
-    for i in range(0, total, BATCH_SIZE):
-        batch = titles[i : i + BATCH_SIZE]
+    for i in range(0, total, REVINFO_BATCH_SIZE):
+        batch = titles[i : i + REVINFO_BATCH_SIZE]
         data = _api_get(session, action="query", prop="info", titles="|".join(batch))
         for page in data["query"]["pages"].values():
             if "lastrevid" in page:
                 result[page["title"]] = page["lastrevid"]
-        done = min(i + BATCH_SIZE, total)
+        done = min(i + REVINFO_BATCH_SIZE, total)
         print(f"\r  [{label}] Sjekker revisjoner: {done}/{total} ({100*done//total}%)", end="", flush=True)
     print(flush=True)
     return result
@@ -157,8 +158,8 @@ def iter_decisions(
         total_needs = len(needs_fetch)
         cached_count = len(members) - total_needs
         print(f"  {cached_count} uendrede (gjenbrukes), {total_needs} nye/endrede hentes", flush=True)
-        for i in range(0, total_needs, BATCH_SIZE):
-            batch = needs_fetch[i : i + BATCH_SIZE]
+        for i in range(0, total_needs, CONTENT_BATCH_SIZE):
+            batch = needs_fetch[i : i + CONTENT_BATCH_SIZE]
             title_map = {m["title"]: m for m in batch}
             snippet_map = _pages_snippet_batch(session, list(title_map.keys()))
             for title, snippet in snippet_map.items():
@@ -172,7 +173,7 @@ def iter_decisions(
                     url=f"https://www.rettspraksis.no/wiki/{title.replace(' ', '_')}",
                 )
             fetched_new += len(snippet_map)
-            done = min(i + BATCH_SIZE, total_needs)
+            done = min(i + CONTENT_BATCH_SIZE, total_needs)
             print(f"\r  [{court}] Henter innhold: {done}/{total_needs} ({100*done//total_needs if total_needs else 0}%)", end="", flush=True)
 
         print(flush=True)
