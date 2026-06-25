@@ -125,6 +125,24 @@ def _forbrukertilsynet_entries():
         }
 
 
+def _regjeringen_entries():
+    for d in _read_jsonl_gz(DATA_DIR / "regjeringen.jsonl.gz"):
+        entry = {
+            "id": f"regjeringen-{d['url'].rstrip('/').split('/')[-1]}",
+            "source": "regjeringen.no",
+            "type": d.get("doc_type") or "dokument",
+            "title": d["title"],
+            "court_or_body": d.get("department") or "Regjeringen",
+            "url": d["url"],
+            "snippet": d.get("snippet") or "",
+            "doc_number": d.get("doc_number") or "",
+        }
+        subjects = d.get("subjects")
+        if subjects:
+            entry["subjects"] = subjects
+        yield entry
+
+
 SOURCE_BUILDERS = [
     _rettspraksis_entries,
     _stortinget_entries,
@@ -135,6 +153,7 @@ SOURCE_BUILDERS = [
     _lovdata_lovtiend1_entries,
     _lovdata_lovtiend2_entries,
     _forbrukertilsynet_entries,
+    _regjeringen_entries,
 ]
 
 

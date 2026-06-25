@@ -171,6 +171,9 @@ def _download_and_parse(session: requests.Session, filename: str) -> list[dict]:
     url = DOWNLOAD_BASE + filename
     print(f"  Laster ned {filename} ...", flush=True)
     resp = session.get(url, timeout=300, stream=True)
+    if resp.status_code == 404:
+        print(f"  ADVARSEL: {filename} finnes ikke ennå (404) — hopper over", flush=True)
+        return []
     resp.raise_for_status()
 
     data = BytesIO(resp.content)
