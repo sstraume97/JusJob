@@ -411,17 +411,108 @@
   <!-- RESSURSER -->
   <div id="ressurser" class="page">
     <h2>Relaterte ressurser</h2>
-    <p style="margin-bottom:1rem; color:var(--muted);">Se <a href="https://github.com/sstraume97/JusJob/blob/main/docs/relaterte-ressurser.md">full vurdering</a> i repo-dokumentasjonen.</p>
-    <table>
-      <tr><th>Repo</th><th>Relevans</th></tr>
-      <tr><td><a href="https://github.com/sondreskarsten/norwegian-laws">sondreskarsten/norwegian-laws</a></td><td>Integreres direkte — 794 lover + 3 438 forskrifter med eli-IDer</td></tr>
-      <tr><td><a href="https://github.com/ngu-tek/Norwegian-law-mcp">ngu-tek/Norwegian-law-mcp</a></td><td>MCP-server for norske lover — aktuell for fremtidig AI-integrasjon</td></tr>
-      <tr><td><a href="https://github.com/StianOby/claude-legal-tools">StianOby/claude-legal-tools</a></td><td>Dokumenterer Lovdata API (api.lovdata.no)</td></tr>
-      <tr><td><a href="https://github.com/worldwidelaw/legal-sources">worldwidelaw/legal-sources</a></td><td>Arkitekturinspirasjon, modulær pipeline for 110+ land</td></tr>
-      <tr><td><a href="https://github.com/KevinJohannesen/catchwise-backend">KevinJohannesen/catchwise-backend</a></td><td>Norwegian-aware BM25-tokenisering for juridisk søk</td></tr>
-      <tr><td><a href="https://github.com/doantumy/Efficiently-Summarizing-Norwegian-Legal-Texts">doantumy/LegSum</a></td><td>Automatisk summering av norske rettsavgjørelser (ML)</td></tr>
-      <tr><td><a href="https://github.com/JoelNiklaus/LegalDatasets">JoelNiklaus/LegalDatasets</a></td><td>Juridiske ML-datasett — mulig norsk dekning</td></tr>
+    <p style="margin-bottom:1rem; color:var(--muted);">
+      Se <a href="https://github.com/sstraume97/JusJob/blob/main/docs/relaterte-ressurser.md">full kildekode-vurdering og gjenbruksanalyse</a> i repo-dokumentasjonen.
+    </p>
+
+    <h3>Relevansmatrise</h3>
+    <table style="margin-bottom:2rem;">
+      <tr><th>Repo</th><th>Relevans</th><th>Kategori</th><th>Gjenbruk</th></tr>
+      <tr>
+        <td><a href="https://github.com/sondreskarsten/norwegian-laws">sondreskarsten/norwegian-laws</a></td>
+        <td>⭐⭐⭐ Kritisk</td>
+        <td>Lovkilde</td>
+        <td>Konsumeres direkte som datakilde (laws.json)</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/khjohns/paragraf-mcp">khjohns/paragraf-mcp</a></td>
+        <td>⭐⭐⭐ Høy</td>
+        <td>Lovdata-parser + MCP</td>
+        <td>structure_parser.py, alias-løser, AND→OR søkelogikk</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/bartoszkobylinski/lovspor">bartoszkobylinski/lovspor</a></td>
+        <td>⭐⭐⭐ Høy</td>
+        <td>Endringshistorikk + MCP</td>
+        <td>validate_citation, verify_quote, endringshistorikk-mønster</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/ngu-tek/Norwegian-law-mcp">ngu-tek/Norwegian-law-mcp</a></td>
+        <td>⭐⭐ God</td>
+        <td>MCP-server</td>
+        <td>Arkitekturmønster for AI-eksponering av indeksen</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/StianOby/claude-legal-tools">StianOby/claude-legal-tools</a></td>
+        <td>⭐⭐ God</td>
+        <td>Lovdata API-ref</td>
+        <td>Dokumenterer api.lovdata.no endepunkter</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/worldwidelaw/legal-sources">worldwidelaw/legal-sources</a></td>
+        <td>⭐⭐ God</td>
+        <td>Arkitektur</td>
+        <td>Modulær pipeline-struktur for 110+ land</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/einarra/lovdata-assistent">einarra/lovdata-assistent</a></td>
+        <td>⭐ Delvis</td>
+        <td>Lovdata + AI</td>
+        <td>Bekrefter API-adresse og autentiseringsmønster</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/EivindKjosbakken/LegalShare">EivindKjosbakken/LegalShare</a></td>
+        <td>⭐ Delvis</td>
+        <td>Høyesterett-scraper</td>
+        <td>Scrapemønster for domstol.no</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/KevinJohannesen/catchwise-backend">KevinJohannesen/catchwise-backend</a></td>
+        <td>⭐ Delvis</td>
+        <td>Søketeknologi</td>
+        <td>Norwegian-aware BM25-tokenisering</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/doantumy/Efficiently-Summarizing-Norwegian-Legal-Texts">doantumy/LegSum</a></td>
+        <td>⭐ Delvis</td>
+        <td>ML/summering</td>
+        <td>Lovdata XML-struktur (sammendrag, premiss, slutning)</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/GmailHelene/rettbot">GmailHelene/rettbot</a></td>
+        <td>– Ikke relevant</td>
+        <td>Kryptert PWA</td>
+        <td>Ingen gjenbrukbar kode</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/openlegaldata/awesome-legal-data">openlegaldata/awesome-legal-data</a></td>
+        <td>– Ikke relevant</td>
+        <td>Lenkeliste</td>
+        <td>Lite norsk dekning</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/JoelNiklaus/LegalDatasets">JoelNiklaus/LegalDatasets</a></td>
+        <td>– Ukjent</td>
+        <td>ML-datasett</td>
+        <td>Mulig norsk dekning ubekreftet</td>
+      </tr>
     </table>
+
+    <h3>Dokumentasjon</h3>
+    <ul class="link-list">
+      <li>
+        <a href="https://github.com/sstraume97/JusJob/blob/main/docs/relaterte-ressurser.md">🔗 Relaterte ressurser</a>
+        <span class="desc">— detaljert kildekode-vurdering og gjenbruksanalyse</span>
+      </li>
+      <li>
+        <a href="https://github.com/sstraume97/JusJob/blob/main/docs/indeks-skjema.md">📐 Indeks-skjema</a>
+        <span class="desc">— feltdefinisjon, lenkestrategi, ELI-basert kobling</span>
+      </li>
+      <li>
+        <a href="https://github.com/sstraume97/JusJob">📦 GitHub-repo</a>
+        <span class="desc">— kildekode, pipeline og Zotero-plugin</span>
+      </li>
+    </ul>
   </div>
 
 </main>
