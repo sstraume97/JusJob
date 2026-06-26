@@ -110,7 +110,7 @@ Plugin-en er et skjelett under utvikling. Planlagte funksjoner:
 
 - Søkepanel med filtrering per kilde og kildetyp
 - Norsk juridisk sitatstil (CSL): `Rt. 2013 s. 1`, `NOU 2020: 4`, `Lov 1902-05-22 nr 10`
-- Zotero Connector-translators per kilde
+- Zotero Connector-translators per kilde (se [`translators/`](translators/))
 - Sitatsjekk, forarbeidskjede-bygger, endringshistorikk-varsling
 - Eksport til juridisk notat (Word/PDF)
 - Automatisk kobling mellom lover, forarbeider og dommer
