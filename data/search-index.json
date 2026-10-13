@@ -633393,6 +633393,24 @@
 "snippet": "{{Tingretter\n|Instans=Vestfold tingrett - Dom\n|Dato=2021-09-22\n|Publisert=TVES-2021-96036\n|Stikkord=Strafferett, Vegtrafikkrett, Mobiltelefonbruk under kjøring, Bevisvurdering\n|Sammendrag=Saken gjaldt spørsmål om forelegg for bruk av mobiltelefon under kjøring. Spørsmålet var om retten skulle legge "
 },
 {
+"id": "stortinget-200461",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Hans Edvard Askjer, Ida Lindtveit Røse, Jonas Andersen Sayed og Jorunn Gleditsch Lossius om forsterket innsats mot menneskehandel, sexkjøp og ufrivillig prostitusjon",
+"court_or_body": "Stortinget",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200461",
+"snippet": "Dokument 8:16 S (2026–2027)"
+},
+{
+"id": "stortinget-200387",
+"source": "stortinget.no",
+"type": "redegjorelse",
+"title": "Redegjørelse av kultur- og likestillingsministeren om mediepolitikk og ytringsfrihet",
+"court_or_body": "Stortinget",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200387",
+"snippet": ""
+},
+{
 "id": "stortinget-200413",
 "source": "stortinget.no",
 "type": "ikke_spesifisert",
@@ -633438,15 +633456,6 @@
 "snippet": ""
 },
 {
-"id": "stortinget-200449",
-"source": "stortinget.no",
-"type": "melding",
-"title": "Nasjonalbudsjettet 2027 ",
-"court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200449",
-"snippet": "Meld. St. 1 (2026–2027); Innst. 2 S (2026-2027)"
-},
-{
 "id": "stortinget-200450",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -633478,7 +633487,7 @@
 "source": "stortinget.no",
 "type": "proposisjon",
 "title": "Statsbudsjettet 2027 ",
-"court_or_body": "Stortinget",
+"court_or_body": "Finanskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200434",
 "snippet": "Prop. 1 S (2026–2027); Innst. 2 S (2026-2027)"
 },
@@ -633609,6 +633618,15 @@
 "snippet": "Meld. St. 4 (2026–2027)"
 },
 {
+"id": "stortinget-200449",
+"source": "stortinget.no",
+"type": "melding",
+"title": "Finansinnstillingen - nasjonalbudsjettet og statsbudsjettet 2027",
+"court_or_body": "Finanskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200449",
+"snippet": "Meld. St. 1 (2026–2027); Innst. 2 S (2026-2027)"
+},
+{
 "id": "stortinget-200415",
 "source": "stortinget.no",
 "type": "redegjorelse",
@@ -633660,6 +633678,15 @@
 "title": "Redegjørelse av barne- og familieministeren om status, gjennomførte tiltak og videre oppfølging av det som er avdekket om kriminelle aktører i barnevernet",
 "court_or_body": "Stortinget",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200432",
+"snippet": ""
+},
+{
+"id": "stortinget-200414",
+"source": "stortinget.no",
+"type": "redegjorelse",
+"title": "Hans Majestet Kongens tale til det 171. storting ved dets åpning og melding om Noregs rikes tilstand og styring (trontaledebatt)",
+"court_or_body": "Stortinget",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200414",
 "snippet": ""
 },
 {
@@ -633753,15 +633780,6 @@
 "snippet": "Dokument 8:7 S (2026–2027)"
 },
 {
-"id": "stortinget-200414",
-"source": "stortinget.no",
-"type": "redegjorelse",
-"title": "Hans Majestet Kongens tale til det 171. storting ved dets åpning og melding om Noregs rikes tilstand og styring (trontaledebatt)",
-"court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200414",
-"snippet": ""
-},
-{
 "id": "stortinget-200427",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -633823,6 +633841,15 @@
 "court_or_body": "Stortinget",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=110288",
 "snippet": "Dokument 15 (2026-2027)"
+},
+{
+"id": "stortinget-110536",
+"source": "stortinget.no",
+"type": "innstillingssaker",
+"title": "Fordeling til komiteene av rammeområder med budsjettkapitler og utkast til romertallsvedtak vedrørende forslaget til statsbudsjett for 2027",
+"court_or_body": "Stortingets presidentskap",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=110536",
+"snippet": "Innst. 1 S (2026-2027)"
 },
 {
 "id": "stortinget-200385",
@@ -677239,6 +677266,15 @@
 "court_or_body": "Sivilombudet",
 "url": "https://www.sivilombudet.no/uttalelser/er-en-sletting-av-en-bostedsregistrering-i-folkeregisteret-et-enkeltvedtak-med-klagerett/",
 "snippet": "Saken gjelder spørsmål om en sletting av en tidligere bostedsregistrering i Folkeregisteret er et enkeltvedtak med klagerett. Klager, som i 2011 ble registrert som bosatt i Norge, hadde mottatt en avgjørelse om at tidligere bostedsregistrering i Folkeregisteret ville bli slettet fordi den var registrert ved en feil. Feilen medførte, ifølge Skatteetaten, at vedtaket var ugyldig. Videre mente de at ettersom det var tale om et påbudsvedtak, innebar ugyldighet at vedtaket uten videre ble en nullitet. Skatteetaten mente at avgjørelsen om å slette registreringen ikke var et enkeltvedtak med klagerett. Sivilombudet kom til at Skatteetatens avgjørelse om sletting var et enkeltvedtak med klagerett. Sivilombudet viste blant annet til at bostedsregistreringen ikke bare medførte plikter, men at det også samtidig hadde betydning for klagers rettigheter. Slettingen hadde dermed store konsekvenser for klager. De rimelighetshensynene som tradisjonelt har begrunnet at ugyldige påbudsvedtak uten videre anses som nulliteter, gjorde seg ikke gjeldende. Registreringen kunne ikke sies å være et spesielt tyngende eller byrdefullt vedtak. Hensynet til partens rettsikkerhet, forutberegnelighet og tilliten til forvaltningen, tilsa at avgjørelsen måtte fattes som et enkeltvedtak med klagerett. Ombudet ba Skattedirektoratet om å sørge for at klager nå får behandlet sin klage over vedtaket om å slette hans tidligere bostedsregistrering. Ombudet ba om å bli orientert om Skatteetatens oppfølging av saken og om utfallet av klagebehandlingen."
+},
+{
+"id": "sivilombudet-https://www.sivilombudet.no/uttalelser/navs-veiledningsplikt-der-en-sykemeldt-har-flere-inntektsforhold/",
+"source": "sivilombudet.no",
+"type": "uttalelse",
+"title": "Navs veiledningsplikt der en sykemeldt har flere inntektsforhold",
+"court_or_body": "Sivilombudet",
+"url": "https://www.sivilombudet.no/uttalelser/navs-veiledningsplikt-der-en-sykemeldt-har-flere-inntektsforhold/",
+"snippet": "Saken gjelder Navs veiledningsplikt der en sykemeldt har flere inntektsforhold. Klager ble sykmeldt 25. mars 2025 fra sin heltidsstilling i et privat selskap. På sykemeldingstidspunktet hadde han i tillegg til heltidsstillingen et mindre verv som områdesjef i Heimevernet (HV). Klager var 100 % arbeidsufør. Han var ikke kjent med at han også måtte ha sykemelding for HV-vervet for å unngå graderte sykepenger. Nav la til grunn at han hadde en restarbeidsevne ettersom han ikke hadde sykemelding fra HV-vervet. De traff vedtak om graderte sykepenger uten å undersøke om han også burde hatt sykemelding for vervet i Forsvaret. Klager påklaget vedtaket. Han ble heller ikke da informert om at han også burde hatt sykemelding for vervet i Forsvaret dersom han var helt arbeidsufør. I august 2025 opprettet han en digital fullmakt i Nav-systemet om at videre kommunikasjon skulle gå via hans fullmektig. Nav Klageinstans opprettholdt vedtaket om graderte sykepenger 20. november 2025. Fullmektigen mottok ikke klageinstansens vedtak. Da klager kontaktet Nav 2. februar 2026 og ville anke, opplyste Nav at ankefristen til Trygderetten var utløpt. Nav anbefalte at han endret anken til en begjæring om omgjøring, noe klager gjorde. Da klageinstansen behandlet omgjøringsbegjæringen 21. april 2026, ble vedtaket om graderte sykepenger opprettholdt. Etter at ombudet undersøkte saken, erkjente Arbeids- og velferdsdirektoratet at Nav gjorde feil både da klageinstansens vedtak ikke ble sendt til fullmektigen og da Nav anbefalte å endre anken til en begjæring om omgjøring. Klageinstansen behandlet derfor saken på nytt i juli 2026 og traff vedtak om at klager hadde krav på 100% sykepenger. Sivilombudet er enig med direktoratet i at Nav handlet i strid med veiledningsplikten og utredningsplikten både på vedtakstidspunktet til Nav Arbeid og ytelser og til Nav Klageinstans. Ettersom feilene er rettet, er det ikke behov for endringer i denne saken. Sivilombudet ber om at Nav merker seg ombudets vurderinger ved behandling av fremtidige saker."
 },
 {
 "id": "kudos-a21b009c-35da-4f10-b881-082e3decd69e",
@@ -1074708,6 +1074744,42 @@
 "snippet": "Dette notatet presenterer sentrale tall for organisasjonsgrader og medlemstall på arbeidstaker- og arbeidsgiversiden, tariffavtaledekning og omfanget av arbeidskonflikter oppdatert til og med 2025. Det gir tidsserier og fordeling etter hovedorganisasjoner samt beskrivelser av variasjon mellom sektor"
 },
 {
+"id": "kudos-a2f860db-5c88-4548-8d71-96b1e7980d80",
+"source": "kudos.dfo.no",
+"type": "Studie",
+"title": "Nasjonale satser til private barnehager i 2027",
+"court_or_body": "Utdanningsdirektoratet (UDIR)",
+"url": "https://www.udir.no/tall-og-forskning/finn-forskning/rapporter/2026/nasjonale-satser-til-private-barnehager-i-2027/",
+"snippet": "Notatet dokumenterer beregningen av nasjonale satser for tilskudd til private barnehager for 2027. Beregningene bygger på kommunale regnskapstall for 2025 fra KOSTRA, prisjustert med anslått kommunal deflator til 2027, og skiller mellom ordinære barnehager, familiebarnehager og åpne barnehager. Pens"
+},
+{
+"id": "kudos-a2f84ff2-a078-4916-95c7-00605241ed0f",
+"source": "kudos.dfo.no",
+"type": "Statusrapport",
+"title": "BreastScreen Norway years, 1996-2025. Early performance measures and recent developments",
+"court_or_body": "Folkehelseinstituttet (FHI)",
+"url": "https://www.fhi.no/publ/2026/mammografiprogrammet-30-ar/",
+"snippet": "Rapporten oppsummerer BreastScreen Norways virksomhet i perioden 1996–2025 og beskriver organisering, deltakelse, tilbakekallingsrutiner, påvisningsrater, intervallkrefter og histopatologiske funn. Den presenterer nøkkeltall som økt deltakelse (omtrent 80 % i 2025), stabile tilbakekallingsrater på 3"
+},
+{
+"id": "kudos-a2f6de9e-83bb-4f47-b0f5-d67a22fac70b",
+"source": "kudos.dfo.no",
+"type": "Forhåndsutredning",
+"title": "Utredning om regulering av pengespill-lignende elementer i dataspill",
+"court_or_body": "Kultur- og likestillingsdepartementet (KUD), Lotteri- og stiftelsestilsynet",
+"url": "https://www.regjeringen.no/no/dokumenter/utredning-om-regulering-av-pengespill-lignende-elementer-i-dataspill/id3177017/",
+"snippet": "Denne utredningen, levert av Lotteri- og stiftelsestilsynet på oppdrag fra Kultur- og likestillingsdepartementet, vurderer behovet for regulering av pengespill-lignende elementer i dataspill som lootbokser, skins og skinsbetting. Den beskriver problemer og risiko, særlig for barn og unge, gjennomgår"
+},
+{
+"id": "kudos-a2f6d3c2-6f85-4a8f-b562-7f9090d594e0",
+"source": "kudos.dfo.no",
+"type": "Statusrapport",
+"title": "Matsvinn i jordbrukssektoren",
+"court_or_body": "Landbruksdirektoratet",
+"url": "https://www.landbruksdirektoratet.no/nb/nyhetsrom/rapporter/matsvinn-i-jordbrukssektoren-kartlegging-for-2025",
+"snippet": "Rapporten kartlegger omfanget av matsvinn i jordbrukssektorens primærledd for 2025 og presenterer sektorspesifikke tall for grønt, korn, melk, kjøtt og egg. Den beskriver datagrunnlag og metode, viser utvikling fra 2020–2025, og omtaler årsaker og mulige tiltak for å redusere matsvinn. Formålet er å"
+},
+{
 "id": "forbrukertilsynet-forbrukerklageutvalget-sok-i-vedtak-for-2021",
 "source": "forbrukertilsynet.no",
 "type": "veiledning",
@@ -1082683,6 +1082755,30 @@
 "court_or_body": "KFIR",
 "url": "https://www.kfir.no/nb/avgj%C3%B8relser/page/9",
 "snippet": "Avgjørelser Patent Varemerke Design Foretaksnavn Planteforedlerrett Ansvarsmerker KFIRs saker for domstolen Avgjørelser Søk Dato Sak 14.02.2025 VM 24/00108 RETROFIT3D 12.02.2025 VM 24/00111 FINSPACE 12.02.2025 VM 24/00071 AFFINITY 10.02.2025 VM 25/00002 TWODAY 06.02.2025 VM 24/00107 ULTRA MASTER 05.02.2025 VM 24/00110 OceanFront 05.02.2025 VM 24/00109 OceanFront (komb.) 29.01.2025 VM 24/00084 REIG",
+"subjects": [
+"Immaterialrett"
+]
+},
+{
+"id": "kfir-mileageplus",
+"source": "kfir.no",
+"type": "avgjørelse",
+"title": "VM 26/00062 MILEAGEPLUS",
+"court_or_body": "KFIR",
+"url": "https://www.kfir.no/avgj%C3%B8relser/varemerke/mileageplus",
+"snippet": "13.10.2026 MILEAGEPLUS VM 26/00062 Varemerke. Avslagssak. Klagen ble forkastet. Varemerkeloven § 14 første ledd og andre ledd bokstav a. Klagenemnda kom til at ordmerket MILEAGEPLUS er beskrivende og mangler særpreg for de aktuelle tjenestene i klasse 35 og 39. Dokumentasjonen ble ikke ansett tilstrekkelig til å vise at merket hadde oppnådd særpreg på bakgrunn av virkninger av bruk, jf. varemerkel",
+"subjects": [
+"Immaterialrett"
+]
+},
+{
+"id": "kfir-aquatic",
+"source": "kfir.no",
+"type": "avgjørelse",
+"title": "VM 26/00061 Aquatic",
+"court_or_body": "KFIR",
+"url": "https://www.kfir.no/avgj%C3%B8relser/varemerke/aquatic",
+"snippet": "13.10.2026 Aquatic VM 26/00061 Varemerke. Avslagssak. Klagen ble forkastet. Varemerkeloven § 14 første ledd og andre ledd bokstav a. Merket AQUATIQ er beskrivende og mangler særpreg for flesteparten av varene og tjenestene. Selv om § 14 ikke ble ansett å ramme alle varer og tjenester, ble klagen forkastet i sin helhet, jf. varemerkeforskriften § 12 a. Avgjørelse 26-00061",
 "subjects": [
 "Immaterialrett"
 ]
