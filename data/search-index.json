@@ -633411,31 +633411,67 @@
 "snippet": ""
 },
 {
-"id": "stortinget-200448",
+"id": "stortinget-200465",
 "source": "stortinget.no",
-"type": "melding",
-"title": "Anmodnings- og utredningsvedtak  i stortingssesjonen 2025–2026",
-"court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200448",
-"snippet": "Meld. St. 4 (2026–2027)"
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Tom Staahle, Hilde Grande, Martin Virkesdal Jonsterhaug og Hans Andreas Limi om å styrke den finansielle robustheten til Statens pensjonsfond utland, gjennom å vurdere økt diversifisering og alternative reserveaktiva",
+"court_or_body": "Stortinget",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200465",
+"snippet": "Dokument 8:18 S (2026–2027)"
 },
 {
-"id": "stortinget-200449",
+"id": "stortinget-200466",
 "source": "stortinget.no",
-"type": "melding",
-"title": "Nasjonalbudsjettet 2027 ",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Trygve Slagsvold Vedum, Maren Grøthe og Geir Inge Lien om å stanse opptrappingsplanen for CO2-avgiften",
+"court_or_body": "Stortinget",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200466",
+"snippet": "Dokument 8:19 S (2026–2027)"
+},
+{
+"id": "stortinget-200429",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Une Bastholm, Ingrid Liland og Lars Lønberg Henriksen om å forby jakt på ekorn",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200429",
+"snippet": "Dokument 8:10 S (2026–2027)"
+},
+{
+"id": "stortinget-200430",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Oda Indgaard og Ingrid Liland om å skattelegge ekstraordinære overskudd i olje- og gasselskaper ",
 "court_or_body": "Finanskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200449",
-"snippet": "Meld. St. 1 (2026–2027); Innst. 2 S (2026-2027)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200430",
+"snippet": "Dokument 8:11 S (2026–2027)"
 },
 {
-"id": "stortinget-200450",
+"id": "stortinget-200431",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Ingrid Liland, Siren Julianne Jensen og Oda Indgaard om å forby reklame for fossil energi",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200431",
+"snippet": "Dokument 8:12 S (2026–2027)"
+},
+{
+"id": "stortinget-200434",
 "source": "stortinget.no",
 "type": "proposisjon",
-"title": "Skatter og avgifter 2027",
+"title": "Statsbudsjettet 2027 ",
 "court_or_body": "Finanskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200450",
-"snippet": "Prop. 1 LS (2026–2027); Innst. 3 S (2026-2027)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200434",
+"snippet": "Prop. 1 S (2026–2027); Innst. 2 S (2026-2027)"
+},
+{
+"id": "stortinget-200453",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Statsbudsjett 2027",
+"court_or_body": "Utenriks- og forsvarskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200453",
+"snippet": "Prop. 1 S (2026–2027); Innst. 17 S (2026-2027)"
 },
 {
 "id": "stortinget-200454",
@@ -633519,121 +633555,13 @@
 "snippet": "Dokument 11 (2025–2026)"
 },
 {
-"id": "stortinget-200429",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Une Bastholm, Ingrid Liland og Lars Lønberg Henriksen om å forby jakt på ekorn",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200429",
-"snippet": "Dokument 8:10 S (2026–2027)"
-},
-{
-"id": "stortinget-200430",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Oda Indgaard og Ingrid Liland om å skattelegge ekstraordinære overskudd i olje- og gasselskaper ",
-"court_or_body": "Finanskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200430",
-"snippet": "Dokument 8:11 S (2026–2027)"
-},
-{
-"id": "stortinget-200431",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Ingrid Liland, Siren Julianne Jensen og Oda Indgaard om å forby reklame for fossil energi",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200431",
-"snippet": "Dokument 8:12 S (2026–2027)"
-},
-{
-"id": "stortinget-200434",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Statsbudsjettet 2027 ",
-"court_or_body": "Finanskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200434",
-"snippet": "Prop. 1 S (2026–2027); Innst. 2 S (2026-2027)"
-},
-{
-"id": "stortinget-200457",
-"source": "stortinget.no",
-"type": "redegjorelse",
-"title": "Redegjørelse av statsministeren om regjeringens skolepolitikk og tiltak for å snu utviklingen i skoleresultater",
-"court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200457",
-"snippet": ""
-},
-{
-"id": "stortinget-200444",
+"id": "stortinget-200437",
 "source": "stortinget.no",
 "type": "proposisjon",
 "title": "Statsbudsjett 2027",
-"court_or_body": "Samferdselskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200444",
-"snippet": "Prop. 1 S (2026–2027); Innst. 13 S (2026-2027)"
-},
-{
-"id": "stortinget-200453",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Statsbudsjett 2027",
-"court_or_body": "Utenriks- og forsvarskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200453",
-"snippet": "Prop. 1 S (2026–2027); Innst. 17 S (2026-2027)"
-},
-{
-"id": "stortinget-200447",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Statsbudsjett 2027",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200447",
-"snippet": "Prop. 1 S (2026–2027); Innst. 16 S (2026-2027)"
-},
-{
-"id": "stortinget-200445",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Statsbudsjett 2027",
-"court_or_body": "Familie- og kulturkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200445",
-"snippet": "Prop. 1 S (2026–2027); Innst. 14 S (2026-2027)"
-},
-{
-"id": "stortinget-200443",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Statsbudsjett 2027",
-"court_or_body": "Utdannings- og forskningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200443",
-"snippet": "Prop. 1 S (2026–2027); Innst. 12 S (2026-2027)"
-},
-{
-"id": "stortinget-200442",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Statsbudsjett 2027",
-"court_or_body": "Helse- og omsorgskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200442",
-"snippet": "Prop. 1 S (2026–2027); Innst. 11 S (2026-2027)"
-},
-{
-"id": "stortinget-200440",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Statsbudsjett 2027",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200440",
-"snippet": "Prop. 1 S (2026–2027); Innst. 9 S (2026-2027)"
-},
-{
-"id": "stortinget-200439",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Statsbudsjett 2027",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200439",
-"snippet": "Prop. 1 S (2026–2027); Innst. 8 S (2026-2027)"
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200437",
+"snippet": "Prop. 1 S (2026–2027); Innst. 6 S (2026-2027)"
 },
 {
 "id": "stortinget-200438",
@@ -633645,13 +633573,121 @@
 "snippet": "Prop. 1 S (2026–2027); Innst. 7 S (2026-2027)"
 },
 {
-"id": "stortinget-200437",
+"id": "stortinget-200439",
 "source": "stortinget.no",
 "type": "proposisjon",
 "title": "Statsbudsjett 2027",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200437",
-"snippet": "Prop. 1 S (2026–2027); Innst. 6 S (2026-2027)"
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200439",
+"snippet": "Prop. 1 S (2026–2027); Innst. 8 S (2026-2027)"
+},
+{
+"id": "stortinget-200440",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Statsbudsjett 2027",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200440",
+"snippet": "Prop. 1 S (2026–2027); Innst. 9 S (2026-2027)"
+},
+{
+"id": "stortinget-200441",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Statsbudsjett 2027",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200441",
+"snippet": "Prop. 1 S (2026–2027); Innst. 10 S (2026-2027)"
+},
+{
+"id": "stortinget-200442",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Statsbudsjett 2027",
+"court_or_body": "Helse- og omsorgskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200442",
+"snippet": "Prop. 1 S (2026–2027); Innst. 11 S (2026-2027)"
+},
+{
+"id": "stortinget-200443",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Statsbudsjett 2027",
+"court_or_body": "Utdannings- og forskningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200443",
+"snippet": "Prop. 1 S (2026–2027); Innst. 12 S (2026-2027)"
+},
+{
+"id": "stortinget-200444",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Statsbudsjett 2027",
+"court_or_body": "Samferdselskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200444",
+"snippet": "Prop. 1 S (2026–2027); Innst. 13 S (2026-2027)"
+},
+{
+"id": "stortinget-200445",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Statsbudsjett 2027",
+"court_or_body": "Familie- og kulturkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200445",
+"snippet": "Prop. 1 S (2026–2027); Innst. 14 S (2026-2027)"
+},
+{
+"id": "stortinget-200446",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Statsbudsjett 2027",
+"court_or_body": "Arbeids- og sosialkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200446",
+"snippet": "Prop. 1 S (2026–2027); Innst. 15 S (2026-2027)"
+},
+{
+"id": "stortinget-200447",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Statsbudsjett 2027",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200447",
+"snippet": "Prop. 1 S (2026–2027); Innst. 16 S (2026-2027)"
+},
+{
+"id": "stortinget-200448",
+"source": "stortinget.no",
+"type": "melding",
+"title": "Anmodnings- og utredningsvedtak  i stortingssesjonen 2025–2026",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200448",
+"snippet": "Meld. St. 4 (2026–2027)"
+},
+{
+"id": "stortinget-200449",
+"source": "stortinget.no",
+"type": "melding",
+"title": "Finansinnstillingen - nasjonalbudsjettet og statsbudsjettet 2027",
+"court_or_body": "Finanskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200449",
+"snippet": "Meld. St. 1 (2026–2027); Innst. 2 S (2026-2027)"
+},
+{
+"id": "stortinget-200450",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Skatter og avgifter 2027",
+"court_or_body": "Finanskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200450",
+"snippet": "Prop. 1 LS (2026–2027); Innst. 3 S (2026-2027)"
+},
+{
+"id": "stortinget-200457",
+"source": "stortinget.no",
+"type": "redegjorelse",
+"title": "Redegjørelse av statsministeren om regjeringens skolepolitikk og tiltak for å snu utviklingen i skoleresultater",
+"court_or_body": "Stortinget",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200457",
+"snippet": ""
 },
 {
 "id": "stortinget-200451",
@@ -633681,13 +633717,13 @@
 "snippet": "Prop. 1 S (2026–2027); Innst. 3 S (2026-2027)"
 },
 {
-"id": "stortinget-200446",
+"id": "stortinget-200432",
 "source": "stortinget.no",
-"type": "proposisjon",
-"title": "Statsbudsjett 2027",
-"court_or_body": "Arbeids- og sosialkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200446",
-"snippet": "Prop. 1 S (2026–2027); Innst. 15 S (2026-2027)"
+"type": "redegjorelse",
+"title": "Redegjørelse av barne- og familieministeren om status, gjennomførte tiltak og videre oppfølging av det som er avdekket om kriminelle aktører i barnevernet",
+"court_or_body": "Stortinget",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200432",
+"snippet": ""
 },
 {
 "id": "stortinget-200452",
@@ -633697,24 +633733,6 @@
 "court_or_body": "Stortinget",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200452",
 "snippet": "Prop. 1 LS (2026–2027); Innst. 4 L (2026-2027)"
-},
-{
-"id": "stortinget-200441",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Statsbudsjett 2027",
-"court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200441",
-"snippet": "Prop. 1 S (2026–2027); Innst. 10 S (2026-2027)"
-},
-{
-"id": "stortinget-200432",
-"source": "stortinget.no",
-"type": "redegjorelse",
-"title": "Redegjørelse av barne- og familieministeren om status, gjennomførte tiltak og videre oppfølging av det som er avdekket om kriminelle aktører i barnevernet",
-"court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200432",
-"snippet": ""
 },
 {
 "id": "stortinget-200415",
@@ -635274,33 +635292,6 @@
 "snippet": "Meld. St. 13 (2025–2026)"
 },
 {
-"id": "stortinget-200373",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i regnskapsloven mv. (forenkling)",
-"court_or_body": "Finanskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200373",
-"snippet": "Prop. 106 L (2025–2026)"
-},
-{
-"id": "stortinget-200370",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i utlendingsloven (familiegjenforening med barn m.m.)",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200370",
-"snippet": "Prop. 108 L (2025–2026)"
-},
-{
-"id": "stortinget-200405",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i lov om god handelsskikk i dagligvarekjeden mv. (presiseringer i god handelsskikk-standarden mv.)",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200405",
-"snippet": "Prop. 112 L (2025–2026)"
-},
-{
 "id": "stortinget-200375",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -635398,6 +635389,33 @@
 "court_or_body": "Helse- og omsorgskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200388",
 "snippet": "Prop. 110 S (2025–2026)"
+},
+{
+"id": "stortinget-200373",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i regnskapsloven mv. (forenkling)",
+"court_or_body": "Finanskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200373",
+"snippet": "Prop. 106 L (2025–2026)"
+},
+{
+"id": "stortinget-200370",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i utlendingsloven (familiegjenforening med barn m.m.)",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200370",
+"snippet": "Prop. 108 L (2025–2026)"
+},
+{
+"id": "stortinget-200405",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i lov om god handelsskikk i dagligvarekjeden mv. (presiseringer i god handelsskikk-standarden mv.)",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200405",
+"snippet": "Prop. 112 L (2025–2026)"
 },
 {
 "id": "stortinget-200356",
@@ -635589,15 +635607,6 @@
 "snippet": "Dokument 3:10 (2025-2026), Innst. 447 S (2025-2026)"
 },
 {
-"id": "stortinget-200070",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Marie Sneve Martinussen og Hege Bae Nyholt om en ny makt- og demokratiutredning",
-"court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200070",
-"snippet": "Dokument 8:143 S (2025-2026), Innst. 385 S (2025-2026)"
-},
-{
 "id": "stortinget-200112",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -635605,6 +635614,15 @@
 "court_or_body": "Familie- og kulturkomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200112",
 "snippet": "Dokument 8:181 S (2025-2026), Innst. 321 S (2025-2026)"
+},
+{
+"id": "stortinget-200070",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Marie Sneve Martinussen og Hege Bae Nyholt om en ny makt- og demokratiutredning",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200070",
+"snippet": "Dokument 8:143 S (2025-2026), Innst. 385 S (2025-2026)"
 },
 {
 "id": "stortinget-109130",
@@ -635634,15 +635652,6 @@
 "snippet": "Dokument 3:6 (2025-2026), Innst. 445 S (2025-2026)"
 },
 {
-"id": "stortinget-200139",
-"source": "stortinget.no",
-"type": "dokumentserien",
-"title": "Menneskerettighetene i Norge 2025 - NIMs årsmelding",
-"court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200139",
-"snippet": "Dokument 6 (2025-2026), Innst. 323 S (2025-2026)"
-},
-{
 "id": "stortinget-200100",
 "source": "stortinget.no",
 "type": "dokumentserien",
@@ -635650,6 +635659,15 @@
 "court_or_body": "Kontroll- og konstitusjonskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200100",
 "snippet": "Dokument 7 (2025-2026), Innst. 319 S (2025-2026)"
+},
+{
+"id": "stortinget-200139",
+"source": "stortinget.no",
+"type": "dokumentserien",
+"title": "Menneskerettighetene i Norge 2025 - NIMs årsmelding",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200139",
+"snippet": "Dokument 6 (2025-2026), Innst. 323 S (2025-2026)"
 },
 {
 "id": "stortinget-200170",
@@ -635706,15 +635724,6 @@
 "snippet": "Prop. 94 S (2025-2026), Innst. 448 S (2025-2026)"
 },
 {
-"id": "stortinget-200354",
-"source": "stortinget.no",
-"type": "ikke_spesifisert",
-"title": "Meddelelse fra stortingsrepresentant Marthe Hammer i Stortingets møte 16. juni 2026 om at hun trekker tilbake forslag fra Kirsti Bergstø og seg selv om å nedsette en forskjellskommisjon, jf. Dokument 8:279 S (2025-2026)",
-"court_or_body": "Finanskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200354",
-"snippet": ""
-},
-{
 "id": "stortinget-200353",
 "source": "stortinget.no",
 "type": "dokumentserien",
@@ -635760,15 +635769,6 @@
 "snippet": "Innst. 337 S (2025-2026)"
 },
 {
-"id": "stortinget-200328",
-"source": "stortinget.no",
-"type": "redegjorelse",
-"title": "Redegjørelse av forsvarsministeren om styring og kontroll i forsvarssektoren",
-"court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200328",
-"snippet": ""
-},
-{
 "id": "stortinget-200350",
 "source": "stortinget.no",
 "type": "melding",
@@ -635794,6 +635794,15 @@
 "court_or_body": "Finanskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200349",
 "snippet": "Prop. 103 L (2025–2026)"
+},
+{
+"id": "stortinget-200328",
+"source": "stortinget.no",
+"type": "redegjorelse",
+"title": "Redegjørelse av forsvarsministeren om styring og kontroll i forsvarssektoren",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200328",
+"snippet": ""
 },
 {
 "id": "stortinget-200073",
@@ -635886,15 +635895,6 @@
 "snippet": "Dokument 8:250 S (2025-2026), Innst. 329 S (2025-2026)"
 },
 {
-"id": "stortinget-200305",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i folketrygdloven (utvidet arbeidsulykkesbegrep og tydeliggjøring av bevisbyrden)",
-"court_or_body": "Arbeids- og sosialkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200305",
-"snippet": "Prop. 93 L (2025-2026), Innst. 443 L (2025-2026), Lovvedtak 90 (2025-2026)"
-},
-{
 "id": "stortinget-200295",
 "source": "stortinget.no",
 "type": "melding",
@@ -635911,6 +635911,15 @@
 "court_or_body": "Næringskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200296",
 "snippet": "Prop. 91 L (2025-2026), Innst. 441 L (2025-2026), Lovvedtak 88 (2025-2026)"
+},
+{
+"id": "stortinget-200305",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i folketrygdloven (utvidet arbeidsulykkesbegrep og tydeliggjøring av bevisbyrden)",
+"court_or_body": "Arbeids- og sosialkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200305",
+"snippet": "Prop. 93 L (2025-2026), Innst. 443 L (2025-2026), Lovvedtak 90 (2025-2026)"
 },
 {
 "id": "stortinget-200269",
@@ -636003,15 +636012,6 @@
 "snippet": "Meld. St. 33 (2024-2025), Innst. 432 S (2025-2026)"
 },
 {
-"id": "stortinget-200150",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Remi Sølvberg og Hege Bae Nyholt om å avvikle anbudssystemet i institusjonsbarnevernet",
-"court_or_body": "Familie- og kulturkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200150",
-"snippet": "Dokument 8:202 S (2025-2026), Innst. 333 S (2025-2026)"
-},
-{
 "id": "stortinget-200128",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -636028,6 +636028,15 @@
 "court_or_body": "Familie- og kulturkomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200129",
 "snippet": "Prop. 38 LS (2025-2026), Innst. 395 L (2025-2026), Lovvedtak 85 (2025-2026)"
+},
+{
+"id": "stortinget-200150",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Remi Sølvberg og Hege Bae Nyholt om å avvikle anbudssystemet i institusjonsbarnevernet",
+"court_or_body": "Familie- og kulturkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200150",
+"snippet": "Dokument 8:202 S (2025-2026), Innst. 333 S (2025-2026)"
 },
 {
 "id": "stortinget-200175",
@@ -636165,13 +636174,13 @@
 "snippet": "Dokument 8:253 S (2025-2026), Innst. 414 S (2025-2026)"
 },
 {
-"id": "stortinget-200193",
+"id": "stortinget-200184",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Bjørn Larsen, Erlend Wiborg, Helge André Njåstad, Rune Midtun, Bård Hoksrud og Dagfinn Henrik Olsen om ivaretakelse av 2G-nettet",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200193",
-"snippet": "Dokument 8:231 S (2025-2026), Innst. 402 S (2025-2026)"
+"title": "Representantforslag fra stortingsrepresentantene Geir Pollestad, Erling Sande og Bent-Joacim Bentzen om videreføring av Innovasjon Norges desentraliserte struktur",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200184",
+"snippet": "Dokument 8:267 S (2025-2026), Innst. 424 S (2025-2026)"
 },
 {
 "id": "stortinget-200190",
@@ -636183,13 +636192,22 @@
 "snippet": "Dokument 8:265 S (2025-2026), Innst. 419 S (2025-2026)"
 },
 {
-"id": "stortinget-200169",
+"id": "stortinget-200193",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Harry Valderhaug, Ida Lindtveit Røse og Jorunn Gleditsch Lossius om helhetlige næringspolitiske rammer for ideelle gjenbruksaktører",
+"title": "Representantforslag fra stortingsrepresentantene Bjørn Larsen, Erlend Wiborg, Helge André Njåstad, Rune Midtun, Bård Hoksrud og Dagfinn Henrik Olsen om ivaretakelse av 2G-nettet",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200193",
+"snippet": "Dokument 8:231 S (2025-2026), Innst. 402 S (2025-2026)"
+},
+{
+"id": "stortinget-200137",
+"source": "stortinget.no",
+"type": "melding",
+"title": "Noregs fiskeriavtalar for 2026 og fisket etter avtalane i 2024 og 2025",
 "court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200169",
-"snippet": "Dokument 8:215 S (2025-2026), Innst. 435 S (2025-2026)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200137",
+"snippet": "Meld. St. 5 (2025-2026), Innst. 276 S (2025-2026)"
 },
 {
 "id": "stortinget-200149",
@@ -636201,13 +636219,13 @@
 "snippet": "Dokument 8:205 S (2025-2026), Innst. 429 S (2025-2026)"
 },
 {
-"id": "stortinget-200173",
+"id": "stortinget-200169",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Bjørn Larsen, Tor Mikkel Wara, Kristoffer Sivertsen, Rikard Spets og Morten Stordalen om å styrke nasjonal og alliert forsyningssikkerhet samt strategiske interesser gjennom utvinning av havbunnsmineraler på norsk sokkel",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200173",
-"snippet": "Dokument 8:272 S (2025-2026), Innst. 399 S (2025-2026)"
+"title": "Representantforslag fra stortingsrepresentantene Harry Valderhaug, Ida Lindtveit Røse og Jorunn Gleditsch Lossius om helhetlige næringspolitiske rammer for ideelle gjenbruksaktører",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200169",
+"snippet": "Dokument 8:215 S (2025-2026), Innst. 435 S (2025-2026)"
 },
 {
 "id": "stortinget-200181",
@@ -636219,13 +636237,13 @@
 "snippet": "Dokument 8:268 S (2025-2026), Innst. 426 S (2025-2026)"
 },
 {
-"id": "stortinget-200184",
+"id": "stortinget-200173",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Geir Pollestad, Erling Sande og Bent-Joacim Bentzen om videreføring av Innovasjon Norges desentraliserte struktur",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200184",
-"snippet": "Dokument 8:267 S (2025-2026), Innst. 424 S (2025-2026)"
+"title": "Representantforslag fra stortingsrepresentantene Bjørn Larsen, Tor Mikkel Wara, Kristoffer Sivertsen, Rikard Spets og Morten Stordalen om å styrke nasjonal og alliert forsyningssikkerhet samt strategiske interesser gjennom utvinning av havbunnsmineraler på norsk sokkel",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200173",
+"snippet": "Dokument 8:272 S (2025-2026), Innst. 399 S (2025-2026)"
 },
 {
 "id": "stortinget-200156",
@@ -636244,15 +636262,6 @@
 "court_or_body": "Næringskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200143",
 "snippet": "Dokument 8:198 S (2025-2026), Innst. 405 S (2025-2026)"
-},
-{
-"id": "stortinget-200137",
-"source": "stortinget.no",
-"type": "melding",
-"title": "Noregs fiskeriavtalar for 2026 og fisket etter avtalane i 2024 og 2025",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200137",
-"snippet": "Meld. St. 5 (2025-2026), Innst. 276 S (2025-2026)"
 },
 {
 "id": "stortinget-107975",
@@ -636300,15 +636309,6 @@
 "snippet": "Dokument 8:298 S (2025–2026)"
 },
 {
-"id": "stortinget-200126",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i energiloven mv. (prioritert tilknytning til strømnettet av hensyn til nasjonale sikkerhetsinteresser)",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200126",
-"snippet": "Prop. 49 L (2025-2026), Innst. 383 L (2025-2026), Lovvedtak 82 (2025-2026)"
-},
-{
 "id": "stortinget-200151",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -636316,6 +636316,15 @@
 "court_or_body": "Justiskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200151",
 "snippet": "Dokument 8:204 S (2025-2026), Innst. 428 S (2025-2026)"
+},
+{
+"id": "stortinget-200126",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i energiloven mv. (prioritert tilknytning til strømnettet av hensyn til nasjonale sikkerhetsinteresser)",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200126",
+"snippet": "Prop. 49 L (2025-2026), Innst. 383 L (2025-2026), Lovvedtak 82 (2025-2026)"
 },
 {
 "id": "stortinget-200148",
@@ -636390,15 +636399,6 @@
 "snippet": "Dokument 8:255 S (2025-2026), Innst. 420 S (2025-2026)"
 },
 {
-"id": "stortinget-200235",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringar i straffeprosessloven (beløpsgrense for dekning av økonomisk tap ved erstatning etter strafforfølging)",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200235",
-"snippet": "Prop. 72 L (2025-2026), Innst. 342 L (2025-2026), Lovvedtak 84 (2025-2026), Lovanmerkning 3 (2025-2026)"
-},
-{
 "id": "stortinget-200221",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -636406,6 +636406,15 @@
 "court_or_body": "Justiskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200221",
 "snippet": "Prop. 57 L (2025-2026), Innst. 351 L (2025-2026), Lovvedtak 77 (2025-2026), Lovanmerkning 2 (2025-2026)"
+},
+{
+"id": "stortinget-200235",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringar i straffeprosessloven (beløpsgrense for dekning av økonomisk tap ved erstatning etter strafforfølging)",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200235",
+"snippet": "Prop. 72 L (2025-2026), Innst. 342 L (2025-2026), Lovvedtak 84 (2025-2026), Lovanmerkning 3 (2025-2026)"
 },
 {
 "id": "stortinget-200245",
@@ -636435,15 +636444,6 @@
 "snippet": "Prop. 67 L (2025-2026), Innst. 338 L (2025-2026), Lovvedtak 74 (2025-2026)"
 },
 {
-"id": "stortinget-200252",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Lov om motorferdsel i utmark og vassdrag (motorferdselloven)",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200252",
-"snippet": "Prop. 61 L (2025-2026), Innst. 436 L (2025-2026), Lovvedtak 73 (2025-2026)"
-},
-{
 "id": "stortinget-200266",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -636451,6 +636451,15 @@
 "court_or_body": "Energi- og miljøkomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200266",
 "snippet": "Prop. 82 L (2025-2026), Innst. 365 L (2025-2026), Lovvedtak 75 (2025-2026)"
+},
+{
+"id": "stortinget-200252",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Lov om motorferdsel i utmark og vassdrag (motorferdselloven)",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200252",
+"snippet": "Prop. 61 L (2025-2026), Innst. 436 L (2025-2026), Lovvedtak 73 (2025-2026)"
 },
 {
 "id": "stortinget-200209",
@@ -636516,15 +636525,6 @@
 "snippet": "Dokument 8:243 S (2025-2026), Innst. 425 S (2025-2026)"
 },
 {
-"id": "stortinget-200157",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Tor André Johnsen, Rune Midtun, På Morten Borgli, Morten Kolbjørnsen, Bjørnar Laabak, May Helen Hetland Ervik og Kristoffer Sivertsen om gjødselbrukforskriften",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200157",
-"snippet": "Dokument 8:224 S (2025-2026), Innst. 427 S (2025-2026)"
-},
-{
 "id": "stortinget-200127",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -636552,15 +636552,6 @@
 "snippet": "Dokument 8:185 S (2025-2026), Innst. 377 S (2025-2026)"
 },
 {
-"id": "stortinget-200091",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Siren Julianne Jensen, Une Bastholm og Oda Indgaard om strakstiltak for å sikre norsk film- og serieproduksjon og hindre kompetanseflukt fra bransjen",
-"court_or_body": "Familie- og kulturkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200091",
-"snippet": "Dokument 8:166 S (2025-2026), Innst. 384 S (2025-2026)"
-},
-{
 "id": "stortinget-200114",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -636570,6 +636561,15 @@
 "snippet": "Dokument 8:193 S (2025-2026), Innst. 345 S (2025-2026)"
 },
 {
+"id": "stortinget-200157",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Tor André Johnsen, Rune Midtun, På Morten Borgli, Morten Kolbjørnsen, Bjørnar Laabak, May Helen Hetland Ervik og Kristoffer Sivertsen om gjødselbrukforskriften",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200157",
+"snippet": "Dokument 8:224 S (2025-2026), Innst. 427 S (2025-2026)"
+},
+{
 "id": "stortinget-200107",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -636577,6 +636577,15 @@
 "court_or_body": "Næringskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200107",
 "snippet": "Dokument 8:195 S (2025-2026), Innst. 427 S (2025-2026)"
+},
+{
+"id": "stortinget-200091",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Siren Julianne Jensen, Une Bastholm og Oda Indgaard om strakstiltak for å sikre norsk film- og serieproduksjon og hindre kompetanseflukt fra bransjen",
+"court_or_body": "Familie- og kulturkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200091",
+"snippet": "Dokument 8:166 S (2025-2026), Innst. 384 S (2025-2026)"
 },
 {
 "id": "stortinget-200078",
@@ -636624,15 +636633,6 @@
 "snippet": "Dokument 8:262 S (2025-2026), Innst. 411 S (2025-2026)"
 },
 {
-"id": "stortinget-200267",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Lov om særavgifter (særavgiftsloven)",
-"court_or_body": "Finanskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200267",
-"snippet": "Prop. 55 L (2025-2026), Innst. 364 L (2025-2026), Lovvedtak 70 (2025-2026)"
-},
-{
 "id": "stortinget-200253",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -636640,6 +636640,15 @@
 "court_or_body": "Kommunal- og forvaltningskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200253",
 "snippet": "Prop. 74 L (2025-2026), Innst. 371 L (2025-2026), Lovvedtak 71 (2025-2026)"
+},
+{
+"id": "stortinget-200267",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Lov om særavgifter (særavgiftsloven)",
+"court_or_body": "Finanskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200267",
+"snippet": "Prop. 55 L (2025-2026), Innst. 364 L (2025-2026), Lovvedtak 70 (2025-2026)"
 },
 {
 "id": "stortinget-200249",
@@ -636660,24 +636669,6 @@
 "snippet": "Meld. St. 8 (2025-2026), Innst. 417 S (2025-2026)"
 },
 {
-"id": "stortinget-200227",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i apotekloven, legemiddelloven og lov om medisinsk utstyr (gjennomføring av forordning (EU) 2022/123, (EU) 2022/2370 og (EU) 2022/2371 om styrket samarbeid ved alvorlige grensekryssende helsetrusler i Europa og forordning (EU) 2024/1860) og samtykke til godkjenning av EØS-komiteens beslutning nr. 167/2024, 180/2024, 181/2024 og 172/2025 om innlemmelse i EØS-avtalen av forordningene",
-"court_or_body": "Helse- og omsorgskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200227",
-"snippet": "Prop. 77 LS (2025-2026), Innst. 346 S (2025-2026)"
-},
-{
-"id": "stortinget-200228",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i apotekloven, legemiddelloven og lov om medisinsk utstyr (gjennomføring av forordning (EU) 2022/123, (EU) 2022/2370 og (EU) 2022/2371 om styrket samarbeid ved alvorlige grensekryssende helsetrusler i Europa og forordning (EU) 2024/1860) og samtykke til godkjenning av EØS-komiteens beslutning nr. 167/2024, 180/2024, 181/2024 og 172/2025 om innlemmelse i EØS-avtalen av forordningene",
-"court_or_body": "Helse- og omsorgskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200228",
-"snippet": "Prop. 77 LS (2025-2026), Innst. 347 L (2025-2026), Lovvedtak 66 (2025-2026)"
-},
-{
 "id": "stortinget-200231",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -636694,6 +636685,24 @@
 "court_or_body": "Næringskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200232",
 "snippet": "Prop. 64 L (2025-2026), Innst. 343 L (2025-2026), Lovvedtak 68 (2025-2026)"
+},
+{
+"id": "stortinget-200227",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i apotekloven, legemiddelloven og lov om medisinsk utstyr (gjennomføring av forordning (EU) 2022/123, (EU) 2022/2370 og (EU) 2022/2371 om styrket samarbeid ved alvorlige grensekryssende helsetrusler i Europa og forordning (EU) 2024/1860) og samtykke til godkjenning av EØS-komiteens beslutning nr. 167/2024, 180/2024, 181/2024 og 172/2025 om innlemmelse i EØS-avtalen av forordningene",
+"court_or_body": "Helse- og omsorgskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200227",
+"snippet": "Prop. 77 LS (2025-2026), Innst. 346 S (2025-2026)"
+},
+{
+"id": "stortinget-200228",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i apotekloven, legemiddelloven og lov om medisinsk utstyr (gjennomføring av forordning (EU) 2022/123, (EU) 2022/2370 og (EU) 2022/2371 om styrket samarbeid ved alvorlige grensekryssende helsetrusler i Europa og forordning (EU) 2024/1860) og samtykke til godkjenning av EØS-komiteens beslutning nr. 167/2024, 180/2024, 181/2024 og 172/2025 om innlemmelse i EØS-avtalen av forordningene",
+"court_or_body": "Helse- og omsorgskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200228",
+"snippet": "Prop. 77 LS (2025-2026), Innst. 347 L (2025-2026), Lovvedtak 66 (2025-2026)"
 },
 {
 "id": "stortinget-200217",
@@ -636721,6 +636730,15 @@
 "court_or_body": "Utdannings- og forskningskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200251",
 "snippet": "Prop. 42 L (2025-2026), Innst. 372 L (2025-2026), Lovvedtak 72 (2025-2026)"
+},
+{
+"id": "stortinget-200248",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i skadeserstatningsloven (inntektstapserstatning til barn - kapitaliseringsrente)",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200248",
+"snippet": "Prop. 52 L (2025-2026), Innst. 373 L (2025-2026), Lovvedtak 62 (2025-2026)"
 },
 {
 "id": "stortinget-200241",
@@ -636786,15 +636804,6 @@
 "snippet": "Prop. 81 L (2025-2026), Innst. 348 L (2025-2026), Lovvedtak 63 (2025-2026)"
 },
 {
-"id": "stortinget-200248",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i skadeserstatningsloven (inntektstapserstatning til barn - kapitaliseringsrente)",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200248",
-"snippet": "Prop. 52 L (2025-2026), Innst. 373 L (2025-2026), Lovvedtak 62 (2025-2026)"
-},
-{
 "id": "stortinget-200179",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -636831,13 +636840,13 @@
 "snippet": "Dokument 8:124 S (2025-2026), Innst. 298 S (2025-2026)"
 },
 {
-"id": "stortinget-200119",
+"id": "stortinget-200138",
 "source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Bård Ludvig Thorheim, Kari Sofie Bjørnsen, Helene Røsholt og Mathias Willassen Hanssen om å realisere Fensfeltet og mer mineralnæring i Norge",
+"type": "proposisjon",
+"title": "Samtykke til ratifikasjon av frihandelsavtale mellom EFTA-statene og MERCOSUR av 16. september 2025",
 "court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200119",
-"snippet": "Dokument 8:186 S (2025-2026), Innst. 376 S (2025-2026)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200138",
+"snippet": "Prop. 46 S (2025-2026), Innst. 406 S (2025-2026)"
 },
 {
 "id": "stortinget-200131",
@@ -636849,15 +636858,6 @@
 "snippet": "Prop. 48 S (2025-2026), Innst. 409 S (2025-2026)"
 },
 {
-"id": "stortinget-200138",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Samtykke til ratifikasjon av frihandelsavtale mellom EFTA-statene og MERCOSUR av 16. september 2025",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200138",
-"snippet": "Prop. 46 S (2025-2026), Innst. 406 S (2025-2026)"
-},
-{
 "id": "stortinget-200133",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -636865,24 +636865,6 @@
 "court_or_body": "Næringskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200133",
 "snippet": "Prop. 47 S (2025-2026), Innst. 407 S (2025-2026)"
-},
-{
-"id": "stortinget-200069",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Stian Storbukås, Finn Krokeide, Anette Carnarius Elseth og Jon Engen-Helgheim om mer effektiv kamp mot organisert bedrageri og registerkriminalitet",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200069",
-"snippet": "Dokument 8:142 S (2025-2026), Innst. 290 S (2025-2026)"
-},
-{
-"id": "stortinget-200071",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Trygve Slagsvold Vedum, Bent-Joacim Bentzen og Geir Pollestad om et statlig mineralselskap",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200071",
-"snippet": "Dokument 8:148 S (2025-2026), Innst. 376 S (2025-2026)"
 },
 {
 "id": "stortinget-200115",
@@ -636894,6 +636876,24 @@
 "snippet": "Dokument 8:183 S (2025-2026), Innst. 376 S (2025-2026)"
 },
 {
+"id": "stortinget-200119",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Bård Ludvig Thorheim, Kari Sofie Bjørnsen, Helene Røsholt og Mathias Willassen Hanssen om å realisere Fensfeltet og mer mineralnæring i Norge",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200119",
+"snippet": "Dokument 8:186 S (2025-2026), Innst. 376 S (2025-2026)"
+},
+{
+"id": "stortinget-200069",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Stian Storbukås, Finn Krokeide, Anette Carnarius Elseth og Jon Engen-Helgheim om mer effektiv kamp mot organisert bedrageri og registerkriminalitet",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200069",
+"snippet": "Dokument 8:142 S (2025-2026), Innst. 290 S (2025-2026)"
+},
+{
 "id": "stortinget-200086",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -636903,22 +636903,13 @@
 "snippet": "Dokument 8:160 S (2025-2026), Innst. 287 S (2025-2026)"
 },
 {
-"id": "stortinget-200237",
+"id": "stortinget-200071",
 "source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i støtteprosessloven (gjennomføring av revidert prosedyreforordning) og samtykke til deltakelse i EØS-komiteens beslutning om innlemmelse i EØS-avtalen av forordning (EU) nr. 734/2013 og forordning (EU) 2015/1589 om revisjon av prosedyreforordningen (statsstøtte) og til inngåelse av avtale om endring av protokoll 3 til Avtale mellom EFTA-statene om opprettelse av et overvåkningsorgan og en domstol (ODA)",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Trygve Slagsvold Vedum, Bent-Joacim Bentzen og Geir Pollestad om et statlig mineralselskap",
 "court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200237",
-"snippet": "Prop. 87 LS (2025-2026), Innst. 340 S (2025-2026)"
-},
-{
-"id": "stortinget-200238",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i støtteprosessloven (gjennomføring av revidert prosedyreforordning) og samtykke til deltakelse i EØS-komiteens beslutning om innlemmelse i EØS-avtalen av forordning (EU) nr. 734/2013 og forordning (EU) 2015/1589 om revisjon av prosedyreforordningen (statsstøtte) og til inngåelse av avtale om endring av protokoll 3 til Avtale mellom EFTA-statene om opprettelse av et overvåkningsorgan og en domstol (ODA)",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200238",
-"snippet": "Prop. 87 LS (2025-2026), Innst. 341 L (2025-2026), Lovvedtak 57 (2025-2026)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200071",
+"snippet": "Dokument 8:148 S (2025-2026), Innst. 376 S (2025-2026)"
 },
 {
 "id": "stortinget-200223",
@@ -636937,6 +636928,24 @@
 "court_or_body": "Transport- og kommunikasjonskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200224",
 "snippet": "Prop. 71 LS (2025-2026), Innst. 350 L (2025-2026), Lovvedtak 56 (2025-2026)"
+},
+{
+"id": "stortinget-200237",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i støtteprosessloven (gjennomføring av revidert prosedyreforordning) og samtykke til deltakelse i EØS-komiteens beslutning om innlemmelse i EØS-avtalen av forordning (EU) nr. 734/2013 og forordning (EU) 2015/1589 om revisjon av prosedyreforordningen (statsstøtte) og til inngåelse av avtale om endring av protokoll 3 til Avtale mellom EFTA-statene om opprettelse av et overvåkningsorgan og en domstol (ODA)",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200237",
+"snippet": "Prop. 87 LS (2025-2026), Innst. 340 S (2025-2026)"
+},
+{
+"id": "stortinget-200238",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i støtteprosessloven (gjennomføring av revidert prosedyreforordning) og samtykke til deltakelse i EØS-komiteens beslutning om innlemmelse i EØS-avtalen av forordning (EU) nr. 734/2013 og forordning (EU) 2015/1589 om revisjon av prosedyreforordningen (statsstøtte) og til inngåelse av avtale om endring av protokoll 3 til Avtale mellom EFTA-statene om opprettelse av et overvåkningsorgan og en domstol (ODA)",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200238",
+"snippet": "Prop. 87 LS (2025-2026), Innst. 341 L (2025-2026), Lovvedtak 57 (2025-2026)"
 },
 {
 "id": "stortinget-200212",
@@ -636975,15 +636984,6 @@
 "snippet": "Prop. 80 L (2025-2026), Innst. 308 L (2025-2026), Lovvedtak 54 (2025-2026)"
 },
 {
-"id": "stortinget-200229",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i universitets- og høyskoleloven mv. (egenbetaling, advokatutgifter)",
-"court_or_body": "Utdannings- og forskningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200229",
-"snippet": "Prop. 58 L (2025-2026), Innst. 312 L (2025-2026), Lovvedtak 51 (2025-2026)"
-},
-{
 "id": "stortinget-200204",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -636991,15 +636991,6 @@
 "court_or_body": "Finanskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200204",
 "snippet": "Dokument 8:252 S (2025-2026), Innst. 265 S (2025-2026)"
-},
-{
-"id": "stortinget-200093",
-"source": "stortinget.no",
-"type": "dokumentserien",
-"title": "Årsrapport for 2025 fra Stortingets utvalg for rettferdsvederlag",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200093",
-"snippet": "Dokument 14 (2025-2026), Innst. 318 S (2025-2026)"
 },
 {
 "id": "stortinget-200195",
@@ -637011,6 +637002,24 @@
 "snippet": "Dokument 8:263 S (2025-2026), Innst. 299 S (2025-2026)"
 },
 {
+"id": "stortinget-200229",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i universitets- og høyskoleloven mv. (egenbetaling, advokatutgifter)",
+"court_or_body": "Utdannings- og forskningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200229",
+"snippet": "Prop. 58 L (2025-2026), Innst. 312 L (2025-2026), Lovvedtak 51 (2025-2026)"
+},
+{
+"id": "stortinget-200185",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Tone Wilhelmsen Trøen, Haagen Poppe og Tage Pettersen om fastsettelse av provenyeffekt av fritak fra merverdiavgift på levende lyd og bilde",
+"court_or_body": "Finanskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200185",
+"snippet": "Dokument 8:244 S (2025-2026), Innst. 259 S (2025-2026)"
+},
+{
 "id": "stortinget-200088",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -637020,6 +637029,15 @@
 "snippet": "Dokument 8:163 S (2025-2026), Innst. 261 S (2025-2026)"
 },
 {
+"id": "stortinget-200093",
+"source": "stortinget.no",
+"type": "dokumentserien",
+"title": "Årsrapport for 2025 fra Stortingets utvalg for rettferdsvederlag",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200093",
+"snippet": "Dokument 14 (2025-2026), Innst. 318 S (2025-2026)"
+},
+{
 "id": "stortinget-200102",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -637027,6 +637045,15 @@
 "court_or_body": "Justiskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200102",
 "snippet": "Dokument 8:176 S (2025-2026), Innst. 320 S (2025-2026)"
+},
+{
+"id": "stortinget-200118",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag frå stortingsrepresentantane Ole Herman Sveian og Kjersti Toppe om å gjennomføre ei ekstern evaluering av sjukehusplanar og sjukehusbygging i Noreg",
+"court_or_body": "Helse- og omsorgskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200118",
+"snippet": "Dokument 8:192 S (2025-2026), Innst. 327 S (2025-2026)"
 },
 {
 "id": "stortinget-200136",
@@ -637065,22 +637092,13 @@
 "snippet": "Dokument 8:203 S (2025-2026), Innst. 326 S (2025-2026)"
 },
 {
-"id": "stortinget-200118",
+"id": "stortinget-200167",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag frå stortingsrepresentantane Ole Herman Sveian og Kjersti Toppe om å gjennomføre ei ekstern evaluering av sjukehusplanar og sjukehusbygging i Noreg",
-"court_or_body": "Helse- og omsorgskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200118",
-"snippet": "Dokument 8:192 S (2025-2026), Innst. 327 S (2025-2026)"
-},
-{
-"id": "stortinget-200185",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Tone Wilhelmsen Trøen, Haagen Poppe og Tage Pettersen om fastsettelse av provenyeffekt av fritak fra merverdiavgift på levende lyd og bilde",
-"court_or_body": "Finanskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200185",
-"snippet": "Dokument 8:244 S (2025-2026), Innst. 259 S (2025-2026)"
+"title": "Representantforslag fra stortingsrepresentantene Julie E. Stuestøl, Margit Bye og Ingrid Liland om å tilrettelegge for innføring av åpenhetsregister i norske kommuner",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200167",
+"snippet": "Dokument 8:217 S (2025-2026), Innst. 272 S (2025-2026)"
 },
 {
 "id": "stortinget-200159",
@@ -637110,15 +637128,6 @@
 "snippet": "Dokument 8:218 S (2025-2026), Innst. 314 S (2025-2026)"
 },
 {
-"id": "stortinget-200167",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Julie E. Stuestøl, Margit Bye og Ingrid Liland om å tilrettelegge for innføring av åpenhetsregister i norske kommuner",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200167",
-"snippet": "Dokument 8:217 S (2025-2026), Innst. 272 S (2025-2026)"
-},
-{
 "id": "stortinget-200047",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -637146,13 +637155,13 @@
 "snippet": "Dokument 8:216 S (2025-2026), Innst. 271 S (2025-2026)"
 },
 {
-"id": "stortinget-200110",
+"id": "stortinget-200147",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Liv Gustavsen, Tom Staahle, Aina Stenersen og Anne Grethe Hauan om etablering av psykiatrisk ambulansetjeneste på det sentrale Østlandet",
-"court_or_body": "Helse- og omsorgskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200110",
-"snippet": "Dokument 8:180 S (2025-2026), Innst. 315 S (2025-2026)"
+"title": "Representantforslag fra stortingsrepresentantene Marie Sneve Martinussen, Hanne Beate Stenvaag og Seher Aydar om arbeidstidsreduksjon for turnusarbeidere",
+"court_or_body": "Arbeids- og sosialkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200147",
+"snippet": "Dokument 8:200 S (2025-2026), Innst. 325 S (2025-2026)"
 },
 {
 "id": "stortinget-200130",
@@ -637164,13 +637173,13 @@
 "snippet": "Prop. 43 L (2025-2026), Innst. 322 L (2025-2026), Lovvedtak 44 (2025-2026)"
 },
 {
-"id": "stortinget-200147",
+"id": "stortinget-200110",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Marie Sneve Martinussen, Hanne Beate Stenvaag og Seher Aydar om arbeidstidsreduksjon for turnusarbeidere",
-"court_or_body": "Arbeids- og sosialkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200147",
-"snippet": "Dokument 8:200 S (2025-2026), Innst. 325 S (2025-2026)"
+"title": "Representantforslag fra stortingsrepresentantene Liv Gustavsen, Tom Staahle, Aina Stenersen og Anne Grethe Hauan om etablering av psykiatrisk ambulansetjeneste på det sentrale Østlandet",
+"court_or_body": "Helse- og omsorgskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200110",
+"snippet": "Dokument 8:180 S (2025-2026), Innst. 315 S (2025-2026)"
 },
 {
 "id": "stortinget-200092",
@@ -637191,15 +637200,6 @@
 "snippet": "Dokument 8:161 S (2025-2026), Innst. 317 S (2025-2026)"
 },
 {
-"id": "stortinget-200198",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Sylvi Listhaug, Bård Hoksrud, Dagfinn Henrik Olsen, Frank Edvard Sve, May Helen Hetland Ervik, Mats Henriksen, Bjørnar Laabak og Tom Staahle om å avslutte byvekstavtaler og avvikle nullvekstmålet",
-"court_or_body": "Transport- og kommunikasjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200198",
-"snippet": "Dokument 8:232 S (2025-2026), Innst. 301 S (2025-2026)"
-},
-{
 "id": "stortinget-200189",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -637207,6 +637207,15 @@
 "court_or_body": "Transport- og kommunikasjonskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200189",
 "snippet": "Dokument 8:246 S (2025-2026), Innst. 313 S (2025-2026)"
+},
+{
+"id": "stortinget-200198",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Sylvi Listhaug, Bård Hoksrud, Dagfinn Henrik Olsen, Frank Edvard Sve, May Helen Hetland Ervik, Mats Henriksen, Bjørnar Laabak og Tom Staahle om å avslutte byvekstavtaler og avvikle nullvekstmålet",
+"court_or_body": "Transport- og kommunikasjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200198",
+"snippet": "Dokument 8:232 S (2025-2026), Innst. 301 S (2025-2026)"
 },
 {
 "id": "stortinget-200194",
@@ -637236,15 +637245,6 @@
 "snippet": "Dokument 8:234 S (2025-2026), Innst. 303 S (2025-2026)"
 },
 {
-"id": "stortinget-200240",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Lov om særskilt innsats mot negativ sosial kontroll og æresmotivert vold",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200240",
-"snippet": "Prop. 69 L (2025-2026), Innst. 307 L (2025-2026), Lovvedtak 49 (2025-2026)"
-},
-{
 "id": "stortinget-200222",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -637252,6 +637252,15 @@
 "court_or_body": "Arbeids- og sosialkomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200222",
 "snippet": "Prop. 62 L (2025-2026), Innst. 306 L (2025-2026), Lovvedtak 45 (2025-2026)"
+},
+{
+"id": "stortinget-200240",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Lov om særskilt innsats mot negativ sosial kontroll og æresmotivert vold",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200240",
+"snippet": "Prop. 69 L (2025-2026), Innst. 307 L (2025-2026), Lovvedtak 49 (2025-2026)"
 },
 {
 "id": "stortinget-200220",
@@ -637290,15 +637299,6 @@
 "snippet": "Prop. 51 L (2025-2026), Innst. 336 L (2025-2026), Lovvedtak 48 (2025-2026)"
 },
 {
-"id": "stortinget-200099",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentant Lars Haltbrekken om ny modell for utjevning av nettleie",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200099",
-"snippet": "Dokument 8:171 S (2025-2026), Innst. 285 S (2025-2026)"
-},
-{
 "id": "stortinget-200077",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -637308,31 +637308,13 @@
 "snippet": "Dokument 8:153 S (2025-2026), Innst. 289 S (2025-2026)"
 },
 {
-"id": "stortinget-200103",
+"id": "stortinget-200079",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Morten Stordalen, Rikard Spets, Pål Morten Borgli, Sylvi Listhaug, Kristoffer Sivertsen, Kristian August Eilertsen, Bjørn Larsen og Tor Mikkel Wara om det neste oljeeventyret på norsk sokkel",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200103",
-"snippet": "Dokument 8:175 S (2025-2026), Innst. 284 S (2025-2026)"
-},
-{
-"id": "stortinget-200108",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Geir Pollestad og Trygve Slagsvold Vedum om beredskapslagring av diesel og flybensin",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200108",
-"snippet": "Dokument 8:178 S (2025-2026), Innst. 295 S (2025-2026)"
-},
-{
-"id": "stortinget-200106",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Ingrid Fiskaa, Kirsti Bergstø, Audun Hammer Hovda, Lars Haltbrekken, Marthe Hammer og Marian Hussein om å bygge infrastruktur for transport og lagring av CO2 - Kortskip",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200106",
-"snippet": "Dokument 8:196 S (2025-2026), Innst. 282 S (2025-2026)"
+"title": "Representantforslag fra stortingsrepresentantene Marius Langballe Dalin, Oda Indgaard, Ingrid Liland, Arild Hermstad, Siren Julianne Jensen, Frøya Skjold Sjursæther og Une Bastholm om å avvikle Helseplattformen og sørge for brukervennlige journalsystemer",
+"court_or_body": "Helse- og omsorgskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200079",
+"snippet": "Dokument 8:155 S (2025-2026), Innst. 328 S (2025-2026)"
 },
 {
 "id": "stortinget-200064",
@@ -637353,13 +637335,40 @@
 "snippet": "Dokument 8:140 L (2025-2026), Innst. 291 L (2025-2026)"
 },
 {
-"id": "stortinget-200079",
+"id": "stortinget-200108",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Marius Langballe Dalin, Oda Indgaard, Ingrid Liland, Arild Hermstad, Siren Julianne Jensen, Frøya Skjold Sjursæther og Une Bastholm om å avvikle Helseplattformen og sørge for brukervennlige journalsystemer",
-"court_or_body": "Helse- og omsorgskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200079",
-"snippet": "Dokument 8:155 S (2025-2026), Innst. 328 S (2025-2026)"
+"title": "Representantforslag fra stortingsrepresentantene Geir Pollestad og Trygve Slagsvold Vedum om beredskapslagring av diesel og flybensin",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200108",
+"snippet": "Dokument 8:178 S (2025-2026), Innst. 295 S (2025-2026)"
+},
+{
+"id": "stortinget-200099",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentant Lars Haltbrekken om ny modell for utjevning av nettleie",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200099",
+"snippet": "Dokument 8:171 S (2025-2026), Innst. 285 S (2025-2026)"
+},
+{
+"id": "stortinget-200106",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Ingrid Fiskaa, Kirsti Bergstø, Audun Hammer Hovda, Lars Haltbrekken, Marthe Hammer og Marian Hussein om å bygge infrastruktur for transport og lagring av CO2 - Kortskip",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200106",
+"snippet": "Dokument 8:196 S (2025-2026), Innst. 282 S (2025-2026)"
+},
+{
+"id": "stortinget-200103",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Morten Stordalen, Rikard Spets, Pål Morten Borgli, Sylvi Listhaug, Kristoffer Sivertsen, Kristian August Eilertsen, Bjørn Larsen og Tor Mikkel Wara om det neste oljeeventyret på norsk sokkel",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200103",
+"snippet": "Dokument 8:175 S (2025-2026), Innst. 284 S (2025-2026)"
 },
 {
 "id": "stortinget-200132",
@@ -637533,6 +637542,33 @@
 "snippet": "Dokument 8:228 S (2025-2026), Innst. 269 S (2025-2026)"
 },
 {
+"id": "stortinget-200104",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Sylvi Listhaug, Morten Stordalen, Kristoffer Sivertsen, Rikard Spets og Tor Mikkel Wara om kostnadsberegninger for å nå Norges klimamål",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200104",
+"snippet": "Dokument 8:174 S (2025-2026), Innst. 283 S (2025-2026)"
+},
+{
+"id": "stortinget-200109",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Hans Andreas Limi, Morten Wold, Bård Hoksrud, Dagfinn Henrik Olsen, Frank Edvard Sve, May Helen Hetland Ervik og Mats Henriksen om bostedsfritak for bompenger på Sollihøgda",
+"court_or_body": "Transport- og kommunikasjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200109",
+"snippet": "Dokument 8:179 S (2025-2026), Innst. 281 S (2025-2026)"
+},
+{
+"id": "stortinget-200096",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther og Oda Indgaard om å slå ned på grov miljøkriminalitet",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200096",
+"snippet": "Dokument 8:172 S (2025-2026), Innst. 286 S (2025-2026)"
+},
+{
 "id": "stortinget-200080",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -637560,31 +637596,13 @@
 "snippet": "Dokument 8:157 LS (2025-2026), Innst. 246 S (2025-2026)"
 },
 {
-"id": "stortinget-200109",
+"id": "stortinget-200225",
 "source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Hans Andreas Limi, Morten Wold, Bård Hoksrud, Dagfinn Henrik Olsen, Frank Edvard Sve, May Helen Hetland Ervik og Mats Henriksen om bostedsfritak for bompenger på Sollihøgda",
-"court_or_body": "Transport- og kommunikasjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200109",
-"snippet": "Dokument 8:179 S (2025-2026), Innst. 281 S (2025-2026)"
-},
-{
-"id": "stortinget-200104",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Sylvi Listhaug, Morten Stordalen, Kristoffer Sivertsen, Rikard Spets og Tor Mikkel Wara om kostnadsberegninger for å nå Norges klimamål",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200104",
-"snippet": "Dokument 8:174 S (2025-2026), Innst. 283 S (2025-2026)"
-},
-{
-"id": "stortinget-200096",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther og Oda Indgaard om å slå ned på grov miljøkriminalitet",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200096",
-"snippet": "Dokument 8:172 S (2025-2026), Innst. 286 S (2025-2026)"
+"type": "melding",
+"title": "Årsmelding 2025 for pensjonsordninga for stortingsrepresentantar og regjeringsmedlemer",
+"court_or_body": "Arbeids- og sosialkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200225",
+"snippet": "Meld. St. 6 (2025-2026), Innst. 235 S (2025-2026)"
 },
 {
 "id": "stortinget-200278",
@@ -637596,15 +637614,6 @@
 "snippet": "Prop. 88 L (2025-2026), Innst. 296 L (2025-2026), Lovvedtak 41 (2025-2026)"
 },
 {
-"id": "stortinget-200225",
-"source": "stortinget.no",
-"type": "melding",
-"title": "Årsmelding 2025 for pensjonsordninga for stortingsrepresentantar og regjeringsmedlemer",
-"court_or_body": "Arbeids- og sosialkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200225",
-"snippet": "Meld. St. 6 (2025-2026), Innst. 235 S (2025-2026)"
-},
-{
 "id": "stortinget-200316",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -637614,15 +637623,6 @@
 "snippet": "Dokument 8:291 S (2025-2026)"
 },
 {
-"id": "stortinget-200098",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Margret Hagerup, Tage Pettersen, Mari Holm Lønseth og Tone Wilhelmsen Trøen om å sikre forutsigbar finansiering for krisesenterbygg",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200098",
-"snippet": "Dokument 8:170 S (2025-2026), Innst. 242 S (2025-2026)"
-},
-{
 "id": "stortinget-200087",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -637630,15 +637630,6 @@
 "court_or_body": "Kommunal- og forvaltningskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200087",
 "snippet": "Dokument 8:162 S (2025-2026), Innst. 266 S (2025-2026)"
-},
-{
-"id": "stortinget-200090",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Silje Hjemdal, Liv Gustavsen, Morgan Langfeldt og Lill Harriet Sandaune om praktiske og alternative opplæringstilbud for barn og unge på barnevernsinstitusjon",
-"court_or_body": "Utdannings- og forskningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200090",
-"snippet": "Dokument 8:165 S (2025-2026), Innst. 244 S (2025-2026)"
 },
 {
 "id": "stortinget-200072",
@@ -637666,6 +637657,51 @@
 "court_or_body": "Kommunal- og forvaltningskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200076",
 "snippet": "Dokument 8:152 S (2025-2026), Innst. 248 S (2025-2026)"
+},
+{
+"id": "stortinget-200059",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Jonas Andersen Sayed, Jørgen H. Kristiansen, Hans Edvard Askjer og Harry Valderhaug om å la ukrainere reise hjem",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200059",
+"snippet": "Dokument 8:136 S (2025-2026), Innst. 233 S (2025-2026)"
+},
+{
+"id": "stortinget-200098",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Margret Hagerup, Tage Pettersen, Mari Holm Lønseth og Tone Wilhelmsen Trøen om å sikre forutsigbar finansiering for krisesenterbygg",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200098",
+"snippet": "Dokument 8:170 S (2025-2026), Innst. 242 S (2025-2026)"
+},
+{
+"id": "stortinget-200090",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Silje Hjemdal, Liv Gustavsen, Morgan Langfeldt og Lill Harriet Sandaune om praktiske og alternative opplæringstilbud for barn og unge på barnevernsinstitusjon",
+"court_or_body": "Utdannings- og forskningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200090",
+"snippet": "Dokument 8:165 S (2025-2026), Innst. 244 S (2025-2026)"
+},
+{
+"id": "stortinget-200111",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Geir Inge Lien, Bent-Joacim Bentzen og Erling Sande om å sikre mobildekning på alle offentlige veier",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200111",
+"snippet": "Dokument 8:194 S (2025-2026), Innst. 239 S (2025-2026)"
+},
+{
+"id": "stortinget-200101",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Kristian August Eilertsen, Per-Willy Amundsen og Bård Hoksrud om å sette i gang et forprosjekt for ny innfartsveg til Tromsø",
+"court_or_body": "Transport- og kommunikasjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200101",
+"snippet": "Dokument 8:177 S (2025-2026), Innst. 241 S (2025-2026)"
 },
 {
 "id": "stortinget-200178",
@@ -637704,15 +637740,6 @@
 "snippet": "Dokument 8:220 S (2025-2026), Innst. 274 S (2025-2026)"
 },
 {
-"id": "stortinget-200111",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Geir Inge Lien, Bent-Joacim Bentzen og Erling Sande om å sikre mobildekning på alle offentlige veier",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200111",
-"snippet": "Dokument 8:194 S (2025-2026), Innst. 239 S (2025-2026)"
-},
-{
 "id": "stortinget-200122",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -637720,15 +637747,6 @@
 "court_or_body": "Kommunal- og forvaltningskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200122",
 "snippet": "Dokument 8:188 S (2025-2026), Innst. 238 S (2025-2026)"
-},
-{
-"id": "stortinget-200101",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Kristian August Eilertsen, Per-Willy Amundsen og Bård Hoksrud om å sette i gang et forprosjekt for ny innfartsveg til Tromsø",
-"court_or_body": "Transport- og kommunikasjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200101",
-"snippet": "Dokument 8:177 S (2025-2026), Innst. 241 S (2025-2026)"
 },
 {
 "id": "stortinget-200153",
@@ -637821,15 +637839,6 @@
 "snippet": "Innberetning 3 (2025-2026)"
 },
 {
-"id": "stortinget-200059",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Jonas Andersen Sayed, Jørgen H. Kristiansen, Hans Edvard Askjer og Harry Valderhaug om å la ukrainere reise hjem",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200059",
-"snippet": "Dokument 8:136 S (2025-2026), Innst. 233 S (2025-2026)"
-},
-{
 "id": "stortinget-200056",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -637855,15 +637864,6 @@
 "court_or_body": "Transport- og kommunikasjonskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200058",
 "snippet": "Dokument 8:135 S (2025-2026), Innst. 254 S (2025-2026)"
-},
-{
-"id": "stortinget-200060",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Ida Lindtveit Røse, Jonas Andersen Sayed, Jorunn Gleditsch Lossius og Hans Edvard Askjer om en stortingsmelding om innvandring og integrering",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200060",
-"snippet": "Dokument 8:137 S (2025-2026), Innst. 234 S (2025-2026)"
 },
 {
 "id": "stortinget-200049",
@@ -637920,6 +637920,33 @@
 "snippet": "Dokument 8:286 S (2025-2026)"
 },
 {
+"id": "stortinget-200105",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Lars Rem, Bård Hoksrud, Dagfinn Henrik Olsen, Frank Edvard Sve, May Helen Hetland Ervik, Mats Henriksen, Finn Krokeide, Tor André Johnsen og Morten Kolbjørnsen om å redusere bompengebelastningen på rv. 4",
+"court_or_body": "Transport- og kommunikasjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200105",
+"snippet": "Dokument 8:173 S (2025-2026), Innst. 240 S (2025-2026)"
+},
+{
+"id": "stortinget-200097",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Grunde Almeland, Guri Melby og Abid Raja om å stimulere til økt bruk av samkjøring for å nå nullvekstmålet",
+"court_or_body": "Transport- og kommunikasjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200097",
+"snippet": "Dokument 8:169 S (2025-2026), Innst. 243 S (2025-2026)"
+},
+{
+"id": "stortinget-200060",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Ida Lindtveit Røse, Jonas Andersen Sayed, Jorunn Gleditsch Lossius og Hans Edvard Askjer om en stortingsmelding om innvandring og integrering",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200060",
+"snippet": "Dokument 8:137 S (2025-2026), Innst. 234 S (2025-2026)"
+},
+{
 "id": "stortinget-200067",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -637945,24 +637972,6 @@
 "court_or_body": "Transport- og kommunikasjonskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200085",
 "snippet": "Dokument 8:159 S (2025-2026), Innst. 245 S (2025-2026)"
-},
-{
-"id": "stortinget-200097",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Grunde Almeland, Guri Melby og Abid Raja om å stimulere til økt bruk av samkjøring for å nå nullvekstmålet",
-"court_or_body": "Transport- og kommunikasjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200097",
-"snippet": "Dokument 8:169 S (2025-2026), Innst. 243 S (2025-2026)"
-},
-{
-"id": "stortinget-200105",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Lars Rem, Bård Hoksrud, Dagfinn Henrik Olsen, Frank Edvard Sve, May Helen Hetland Ervik, Mats Henriksen, Finn Krokeide, Tor André Johnsen og Morten Kolbjørnsen om å redusere bompengebelastningen på rv. 4",
-"court_or_body": "Transport- og kommunikasjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200105",
-"snippet": "Dokument 8:173 S (2025-2026), Innst. 240 S (2025-2026)"
 },
 {
 "id": "stortinget-200066",
@@ -638091,15 +638100,6 @@
 "snippet": "Dokument 8:112 S (2025-2026), Innst. 227 S (2025-2026)"
 },
 {
-"id": "stortinget-200023",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Kari Sofie Bjørnsen, Aleksander Stokkebø, Erlend Larsen, Tage Pettersen og Ove Trellevik om en plan for håndtering av sprengstoff og ammunisjon i norsk natur og i kystnære farvann",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200023",
-"snippet": "Dokument 8:104 S (2025-2026), Innst. 201 S (2025-2026)"
-},
-{
 "id": "stortinget-200026",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -638116,6 +638116,15 @@
 "court_or_body": "Kommunal- og forvaltningskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200010",
 "snippet": "Dokument 8:90 S (2025-2026), Innst. 221 S (2025-2026)"
+},
+{
+"id": "stortinget-200023",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Kari Sofie Bjørnsen, Aleksander Stokkebø, Erlend Larsen, Tage Pettersen og Ove Trellevik om en plan for håndtering av sprengstoff og ammunisjon i norsk natur og i kystnære farvann",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200023",
+"snippet": "Dokument 8:104 S (2025-2026), Innst. 201 S (2025-2026)"
 },
 {
 "id": "stortinget-200298",
@@ -638307,6 +638316,24 @@
 "snippet": "Dokument 8:125 S (2025-2026), Innst. 212 S (2025-2026)"
 },
 {
+"id": "stortinget-200028",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Nikolai Astrup og Kari Sofie Bjørnsen om å forbedre aksjesparekontoordningen for å øke investeringer i vekstbedrifter",
+"court_or_body": "Finanskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200028",
+"snippet": "Dokument 8:108 S (2025-2026), Innst. 182 S (2025-2026)"
+},
+{
+"id": "stortinget-200029",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i lov om supplerande stønad ved kort butid (presisering av reglene om behovsprøving)",
+"court_or_body": "Arbeids- og sosialkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200029",
+"snippet": "Prop. 33 L (2025-2026), Innst. 181 L (2025-2026), Lovvedtak 38 (2025-2026)"
+},
+{
 "id": "stortinget-200055",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -638343,24 +638370,6 @@
 "snippet": "Dokument 8:105 S (2025-2026), Innst. 183 S (2025-2026)"
 },
 {
-"id": "stortinget-200028",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Nikolai Astrup og Kari Sofie Bjørnsen om å forbedre aksjesparekontoordningen for å øke investeringer i vekstbedrifter",
-"court_or_body": "Finanskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200028",
-"snippet": "Dokument 8:108 S (2025-2026), Innst. 182 S (2025-2026)"
-},
-{
-"id": "stortinget-200029",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i lov om supplerande stønad ved kort butid (presisering av reglene om behovsprøving)",
-"court_or_body": "Arbeids- og sosialkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200029",
-"snippet": "Prop. 33 L (2025-2026), Innst. 181 L (2025-2026), Lovvedtak 38 (2025-2026)"
-},
-{
 "id": "stortinget-200125",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -638379,15 +638388,6 @@
 "snippet": "Innberetning 2 (2025-2026)"
 },
 {
-"id": "stortinget-200027",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Geir Jørgensen, Sofie Marhaug og Mímir Kristjánsson om Nysnø",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200027",
-"snippet": "Dokument 8:109 S (2025-2026), Innst. 211 S (2025-2026)"
-},
-{
 "id": "stortinget-200019",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -638404,6 +638404,15 @@
 "court_or_body": "Utdannings- og forskningskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200017",
 "snippet": "Dokument 8:100 S (2025-2026), Innst. 185 S (2025-2026)"
+},
+{
+"id": "stortinget-200027",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Geir Jørgensen, Sofie Marhaug og Mímir Kristjánsson om Nysnø",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200027",
+"snippet": "Dokument 8:109 S (2025-2026), Innst. 211 S (2025-2026)"
 },
 {
 "id": "stortinget-200013",
@@ -1074787,6 +1074796,33 @@
 "court_or_body": "Finansdepartementet (FIN)",
 "url": "https://www.regjeringen.no/en/documents/meld.-st.-1-20262027/id3177186/",
 "snippet": "Kapittelene gir en gjennomgang av utviklingen i norsk økonomi og petroleumsmarkedene, med analyser av inflasjon, renter og kapasitetsutnytting i fastlandsøkonomien. Rapporten vurderer virkningen av krigen i Midtøsten på olje- og gasspriser, handelsstrømmer og usikkerhet, og legger fram tekniske pris"
+},
+{
+"id": "kudos-a2fc515e-651e-4d90-b7fb-02c981adf418",
+"source": "kudos.dfo.no",
+"type": "NOU",
+"title": "NOU 2026: 11",
+"court_or_body": "Finansdepartementet (FIN)",
+"url": "https://www.regjeringen.no/no/dokumenter/nou-2026-11/id3177462/",
+"snippet": "Denne NOU vurderer og gir anbefalinger om det etiske rammeverket for Statens pensjonsfond utland (SPU). Utredningen analyserer fondets etiske forpliktelser, folkerettslige hensyn, produkt- og adferdskriterier, håndtering ved krig og konflikt, samt organisering, åpenhet og rapportering. Den diskutere"
+},
+{
+"id": "kudos-a2fae496-63f9-48d5-a18d-fa69367a1849",
+"source": "kudos.dfo.no",
+"type": "KVU/KS1/KS2",
+"title": "KS2 Finansieringsgrunnlag Oslopakke 3 - 2027-2045",
+"court_or_body": "Samferdselsdepartementet (SD), Finansdepartementet (FIN)",
+"url": "https://www.ntnu.no/concept/ks-rapporter",
+"snippet": "Rapporten er en ekstern kvalitetssikring (KS2) av finansieringsgrunnlaget for Oslopakke 2027–2045 utført for Samferdselsdepartementet og Finansdepartementet. Kvalitetssikringen viser at tiltaksporteføljen kan gjennomføres innen avtaleperioden, men at finansieringsplanen er sårbar for kostnadsøkninge"
+},
+{
+"id": "kudos-a2fa9f05-1452-4b8c-85ff-0b61a1b61806",
+"source": "kudos.dfo.no",
+"type": "Statusrapport",
+"title": "Risikovurdering av advokatbransjen 2026",
+"court_or_body": "Advokattilsynet",
+"url": "https://tilsynet.no/aktuelt/risikovurdering-advokatbransjen",
+"snippet": "Denne risikovurderingen analyserer risikoen for at advokatbransjen i Norge kan bli utnyttet til hvitvasking, terrorfinansiering og finansiering av spredning av masseødeleggelsesvåpen. Den vurderer bransjens særtrekk, klient- og oppdragsrisiko, geografiske og organisatoriske sårbarheter samt etterlev"
 },
 {
 "id": "forbrukertilsynet-forbrukerklageutvalget-sok-i-vedtak-for-2021",
