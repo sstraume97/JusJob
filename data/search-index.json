@@ -633393,6 +633393,69 @@
 "snippet": "\n\n{{Lagmannsretter\n|Instans=\n\nEidsivating militære lagmannsrett - Dom\n|Dato=\n1953-06-23\n|Publisert=\nRt-1953-913\n|Sammendrag=\n\n|Stikkord=\n\n|Saksgang=\nMilitær straffesak nr. 9/1953.\n|Parter=\nGeneraljurisdiksjonssjefen for hæren v/krigsadvokat Alf Monsen mot løytnant A (forsvarer høyesterettsadvokat J."
 },
 {
+"id": "stortinget-200457",
+"source": "stortinget.no",
+"type": "redegjorelse",
+"title": "Redegjørelse av statsministeren om regjeringens skolepolitikk og tiltak for å snu utviklingen i skoleresultater",
+"court_or_body": "Stortinget",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200457",
+"snippet": ""
+},
+{
+"id": "stortinget-200468",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Hege Bae Nyholt, Marie Sneve Martinussen, Seher Aydar og Mímir Kristjánsson om å avskaffe urimelige representantytelser",
+"court_or_body": "Stortingets presidentskap",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200468",
+"snippet": "Dokument 8:20 S (2026–2027)"
+},
+{
+"id": "stortinget-200469",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Tone Wilhelmsen Trøen, Haagen Poppe, Tage Pettersen og Mahmoud Farahmand om et trygt og sikkert institusjonsbarnevern",
+"court_or_body": "Familie- og kulturkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200469",
+"snippet": "Dokument 8:21 S (2026–2027)"
+},
+{
+"id": "stortinget-200471",
+"source": "stortinget.no",
+"type": "innstillingssaker",
+"title": "Innstilling fra valgkomiteen om valg av medlemmer og varamedlemmer til Nordisk råd",
+"court_or_body": "Valgkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200471",
+"snippet": "Innst. 19 S (2026-2027)"
+},
+{
+"id": "stortinget-200472",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Petroleumsskattelovgivningen – teknisk revisjon",
+"court_or_body": "Finanskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200472",
+"snippet": "Prop. 3 LS (2026–2027)"
+},
+{
+"id": "stortinget-200473",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Petroleumsskattelovgivningen – teknisk revisjon",
+"court_or_body": "Finanskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200473",
+"snippet": "Prop. 3 LS (2026–2027)"
+},
+{
+"id": "stortinget-200474",
+"source": "stortinget.no",
+"type": "dokumentserien",
+"title": "Riksrevisjonens undersøkelse av myndighetenes arbeid med energieffektivisering",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200474",
+"snippet": "Dokument 3:3 (2026–2027)"
+},
+{
 "id": "stortinget-200476",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -633411,13 +633474,13 @@
 "snippet": "Dokument 8:23 S (2026–2027)"
 },
 {
-"id": "stortinget-200474",
+"id": "stortinget-200463",
 "source": "stortinget.no",
-"type": "dokumentserien",
-"title": "Riksrevisjonens undersøkelse av myndighetenes arbeid med energieffektivisering",
+"type": "redegjorelse",
+"title": "Redegjørelse av utviklingsministeren om nordisk samarbeid",
 "court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200474",
-"snippet": "Dokument 3:3 (2026–2027)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200463",
+"snippet": ""
 },
 {
 "id": "stortinget-200475",
@@ -633429,33 +633492,6 @@
 "snippet": ""
 },
 {
-"id": "stortinget-200472",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Petroleumsskattelovgivningen – teknisk revisjon",
-"court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200472",
-"snippet": "Prop. 3 LS (2026–2027)"
-},
-{
-"id": "stortinget-200473",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Petroleumsskattelovgivningen – teknisk revisjon",
-"court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200473",
-"snippet": "Prop. 3 LS (2026–2027)"
-},
-{
-"id": "stortinget-200471",
-"source": "stortinget.no",
-"type": "innstillingssaker",
-"title": "Innstilling fra valgkomiteen om valg av medlemmer og varamedlemmer til Nordisk råd",
-"court_or_body": "Valgkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200471",
-"snippet": "Innst. 19 S (2026-2027)"
-},
-{
 "id": "stortinget-200432",
 "source": "stortinget.no",
 "type": "redegjorelse",
@@ -633463,24 +633499,6 @@
 "court_or_body": "Familie- og kulturkomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200432",
 "snippet": ""
-},
-{
-"id": "stortinget-200461",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Hans Edvard Askjer, Ida Lindtveit Røse, Jonas Andersen Sayed og Jorunn Gleditsch Lossius om forsterket innsats mot menneskehandel, sexkjøp og ufrivillig prostitusjon",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200461",
-"snippet": "Dokument 8:16 S (2026–2027)"
-},
-{
-"id": "stortinget-200462",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Marius Langballe Dalin, Siren Julianne Jensen, Oda Indgaard, Ingrid Liland og Lars Lønberg Henriksen om å lovliggjøre og legge til rette for pluggbare solceller og batterier",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200462",
-"snippet": "Dokument 8:17 S (2026–2027)"
 },
 {
 "id": "stortinget-200465",
@@ -633501,22 +633519,22 @@
 "snippet": "Dokument 8:19 S (2026–2027)"
 },
 {
-"id": "stortinget-200468",
+"id": "stortinget-200461",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Hege Bae Nyholt, Marie Sneve Martinussen, Seher Aydar og Mímir Kristjánsson om å avskaffe urimelige representantytelser",
-"court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200468",
-"snippet": "Dokument 8:20 S (2026–2027)"
+"title": "Representantforslag fra stortingsrepresentantene Hans Edvard Askjer, Ida Lindtveit Røse, Jonas Andersen Sayed og Jorunn Gleditsch Lossius om forsterket innsats mot menneskehandel, sexkjøp og ufrivillig prostitusjon",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200461",
+"snippet": "Dokument 8:16 S (2026–2027)"
 },
 {
-"id": "stortinget-200469",
+"id": "stortinget-200462",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Tone Wilhelmsen Trøen, Haagen Poppe, Tage Pettersen og Mahmoud Farahmand om et trygt og sikkert institusjonsbarnevern",
-"court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200469",
-"snippet": "Dokument 8:21 S (2026–2027)"
+"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Marius Langballe Dalin, Siren Julianne Jensen, Oda Indgaard, Ingrid Liland og Lars Lønberg Henriksen om å lovliggjøre og legge til rette for pluggbare solceller og batterier",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200462",
+"snippet": "Dokument 8:17 S (2026–2027)"
 },
 {
 "id": "stortinget-200426",
@@ -633526,15 +633544,6 @@
 "court_or_body": "Kommunal- og forvaltningskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200426",
 "snippet": "Dokument 8:8 S (2026–2027)"
-},
-{
-"id": "stortinget-200463",
-"source": "stortinget.no",
-"type": "redegjorelse",
-"title": "Redegjørelse av utviklingsministeren om nordisk samarbeid",
-"court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200463",
-"snippet": ""
 },
 {
 "id": "stortinget-200464",
@@ -633699,33 +633708,6 @@
 "snippet": "Prop. 1 LS (2026–2027); Innst. 3 S (2026-2027)"
 },
 {
-"id": "stortinget-200429",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Une Bastholm, Ingrid Liland og Lars Lønberg Henriksen om å forby jakt på ekorn",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200429",
-"snippet": "Dokument 8:10 S (2026–2027)"
-},
-{
-"id": "stortinget-200430",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Oda Indgaard og Ingrid Liland om å skattelegge ekstraordinære overskudd i olje- og gasselskaper ",
-"court_or_body": "Finanskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200430",
-"snippet": "Dokument 8:11 S (2026–2027)"
-},
-{
-"id": "stortinget-200431",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Ingrid Liland, Siren Julianne Jensen og Oda Indgaard om å forby reklame for fossil energi",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200431",
-"snippet": "Dokument 8:12 S (2026–2027)"
-},
-{
 "id": "stortinget-200452",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -633771,6 +633753,33 @@
 "snippet": "Dokument 8:13 L (2026–2027)"
 },
 {
+"id": "stortinget-200429",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Une Bastholm, Ingrid Liland og Lars Lønberg Henriksen om å forby jakt på ekorn",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200429",
+"snippet": "Dokument 8:10 S (2026–2027)"
+},
+{
+"id": "stortinget-200430",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Oda Indgaard og Ingrid Liland om å skattelegge ekstraordinære overskudd i olje- og gasselskaper",
+"court_or_body": "Finanskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200430",
+"snippet": "Dokument 8:11 S (2026–2027)"
+},
+{
+"id": "stortinget-200431",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Frøya Skjold Sjursæther, Ingrid Liland, Siren Julianne Jensen og Oda Indgaard om å forby reklame for fossil energi",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200431",
+"snippet": "Dokument 8:12 S (2026–2027)"
+},
+{
 "id": "stortinget-200458",
 "source": "stortinget.no",
 "type": "ikke_spesifisert",
@@ -633786,15 +633795,6 @@
 "title": "Den Norske Nobelkomité meddeler at Nobels fredspris for 2026 er tildelt Navanethem «Navi» Pillay",
 "court_or_body": "Stortinget",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200460",
-"snippet": ""
-},
-{
-"id": "stortinget-200457",
-"source": "stortinget.no",
-"type": "redegjorelse",
-"title": "Redegjørelse av statsministeren om regjeringens skolepolitikk og tiltak for å snu utviklingen i skoleresultater",
-"court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200457",
 "snippet": ""
 },
 {
@@ -634578,7 +634578,7 @@
 "title": "Representantforslag fra stortingsrepresentantene Anna Molberg, Henrik Asheim, Amalie Gunnufsen, Mahmoud Farahmand om forskuttering av sykepenger",
 "court_or_body": "Arbeids- og sosialkomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200302",
-"snippet": "Dokument 8:285 S (2025-2026)"
+"snippet": "Dokument 8:285 S (2025-2026), Innst. 20 S (2026-2027)"
 },
 {
 "id": "stortinget-200303",
@@ -637980,7 +637980,7 @@
 "title": "Representantforslag fra stortingsrepresentantene Anna Molberg, Henrik Asheim, Amalie Gunnufsen, Mahmoud Farahmand om forskuttering av sykepenger",
 "court_or_body": "Arbeids- og sosialkomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200302",
-"snippet": "Dokument 8:285 S (2025-2026)"
+"snippet": "Dokument 8:285 S (2025-2026), Innst. 20 S (2026-2027)"
 },
 {
 "id": "stortinget-200303",
@@ -653544,15 +653544,6 @@
 "snippet": "Meld. St. 22 (2022-2023), Innst. 217 S (2023-2024)"
 },
 {
-"id": "stortinget-94564",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Olaug Vervik Bollestad, Dag-Inge Ulstein og Kjell Ingolf Ropstad om en verifiserbar aldersgrense for sosiale medier og regulering av innhold og reklame rettet mot barn",
-"court_or_body": "Familie- og kulturkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94564",
-"snippet": "Dokument 8:247 S (2022-2023), Innst. 191 S (2023-2024)"
-},
-{
 "id": "stortinget-95011",
 "source": "stortinget.no",
 "type": "innstillingssaker",
@@ -653562,6 +653553,15 @@
 "snippet": "Innst. 215 S (2023-2024)"
 },
 {
+"id": "stortinget-94564",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Olaug Vervik Bollestad, Dag-Inge Ulstein og Kjell Ingolf Ropstad om en verifiserbar aldersgrense for sosiale medier og regulering av innhold og reklame rettet mot barn",
+"court_or_body": "Familie- og kulturkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94564",
+"snippet": "Dokument 8:247 S (2022-2023), Innst. 191 S (2023-2024)"
+},
+{
 "id": "stortinget-94763",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -653569,15 +653569,6 @@
 "court_or_body": "Utdannings- og forskningskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94763",
 "snippet": "Prop. 126 L (2022-2023), Innst. 169 L (2023-2024), Lovvedtak 43 (2023-2024)"
-},
-{
-"id": "stortinget-94206",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Torgeir Knag Fylkesnes og Marian Hussein om demokratisk kunstig intelligens",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94206",
-"snippet": "Dokument 8:232 S (2022-2023), Innst. 152 S (2023-2024)"
 },
 {
 "id": "stortinget-94761",
@@ -653596,6 +653587,15 @@
 "court_or_body": "Justiskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94739",
 "snippet": "Dokument 8:273 S (2022-2023), Innst. 151 S (2023-2024)"
+},
+{
+"id": "stortinget-94206",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Torgeir Knag Fylkesnes og Marian Hussein om demokratisk kunstig intelligens",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94206",
+"snippet": "Dokument 8:232 S (2022-2023), Innst. 152 S (2023-2024)"
 },
 {
 "id": "stortinget-94807",
@@ -653650,60 +653650,6 @@
 "court_or_body": "Kommunal- og forvaltningskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=92496",
 "snippet": "Meld. St. 27 (2022-2023), Innst. 110 S (2023-2024)"
-},
-{
-"id": "stortinget-93892",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Ingvild Wetrhus Thorsvik, Guri Melby, André N. Skjelstad og Abid Raja om å bedre psykisk helsetilbud for innsatte i fengsel",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93892",
-"snippet": "Dokument 8:226 S (2022-2023), Innst. 95 S (2023-2024)"
-},
-{
-"id": "stortinget-94516",
-"source": "stortinget.no",
-"type": "dokumentserien",
-"title": "Kvalitet og effektivitet i drift og vedlikehold av riks- og fylkesveier",
-"court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94516",
-"snippet": "Dokument 3:11 (2022-2023), Innst. 94 S (2023-2024)"
-},
-{
-"id": "stortinget-94886",
-"source": "stortinget.no",
-"type": "dokumentserien",
-"title": "Universiteta og høgskulane sitt arbeid med å vidareutvikle kvaliteten i studieprogramma",
-"court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94886",
-"snippet": "Dokument 3:14 (2022-2023), Innst. 97 S (2023-2024)"
-},
-{
-"id": "stortinget-92906",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Lan Marie Nguyen Berg, Rasmus Hansson og Kristoffer Robin Haug om endring av straffeloven § 185, «rasismeparagrafen», og et tryggere offentlig ytringsrom",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=92906",
-"snippet": "Dokument 8:134 S (2022-2023), Innst. 96 S (2023-2024)"
-},
-{
-"id": "stortinget-94531",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Mari Holm Lønseth, Erna Solberg, Sveinung Stensland og Mudassar Kapur om bedre forebygging av og mer kunnskap om voldelig ekstremisme og radikalisering",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94531",
-"snippet": "Dokument 8:246 S (2022-2023), Innst. 93 S (2023-2024)"
-},
-{
-"id": "stortinget-94328",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Hans Andreas Limi, Roy Steffensen, Silje Hjemdal og Helge André Njåstad om en bedre politikk for anskaffelse, bytte og eie av bolig",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94328",
-"snippet": "Dokument 8:239 S (2022-2023), Innst. 109 S (2023-2024)"
 },
 {
 "id": "stortinget-95117",
@@ -653814,31 +653760,58 @@
 "snippet": "Dokument 8:269 S (2022-2023), Innst. 107 S (2023-2024)"
 },
 {
-"id": "stortinget-94026",
+"id": "stortinget-93892",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Kathy Lie og Cato Brunvand Ellingsen om utviklingshemmedes møte med strafferettspleien",
+"title": "Representantforslag fra stortingsrepresentantene Ingvild Wetrhus Thorsvik, Guri Melby, André N. Skjelstad og Abid Raja om å bedre psykisk helsetilbud for innsatte i fengsel",
 "court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94026",
-"snippet": "Dokument 8:230 S (2022-2023), Innst. 56 S (2023-2024)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93892",
+"snippet": "Dokument 8:226 S (2022-2023), Innst. 95 S (2023-2024)"
 },
 {
-"id": "stortinget-94712",
+"id": "stortinget-94516",
 "source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Per-Willy Amundsen, Morten Stordalen og Frank Edvard Sve om skjerpede reaksjoner mot villmannskjøring",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94712",
-"snippet": "Dokument 8:257 S (2022-2023), Innst. 71 S (2023-2024)"
+"type": "dokumentserien",
+"title": "Kvalitet og effektivitet i drift og vedlikehold av riks- og fylkesveier",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94516",
+"snippet": "Dokument 3:11 (2022-2023), Innst. 94 S (2023-2024)"
 },
 {
-"id": "stortinget-94714",
+"id": "stortinget-94886",
+"source": "stortinget.no",
+"type": "dokumentserien",
+"title": "Universiteta og høgskulane sitt arbeid med å vidareutvikle kvaliteten i studieprogramma",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94886",
+"snippet": "Dokument 3:14 (2022-2023), Innst. 97 S (2023-2024)"
+},
+{
+"id": "stortinget-92906",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Mari Holm Lønseth, Tone Wilhelmsen Trøen, Sandra Bruflot, Ingunn Foss og Jan Tore Sanner om styrket kamp mot negativ sosial kontroll",
+"title": "Representantforslag fra stortingsrepresentantene Lan Marie Nguyen Berg, Rasmus Hansson og Kristoffer Robin Haug om endring av straffeloven § 185, «rasismeparagrafen», og et tryggere offentlig ytringsrom",
 "court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94714",
-"snippet": "Dokument 8:258 S (2022-2023), Innst. 90 S (2023-2024)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=92906",
+"snippet": "Dokument 8:134 S (2022-2023), Innst. 96 S (2023-2024)"
+},
+{
+"id": "stortinget-94531",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Mari Holm Lønseth, Erna Solberg, Sveinung Stensland og Mudassar Kapur om bedre forebygging av og mer kunnskap om voldelig ekstremisme og radikalisering",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94531",
+"snippet": "Dokument 8:246 S (2022-2023), Innst. 93 S (2023-2024)"
+},
+{
+"id": "stortinget-94328",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Hans Andreas Limi, Roy Steffensen, Silje Hjemdal og Helge André Njåstad om en bedre politikk for anskaffelse, bytte og eie av bolig",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94328",
+"snippet": "Dokument 8:239 S (2022-2023), Innst. 109 S (2023-2024)"
 },
 {
 "id": "stortinget-94745",
@@ -653895,22 +653868,31 @@
 "snippet": "Prop. 109 LS (2022-2023), Innst. 78 L (2023-2024), Lovvedtak 15 (2023-2024)"
 },
 {
-"id": "stortinget-94604",
-"source": "stortinget.no",
-"type": "dokumentserien",
-"title": "Norsk bistand til Syria-krisa 2016-2021",
-"court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94604",
-"snippet": "Dokument 3:13 (2022-2023), Innst. 92 S (2023-2024)"
-},
-{
-"id": "stortinget-94718",
+"id": "stortinget-94026",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene André N. Skjelstad, Alfred Jens Bjørlo, Abid Raja og Guri Melby om tryggere fylkesveier og økt nedbetalingstid for bompenger i distriktene",
-"court_or_body": "Transport- og kommunikasjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94718",
-"snippet": "Dokument 8:255 S (2022-2023), Innst. 69 S (2023-2024)"
+"title": "Representantforslag fra stortingsrepresentantene Kathy Lie og Cato Brunvand Ellingsen om utviklingshemmedes møte med strafferettspleien",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94026",
+"snippet": "Dokument 8:230 S (2022-2023), Innst. 56 S (2023-2024)"
+},
+{
+"id": "stortinget-94712",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Per-Willy Amundsen, Morten Stordalen og Frank Edvard Sve om skjerpede reaksjoner mot villmannskjøring",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94712",
+"snippet": "Dokument 8:257 S (2022-2023), Innst. 71 S (2023-2024)"
+},
+{
+"id": "stortinget-94714",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Mari Holm Lønseth, Tone Wilhelmsen Trøen, Sandra Bruflot, Ingunn Foss og Jan Tore Sanner om styrket kamp mot negativ sosial kontroll",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94714",
+"snippet": "Dokument 8:258 S (2022-2023), Innst. 90 S (2023-2024)"
 },
 {
 "id": "stortinget-95583",
@@ -653929,6 +653911,60 @@
 "court_or_body": "Transport- og kommunikasjonskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=95584",
 "snippet": "Prop. 140 LS (2022-2023), Innst. 87 L (2023-2024), Lovvedtak 14 (2023-2024)"
+},
+{
+"id": "stortinget-94604",
+"source": "stortinget.no",
+"type": "dokumentserien",
+"title": "Norsk bistand til Syria-krisa 2016-2021",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94604",
+"snippet": "Dokument 3:13 (2022-2023), Innst. 92 S (2023-2024)"
+},
+{
+"id": "stortinget-94718",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene André N. Skjelstad, Alfred Jens Bjørlo, Abid Raja og Guri Melby om tryggere fylkesveier og økt nedbetalingstid for bompenger i distriktene",
+"court_or_body": "Transport- og kommunikasjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94718",
+"snippet": "Dokument 8:255 S (2022-2023), Innst. 69 S (2023-2024)"
+},
+{
+"id": "stortinget-94764",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i sjøloven og skipssikkerhetsloven (elektronisk tinglysing av skip og rettigheter i skip)",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94764",
+"snippet": "Prop. 129 L (2022-2023), Innst. 59 L (2023-2024), Lovvedtak 11 (2023-2024)"
+},
+{
+"id": "stortinget-94741",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Ola Elvestuen, Guri Melby, Grunde Almeland, Abid Raja, Sveinung Rotevatn og Ingvild Wetrhus Thorsvik om tiltak for å reetablere livskraftige fiskebestander i Oslofjorden",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94741",
+"snippet": "Dokument 8:271 S (2022-2023), Innst. 66 S (2023-2024)"
+},
+{
+"id": "stortinget-94738",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Alfred Jens Bjørlo, Guri Melby, André N. Skjelstad, Ingvild Wetrhus Thorsvik og Sveinung Rotevatn om å gjøre Norge til verdens beste nærings-, gründer- og nyskapingsnasjon",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94738",
+"snippet": "Dokument 8:274 S (2022-2023), Innst. 68 S (2023-2024)"
+},
+{
+"id": "stortinget-94744",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Geir Jørgensen og Marie Sneve Martinussen om eierskapsbegrensninger i dagligvarebransjen",
+"court_or_body": "Næringskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94744",
+"snippet": "Dokument 8:268 S (2022-2023), Innst. 64 S (2023-2024)"
 },
 {
 "id": "stortinget-94702",
@@ -653983,78 +654019,6 @@
 "court_or_body": "Næringskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94700",
 "snippet": "Dokument 8:250 S (2022-2023), Innst. 74 S (2023-2024)"
-},
-{
-"id": "stortinget-94764",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i sjøloven og skipssikkerhetsloven (elektronisk tinglysing av skip og rettigheter i skip)",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94764",
-"snippet": "Prop. 129 L (2022-2023), Innst. 59 L (2023-2024), Lovvedtak 11 (2023-2024)"
-},
-{
-"id": "stortinget-94741",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Ola Elvestuen, Guri Melby, Grunde Almeland, Abid Raja, Sveinung Rotevatn og Ingvild Wetrhus Thorsvik om tiltak for å reetablere livskraftige fiskebestander i Oslofjorden",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94741",
-"snippet": "Dokument 8:271 S (2022-2023), Innst. 66 S (2023-2024)"
-},
-{
-"id": "stortinget-94738",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Alfred Jens Bjørlo, Guri Melby, André N. Skjelstad, Ingvild Wetrhus Thorsvik og Sveinung Rotevatn om å gjøre Norge til verdens beste nærings-, gründer- og nyskapingsnasjon",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94738",
-"snippet": "Dokument 8:274 S (2022-2023), Innst. 68 S (2023-2024)"
-},
-{
-"id": "stortinget-94744",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Geir Jørgensen og Marie Sneve Martinussen om eierskapsbegrensninger i dagligvarebransjen",
-"court_or_body": "Næringskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94744",
-"snippet": "Dokument 8:268 S (2022-2023), Innst. 64 S (2023-2024)"
-},
-{
-"id": "stortinget-94701",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Mímir Kristjánsson og Bjørnar Moxnes om å tette smutthull i innleieregelverket ved å presisere begrepet tillitsvalgt i arbeidsmiljøloven",
-"court_or_body": "Arbeids- og sosialkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94701",
-"snippet": "Dokument 8:251 S (2022-2023), Innst. 73 S (2023-2024)"
-},
-{
-"id": "stortinget-94716",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Stine Westrum, Marie Sneve Martinussen og Tobias Drevland Lund om en strandsone for alle og styrking av allemannsretten",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94716",
-"snippet": "Dokument 8:254 S (2022-2023), Innst. 47 S (2023-2024)"
-},
-{
-"id": "stortinget-94601",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Hege Bae Nyholt, Seher Aydar, Bjørnar Moxnes og Tobias Drevland Lund om tilbakekjøp av velferdseiendommer",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94601",
-"snippet": "Dokument 8:248 S (2022-2023), Innst. 55 S (2023-2024)"
-},
-{
-"id": "stortinget-94626",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Bjørnar Moxnes, Mímir Kristjánsson, Tobias Drevland Lund og Marie Sneve Martinussen om å sikre anstendig sosialhjelp til alle som trenger det",
-"court_or_body": "Arbeids- og sosialkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94626",
-"snippet": "Dokument 8:249 S (2022-2023), Innst. 75 S (2023-2024)"
 },
 {
 "id": "stortinget-94749",
@@ -654120,6 +654084,60 @@
 "snippet": "Prop. 135 L (2022-2023), Innst. 58 L (2023-2024), Lovvedtak 9 (2023-2024)"
 },
 {
+"id": "stortinget-94701",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Mímir Kristjánsson og Bjørnar Moxnes om å tette smutthull i innleieregelverket ved å presisere begrepet tillitsvalgt i arbeidsmiljøloven",
+"court_or_body": "Arbeids- og sosialkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94701",
+"snippet": "Dokument 8:251 S (2022-2023), Innst. 73 S (2023-2024)"
+},
+{
+"id": "stortinget-94716",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Stine Westrum, Marie Sneve Martinussen og Tobias Drevland Lund om en strandsone for alle og styrking av allemannsretten",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94716",
+"snippet": "Dokument 8:254 S (2022-2023), Innst. 47 S (2023-2024)"
+},
+{
+"id": "stortinget-94601",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Hege Bae Nyholt, Seher Aydar, Bjørnar Moxnes og Tobias Drevland Lund om tilbakekjøp av velferdseiendommer",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94601",
+"snippet": "Dokument 8:248 S (2022-2023), Innst. 55 S (2023-2024)"
+},
+{
+"id": "stortinget-94626",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Bjørnar Moxnes, Mímir Kristjánsson, Tobias Drevland Lund og Marie Sneve Martinussen om å sikre anstendig sosialhjelp til alle som trenger det",
+"court_or_body": "Arbeids- og sosialkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94626",
+"snippet": "Dokument 8:249 S (2022-2023), Innst. 75 S (2023-2024)"
+},
+{
+"id": "stortinget-94633",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i tobakksskadeloven (strengere regulering av e-sigaretter)",
+"court_or_body": "Helse- og omsorgskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94633",
+"snippet": "Prop. 125 L (2022-2023), Innst. 48 L (2023-2024), Lovvedtak 7 (2023-2024)"
+},
+{
+"id": "stortinget-93961",
+"source": "stortinget.no",
+"type": "proposisjon",
+"title": "Endringer i klimaloven (klimamålet for 2030)",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93961",
+"snippet": "Prop. 107 L (2022-2023), Innst. 38 L (2023-2024), Lovvedtak 5 (2023-2024)"
+},
+{
 "id": "stortinget-94236",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -654147,22 +654165,22 @@
 "snippet": "Dokument 8:231 S (2022-2023), Innst. 54 S (2023-2024)"
 },
 {
-"id": "stortinget-94633",
+"id": "stortinget-94747",
 "source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i tobakksskadeloven (strengere regulering av e-sigaretter)",
-"court_or_body": "Helse- og omsorgskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94633",
-"snippet": "Prop. 125 L (2022-2023), Innst. 48 L (2023-2024), Lovvedtak 7 (2023-2024)"
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Une Bastholm og Lan Marie Nguyen Berg om forurensningsfri fotballglede",
+"court_or_body": "Energi- og miljøkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94747",
+"snippet": "Dokument 8:265 S (2022-2023), Innst. 44 S (2023-2024)"
 },
 {
-"id": "stortinget-93961",
+"id": "stortinget-94746",
 "source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i klimaloven (klimamålet for 2030)",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Ola Elvestuen, Guri Melby, Grunde Almeland, Abid Raja, Ingvild Wetrhus Thorsvik og Sveinung Rotevatn om Oslofjorden og stans av forurensning fra spyling av fritidsbåter",
 "court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93961",
-"snippet": "Prop. 107 L (2022-2023), Innst. 38 L (2023-2024), Lovvedtak 5 (2023-2024)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94746",
+"snippet": "Dokument 8:266 S (2022-2023), Innst. 45 S (2023-2024)"
 },
 {
 "id": "stortinget-94007",
@@ -654201,22 +654219,13 @@
 "snippet": "Dokument 8:256 S (2022-2023), Innst. 46 S (2023-2024)"
 },
 {
-"id": "stortinget-94747",
+"id": "stortinget-95582",
 "source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Une Bastholm og Lan Marie Nguyen Berg om forurensningsfri fotballglede",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94747",
-"snippet": "Dokument 8:265 S (2022-2023), Innst. 44 S (2023-2024)"
-},
-{
-"id": "stortinget-94746",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Ola Elvestuen, Guri Melby, Grunde Almeland, Abid Raja, Ingvild Wetrhus Thorsvik og Sveinung Rotevatn om Oslofjorden og stans av forurensning fra spyling av fritidsbåter",
-"court_or_body": "Energi- og miljøkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94746",
-"snippet": "Dokument 8:266 S (2022-2023), Innst. 45 S (2023-2024)"
+"type": "proposisjon",
+"title": "Endringar i statsbudsjettet 2023 under Samferdselsdepartementet (tilskot til godstogselskap etter ekstremvêret «Hans»)",
+"court_or_body": "Transport- og kommunikasjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=95582",
+"snippet": "Prop. 141 S (2022-2023), Innst. 41 S (2023-2024)"
 },
 {
 "id": "stortinget-94297",
@@ -654228,13 +654237,22 @@
 "snippet": "Dokument 8:237 S (2022-2023), Innst. 26 S (2023-2024)"
 },
 {
-"id": "stortinget-95582",
+"id": "stortinget-95145",
 "source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringar i statsbudsjettet 2023 under Samferdselsdepartementet (tilskot til godstogselskap etter ekstremvêret «Hans»)",
-"court_or_body": "Transport- og kommunikasjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=95582",
-"snippet": "Prop. 141 S (2022-2023), Innst. 41 S (2023-2024)"
+"type": "innstillingssaker",
+"title": "Forelegg for Stortinget av overenskomster inngått med fremmede stater eller internasjonale organisasjoner i 2019",
+"court_or_body": "Utenriks- og forsvarskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=95145",
+"snippet": "Innst. 34 S (2023-2024)"
+},
+{
+"id": "stortinget-94542",
+"source": "stortinget.no",
+"type": "melding",
+"title": "Eksport av forsvarsmateriell fra Norge i 2022, eksportkontroll og internasjonalt ikke-spredningssamarbeid",
+"court_or_body": "Utenriks- og forsvarskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94542",
+"snippet": "Meld. St. 21 (2022-2023), Innst. 30 S (2023-2024)"
 },
 {
 "id": "stortinget-94207",
@@ -654255,22 +654273,22 @@
 "snippet": "Dokument 8:225 S (2022-2023), Innst. 22 S (2023-2024)"
 },
 {
-"id": "stortinget-95145",
+"id": "stortinget-94757",
 "source": "stortinget.no",
-"type": "innstillingssaker",
-"title": "Forelegg for Stortinget av overenskomster inngått med fremmede stater eller internasjonale organisasjoner i 2019",
+"type": "proposisjon",
+"title": "Endringer i forsvarsloven mv. (militær disiplinærmyndighet)",
 "court_or_body": "Utenriks- og forsvarskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=95145",
-"snippet": "Innst. 34 S (2023-2024)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94757",
+"snippet": "Prop. 133 L (2022-2023), Innst. 32 L (2023-2024), Lovvedtak 3 (2023-2024)"
 },
 {
-"id": "stortinget-94542",
+"id": "stortinget-94804",
 "source": "stortinget.no",
-"type": "melding",
-"title": "Eksport av forsvarsmateriell fra Norge i 2022, eksportkontroll og internasjonalt ikke-spredningssamarbeid",
+"type": "proposisjon",
+"title": "Lov om militær politimyndighet (militærpolitiloven)",
 "court_or_body": "Utenriks- og forsvarskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94542",
-"snippet": "Meld. St. 21 (2022-2023), Innst. 30 S (2023-2024)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94804",
+"snippet": "Prop. 134 L (2022-2023), Innst. 33 L (2023-2024), Lovvedtak 4 (2023-2024)"
 },
 {
 "id": "stortinget-93018",
@@ -654318,22 +654336,22 @@
 "snippet": "Dokument 8:253 S (2022-2023), Innst. 31 S (2023-2024)"
 },
 {
-"id": "stortinget-94757",
+"id": "stortinget-94454",
 "source": "stortinget.no",
 "type": "proposisjon",
-"title": "Endringer i forsvarsloven mv. (militær disiplinærmyndighet)",
-"court_or_body": "Utenriks- og forsvarskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94757",
-"snippet": "Prop. 133 L (2022-2023), Innst. 32 L (2023-2024), Lovvedtak 3 (2023-2024)"
+"title": "Endringer i lov om Statens pensjonskasse og enkelte andre lover (opphevelse av minstegrensen for rett til medlemskap)",
+"court_or_body": "Arbeids- og sosialkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94454",
+"snippet": "Prop. 120 L (2022-2023), Innst. 37 L (2023-2024), Lovvedtak 1 (2023-2024)"
 },
 {
-"id": "stortinget-94804",
+"id": "stortinget-94455",
 "source": "stortinget.no",
 "type": "proposisjon",
-"title": "Lov om militær politimyndighet (militærpolitiloven)",
-"court_or_body": "Utenriks- og forsvarskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94804",
-"snippet": "Prop. 134 L (2022-2023), Innst. 33 L (2023-2024), Lovvedtak 4 (2023-2024)"
+"title": "Endringer i arbeidsmiljøloven (forskriftshjemmel om lovens anvendelse for dykkeoperasjoner)",
+"court_or_body": "Arbeids- og sosialkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94455",
+"snippet": "Prop. 122 L (2022-2023), Innst. 29 L (2023-2024), Lovvedtak 2 (2023-2024)"
 },
 {
 "id": "stortinget-94385",
@@ -654363,22 +654381,13 @@
 "snippet": "Dokument 8:227 S (2022-2023), Innst. 25 S (2023-2024)"
 },
 {
-"id": "stortinget-94454",
+"id": "stortinget-95579",
 "source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i lov om Statens pensjonskasse og enkelte andre lover (opphevelse av minstegrensen for rett til medlemskap)",
-"court_or_body": "Arbeids- og sosialkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94454",
-"snippet": "Prop. 120 L (2022-2023), Innst. 37 L (2023-2024), Lovvedtak 1 (2023-2024)"
-},
-{
-"id": "stortinget-94455",
-"source": "stortinget.no",
-"type": "proposisjon",
-"title": "Endringer i arbeidsmiljøloven (forskriftshjemmel om lovens anvendelse for dykkeoperasjoner)",
-"court_or_body": "Arbeids- og sosialkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94455",
-"snippet": "Prop. 122 L (2022-2023), Innst. 29 L (2023-2024), Lovvedtak 2 (2023-2024)"
+"type": "innberetning",
+"title": "Innberetning fra valgkomiteen om endringer i de faste komiteers sammensetning",
+"court_or_body": "Valgkomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=95579",
+"snippet": "Innberetning 5 (2022-2023)"
 },
 {
 "id": "stortinget-95493",
@@ -654388,15 +654397,6 @@
 "court_or_body": "Stortinget",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=95493",
 "snippet": ""
-},
-{
-"id": "stortinget-95579",
-"source": "stortinget.no",
-"type": "innberetning",
-"title": "Innberetning fra valgkomiteen om endringer i de faste komiteers sammensetning",
-"court_or_body": "Valgkomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=95579",
-"snippet": "Innberetning 5 (2022-2023)"
 },
 {
 "id": "stortinget-95466",
@@ -677383,6 +677383,15 @@
 "court_or_body": "Sivilombudet",
 "url": "https://www.sivilombudet.no/uttalelser/vurdering-av-soknad-om-utsatt-skolestart/",
 "snippet": "Saken gjelder søknad om utsatt skolestart for et barn [begrunnelse]. Sivilombudet er kommet til at Statsforvalteren i Vestfold og Telemark har lagt feil rettsanvendelse til grunn ved vurderingen av søknaden. Statsforvalterenes vedtak mangler en tydelig vurdering av om barnet rent faktisk er på et utviklingsnivå på nåværende tidspunkt, som tilsier at han klart har kommet langt nok i sin utvikling til at han bør starte på skolen. Statsforvalterens vurdering av om han er klar for skolestart er knyttet opp mot forventet utvikling frem til neste skoleår og at PP-tjenesten har konkludert med at han «kan» begynne på skolen. Sivilombudet har kommet til at spørsmålet om han bør begynne på skolen nå beror på nå-situasjonen og at eventuell utvikling i løpet av det neste året ikke er avgjørende. Vi har bedt Statsforvalteren om å gjøre en fornyet vurdering av om det foreligger slik tvil om at A har kommet langt nok i utviklinga si til at han bør starte på skolen."
+},
+{
+"id": "sivilombudet-https://www.sivilombudet.no/uttalelser/klageadgangen-for-avslag-pa-utsettelse-av-heimevernstjeneste/",
+"source": "sivilombudet.no",
+"type": "uttalelse",
+"title": "Klageadgangen for avslag på utsettelse av heimevernstjeneste",
+"court_or_body": "Sivilombudet",
+"url": "https://www.sivilombudet.no/uttalelser/klageadgangen-for-avslag-pa-utsettelse-av-heimevernstjeneste/",
+"snippet": "Saken gjelder behandling av klager på utsettelse av tjeneste i Heimevernet (HV). Sivilombudet er kjent med at Forsvarsdepartementets klagenemnd i vernepliktssaker (klagenemnda) behandler få klager over avslag på utsettelse av HV-tjeneste. Derfor har ombudet innhentet de 21 påklagede avgjørelsene som HV hadde oversendt for behandling i klagenemnda, og undersøkt om klageadgangen fungerer. Undersøkelsen viser at HV-området videresender klager over avslag på utsettelse til klagenemnda uten å kreve at den tjenestepliktige sender ny klage. Dette er en forbedring siden forrige undersøkelse forut for uttalelse SOM-2023-5286. Videre viser de fleste vedtakene at Forsvaret gir klar informasjon om klagerett på avslag på utsettelse. De fleste vedtakene oppgir også klagefrist. Dette fremstår som en forbedring siden forrige undersøkelse. I elleve av de 17 sakene ble imidlertid ikke klagen ferdigbehandlet av FPVS før HV-øvelsen var i gang eller over. Når en klage blir liggende i FPVS i flere uker og ikke blir behandlet før HV-øvelsen, fungerer ikke klageordningen. Dette svekker rettssikkerheten til den som klager. Sivilombudet er kommet til at det er behov for å iverksette tiltak for å effektivisere klagebehandlingen slik at de tjenestepliktige får endelig svar på klagen før øvelsen. Forsvarsdepartementet anmodes om å gi tilbakemelding innen 1. juni 2027."
 },
 {
 "id": "kudos-a21b009c-35da-4f10-b881-082e3decd69e",
@@ -1075113,6 +1075122,42 @@
 "snippet": "Utredningen kartlegger nåværende skolestruktur i Vestvågøy kommune, oppdaterer Norconsults 2020-analyse med ny demografi, elevtallsprognoser og økonomiske beregninger, og samler innspill fra medvirkningsprosessen. Den vurderer kapasitetsutnyttelse, skolebyggenes tilstand, skoleskyss og lovverk knytt"
 },
 {
+"id": "kudos-a306e109-416f-462b-9c99-a46827737ef2",
+"source": "kudos.dfo.no",
+"type": "Statusrapport",
+"title": "State ownership report 2025",
+"court_or_body": "Nærings- og fiskeridepartementet (NFD)",
+"url": "https://www.regjeringen.no/en/documents/statens-eierrapport-2025/id3165665/",
+"snippet": "Rapporten gir en omfattende oversikt over statens direkte eierskap per 2025, inkludert selskapers økonomiske utvikling, ansattes nøkkeltall og miljørapportering. Den beskriver eierskapsmålene for to kategorier av selskaper og presenterer nøkkeltall som samlet verdi og avkastning. Rapporten omtaler o"
+},
+{
+"id": "kudos-a306cb93-bffd-4ef4-acff-8f0515ef156b",
+"source": "kudos.dfo.no",
+"type": "Kartlegging",
+"title": "Utviklingen i antall ansatte i statsforvaltningen 2024-2025",
+"court_or_body": "Direktoratet for forvaltning og økonomistyring (DFØ)",
+"url": "https://www.dfo.no/nn/rapportar/utviklinga-i-talet-pa-tilsette-i-statsforvaltninga",
+"snippet": "Notatet kartlegger utviklingen i antall arbeidsforhold i statsforvaltningen i perioden 2024–2025 basert på SSB-statistikk og DFØs egen kartlegging. Det beskriver endringer totalt og etter departementsområder, fylker og sentralitet, samt årsaker til vekst eller reduksjon og effekt av omorganiseringer"
+},
+{
+"id": "kudos-a306cb93-5fc1-44f1-b8a9-86b5540a810b",
+"source": "kudos.dfo.no",
+"type": "Riksrevisjonsrapport",
+"title": "Riksrevisjonens undersøkelse av myndighetenes arbeid med energieffektivisering",
+"court_or_body": "Riksrevisjonen",
+"url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2026-2027/myndighetenes-arbeid-med-energieffektivisering/",
+"snippet": "Riksrevisjonen har gjennomført en forvaltningsrevisjon av myndighetenes arbeid med energieffektivisering for å vurdere om virkemidlene har bidratt til resultater. Rapporten konkluderer med at energieffektiviteten er forbedret, men at dagens virkemidler ikke er godt nok innrettet eller kraftfulle nok"
+},
+{
+"id": "kudos-a307ed49-7e58-4d4d-b4ac-b826767ee90a",
+"source": "kudos.dfo.no",
+"type": "Kartlegging",
+"title": "Mengderapport vinteren 2025/2026",
+"court_or_body": "Statens vegvesen (SVV)",
+"url": "https://kudos.dfo.no/dokument/a307ed49-7e58-4d4d-b4ac-b826767ee90a/filer/a307f2aa-7867-4b36-8e2c-840b8cf02b5d.pdf",
+"snippet": "Rapporten gir en oversikt over ressursbruken i vinterdriften på Europa- og riksveger i sesongen 2025/2026 for Statens vegvesen og Nye veier, inkludert veier i OPS- og felleskontrakter. Den dokumenterer mengder for salting, sanding og brøyting, samt historiske tall for sammenligning over tid. Rapport"
+},
+{
 "id": "forbrukertilsynet-forbrukerklageutvalget-sok-i-vedtak-for-2021",
 "source": "forbrukertilsynet.no",
 "type": "veiledning",
@@ -1083473,6 +1083518,19 @@
 "court_or_body": "Riksrevisjonen",
 "url": "https://www.riksrevisjonen.no/rapporter/?p=2 ",
 "snippet": "Offentliggjort 05.05.2026 Helsetenestenes samhandling om eldre Mange pasientar som kunne vore behandla i kommunane blir i staden behandla i sjukehusa. Klikk for å lese mer. Kategorier: Helse Les videre",
+"subjects": [
+"Stats-/statsforfatnings-/statsborgerrett",
+"Forvaltnings-/kommunalrett"
+]
+},
+{
+"id": "riksrevisjonen-myndighetenes-arbeid-med-energieffektivisering",
+"source": "riksrevisjonen.no",
+"type": "rapport",
+"title": "Offentliggjort20.10.2026Myndighetenes arbeid med energieffektiviseringNorge har store muligheter for energieffektivisering og Stortinget har satt klare mål. Om vi ikke når målene, kan det bidra til at strømprisene blir høyere og at det blir bygget ut mer kraftproduksjon...Klikk for å lese mer.Kategorier:Energi/klima/miljøLes videre",
+"court_or_body": "Riksrevisjonen",
+"url": "https://www.riksrevisjonen.no/rapporter-mappe/no-2026-2027/myndighetenes-arbeid-med-energieffektivisering/",
+"snippet": "Dokument 3:3\r\n                                    (2026−2027) / Offentliggjort 20.10.2026 Myndighetenes arbeid med energieffektivisering Norge har store muligheter for energieffektivisering og Stortinget har satt klare mål. Om vi ikke når målene, kan det bidra til at strømprisene blir høyere og at det blir bygget ut mer kraftproduksjon og nettinfrastruktur enn ellers nødvendig. (PDF, 2,61 MB) Last",
 "subjects": [
 "Stats-/statsforfatnings-/statsborgerrett",
 "Forvaltnings-/kommunalrett"
