@@ -633393,6 +633393,15 @@
 "snippet": "{{Tingretter\n|Instans=Vestfold tingrett - Dom\n|Dato=2021-09-22\n|Publisert=TVES-2021-96036\n|Stikkord=Strafferett, Vegtrafikkrett, Mobiltelefonbruk under kjøring, Bevisvurdering\n|Sammendrag=Saken gjaldt spørsmål om forelegg for bruk av mobiltelefon under kjøring. Spørsmålet var om retten skulle legge "
 },
 {
+"id": "stortinget-200506",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Tage Pettersen, Mudassar Kapur, Anne Kristine Linnestad, Kari Sofie Bjørnsen, Erlend Larsen og Trond Helleland om at staten må bidra i spleiselaget for å sikre nitrogenrensing av norsk avløpsvann",
+"court_or_body": "Stortinget",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=200506",
+"snippet": "Dokument 8:39 S (2026–2027)"
+},
+{
 "id": "stortinget-200503",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -653904,6 +653913,42 @@
 "snippet": "Meld. St. 27 (2022-2023), Innst. 110 S (2023-2024)"
 },
 {
+"id": "stortinget-93892",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Ingvild Wetrhus Thorsvik, Guri Melby, André N. Skjelstad og Abid Raja om å bedre psykisk helsetilbud for innsatte i fengsel",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93892",
+"snippet": "Dokument 8:226 S (2022-2023), Innst. 95 S (2023-2024)"
+},
+{
+"id": "stortinget-94516",
+"source": "stortinget.no",
+"type": "dokumentserien",
+"title": "Kvalitet og effektivitet i drift og vedlikehold av riks- og fylkesveier",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94516",
+"snippet": "Dokument 3:11 (2022-2023), Innst. 94 S (2023-2024)"
+},
+{
+"id": "stortinget-94886",
+"source": "stortinget.no",
+"type": "dokumentserien",
+"title": "Universiteta og høgskulane sitt arbeid med å vidareutvikle kvaliteten i studieprogramma",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94886",
+"snippet": "Dokument 3:14 (2022-2023), Innst. 97 S (2023-2024)"
+},
+{
+"id": "stortinget-92906",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Lan Marie Nguyen Berg, Rasmus Hansson og Kristoffer Robin Haug om endring av straffeloven § 185, «rasismeparagrafen», og et tryggere offentlig ytringsrom",
+"court_or_body": "Justiskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=92906",
+"snippet": "Dokument 8:134 S (2022-2023), Innst. 96 S (2023-2024)"
+},
+{
 "id": "stortinget-95117",
 "source": "stortinget.no",
 "type": "melding",
@@ -654030,40 +654075,13 @@
 "snippet": "Dokument 8:246 S (2022-2023), Innst. 93 S (2023-2024)"
 },
 {
-"id": "stortinget-93892",
+"id": "stortinget-94026",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Ingvild Wetrhus Thorsvik, Guri Melby, André N. Skjelstad og Abid Raja om å bedre psykisk helsetilbud for innsatte i fengsel",
+"title": "Representantforslag fra stortingsrepresentantene Kathy Lie og Cato Brunvand Ellingsen om utviklingshemmedes møte med strafferettspleien",
 "court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93892",
-"snippet": "Dokument 8:226 S (2022-2023), Innst. 95 S (2023-2024)"
-},
-{
-"id": "stortinget-94516",
-"source": "stortinget.no",
-"type": "dokumentserien",
-"title": "Kvalitet og effektivitet i drift og vedlikehold av riks- og fylkesveier",
-"court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94516",
-"snippet": "Dokument 3:11 (2022-2023), Innst. 94 S (2023-2024)"
-},
-{
-"id": "stortinget-94886",
-"source": "stortinget.no",
-"type": "dokumentserien",
-"title": "Universiteta og høgskulane sitt arbeid med å vidareutvikle kvaliteten i studieprogramma",
-"court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94886",
-"snippet": "Dokument 3:14 (2022-2023), Innst. 97 S (2023-2024)"
-},
-{
-"id": "stortinget-92906",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Lan Marie Nguyen Berg, Rasmus Hansson og Kristoffer Robin Haug om endring av straffeloven § 185, «rasismeparagrafen», og et tryggere offentlig ytringsrom",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=92906",
-"snippet": "Dokument 8:134 S (2022-2023), Innst. 96 S (2023-2024)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94026",
+"snippet": "Dokument 8:230 S (2022-2023), Innst. 56 S (2023-2024)"
 },
 {
 "id": "stortinget-94712",
@@ -654138,13 +654156,13 @@
 "snippet": "Dokument 8:272 S (2022-2023), Innst. 67 S (2023-2024)"
 },
 {
-"id": "stortinget-94026",
+"id": "stortinget-94604",
 "source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Kathy Lie og Cato Brunvand Ellingsen om utviklingshemmedes møte med strafferettspleien",
-"court_or_body": "Justiskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94026",
-"snippet": "Dokument 8:230 S (2022-2023), Innst. 56 S (2023-2024)"
+"type": "dokumentserien",
+"title": "Norsk bistand til Syria-krisa 2016-2021",
+"court_or_body": "Kontroll- og konstitusjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94604",
+"snippet": "Dokument 3:13 (2022-2023), Innst. 92 S (2023-2024)"
 },
 {
 "id": "stortinget-95583",
@@ -654174,13 +654192,13 @@
 "snippet": "Dokument 8:255 S (2022-2023), Innst. 69 S (2023-2024)"
 },
 {
-"id": "stortinget-94604",
+"id": "stortinget-94609",
 "source": "stortinget.no",
 "type": "dokumentserien",
-"title": "Norsk bistand til Syria-krisa 2016-2021",
+"title": "Myndighetenes arbeid med fiskehelse og fiskevelferd i havbruksnæringen",
 "court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94604",
-"snippet": "Dokument 3:13 (2022-2023), Innst. 92 S (2023-2024)"
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94609",
+"snippet": "Dokument 3:12 (2022-2023), Innst. 76 S (2023-2024)"
 },
 {
 "id": "stortinget-94744",
@@ -654262,15 +654280,6 @@
 "court_or_body": "Næringskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94237",
 "snippet": "Dokument 8:236 S (2022-2023), Innst. 74 S (2023-2024)"
-},
-{
-"id": "stortinget-94609",
-"source": "stortinget.no",
-"type": "dokumentserien",
-"title": "Myndighetenes arbeid med fiskehelse og fiskevelferd i havbruksnæringen",
-"court_or_body": "Kontroll- og konstitusjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94609",
-"snippet": "Dokument 3:12 (2022-2023), Innst. 76 S (2023-2024)"
 },
 {
 "id": "stortinget-94601",
@@ -654417,6 +654426,15 @@
 "snippet": "Dokument 8:243 S (2022-2023), Innst. 51 S (2023-2024)"
 },
 {
+"id": "stortinget-94007",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag frå stortingsrepresentantane Liv Kari Eskeland, Ove Trellevik, Olve Grotle, Alfred Jens Bjørlo, Mathilde Tybring-Gjedde, Svein Harberg og Kjell Ingolf Ropstad om utvida bruk av maritim ladeinfrastruktur",
+"court_or_body": "Transport- og kommunikasjonskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94007",
+"snippet": "Dokument 8:229 S (2022-2023), Innst. 42 S (2023-2024)"
+},
+{
 "id": "stortinget-94512",
 "source": "stortinget.no",
 "type": "representantforslag",
@@ -654462,15 +654480,6 @@
 "snippet": "Dokument 8:256 S (2022-2023), Innst. 46 S (2023-2024)"
 },
 {
-"id": "stortinget-94007",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag frå stortingsrepresentantane Liv Kari Eskeland, Ove Trellevik, Olve Grotle, Alfred Jens Bjørlo, Mathilde Tybring-Gjedde, Svein Harberg og Kjell Ingolf Ropstad om utvida bruk av maritim ladeinfrastruktur",
-"court_or_body": "Transport- og kommunikasjonskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94007",
-"snippet": "Dokument 8:229 S (2022-2023), Innst. 42 S (2023-2024)"
-},
-{
 "id": "stortinget-95582",
 "source": "stortinget.no",
 "type": "proposisjon",
@@ -654487,6 +654496,15 @@
 "court_or_body": "Utenriks- og forsvarskomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=94297",
 "snippet": "Dokument 8:237 S (2022-2023), Innst. 26 S (2023-2024)"
+},
+{
+"id": "stortinget-93873",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Guri Melby, Grunde Almeland, Ola Elvestuen og Alfred Jens Bjørlo om en frihetsfremmende handelspolitikk",
+"court_or_body": "Utenriks- og forsvarskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93873",
+"snippet": "Dokument 8:225 S (2022-2023), Innst. 22 S (2023-2024)"
 },
 {
 "id": "stortinget-94207",
@@ -654516,13 +654534,31 @@
 "snippet": "Innst. 34 S (2023-2024)"
 },
 {
-"id": "stortinget-93873",
+"id": "stortinget-93018",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Guri Melby, Grunde Almeland, Ola Elvestuen og Alfred Jens Bjørlo om en frihetsfremmende handelspolitikk",
-"court_or_body": "Utenriks- og forsvarskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93873",
-"snippet": "Dokument 8:225 S (2022-2023), Innst. 22 S (2023-2024)"
+"title": "Representantforslag fra stortingsrepresentantene Helge André Njåstad, Hans Andreas Limi, Bård Hoksrud, Morten Wold, Bengt Rune Strifeldt og Frank Edvard Sve om å etablere en benchmarking-modell for vann- og avløpssektoren",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93018",
+"snippet": "Dokument 8:139 S (2022-2023), Innst. 35 S (2023-2024)"
+},
+{
+"id": "stortinget-93481",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Grete Wold, Lars Haltbrekken, Kari Elisabeth Kaski og Birgit Oline Kjerstad om styrket satsing på vann og avløp",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93481",
+"snippet": "Dokument 8:177 S (2022-2023), Innst. 35 S (2023-2024)"
+},
+{
+"id": "stortinget-93580",
+"source": "stortinget.no",
+"type": "representantforslag",
+"title": "Representantforslag fra stortingsrepresentantene Sofie Marhaug og Tobias Drevland Lund om å ta nasjonalt ansvar for å demme opp for gebyrsjokk for innbyggerne som følge av EUs revidering av avløpsdirektivet og rehabilitering og utbygging i VA-sektoren",
+"court_or_body": "Kommunal- og forvaltningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93580",
+"snippet": "Dokument 8:183 S (2022-2023), Innst. 35 S (2023-2024)"
 },
 {
 "id": "stortinget-94757",
@@ -654561,31 +654597,13 @@
 "snippet": "Dokument 8:253 S (2022-2023), Innst. 31 S (2023-2024)"
 },
 {
-"id": "stortinget-93018",
+"id": "stortinget-93992",
 "source": "stortinget.no",
 "type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Helge André Njåstad, Hans Andreas Limi, Bård Hoksrud, Morten Wold, Bengt Rune Strifeldt og Frank Edvard Sve om å etablere en benchmarking-modell for vann- og avløpssektoren",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93018",
-"snippet": "Dokument 8:139 S (2022-2023), Innst. 35 S (2023-2024)"
-},
-{
-"id": "stortinget-93481",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Grete Wold, Lars Haltbrekken, Kari Elisabeth Kaski og Birgit Oline Kjerstad om styrket satsing på vann og avløp",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93481",
-"snippet": "Dokument 8:177 S (2022-2023), Innst. 35 S (2023-2024)"
-},
-{
-"id": "stortinget-93580",
-"source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Sofie Marhaug og Tobias Drevland Lund om å ta nasjonalt ansvar for å demme opp for gebyrsjokk for innbyggerne som følge av EUs revidering av avløpsdirektivet og rehabilitering og utbygging i VA-sektoren",
-"court_or_body": "Kommunal- og forvaltningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93580",
-"snippet": "Dokument 8:183 S (2022-2023), Innst. 35 S (2023-2024)"
+"title": "Representantforslag fra stortingsrepresentantene Guri Melby, Abid Raja og Sveinung Rotevatn om at alle barn skal få tilbud om en barnehageplass rett etter endt foreldrepermisjon",
+"court_or_body": "Utdannings- og forskningskomiteen",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93992",
+"snippet": "Dokument 8:227 S (2022-2023), Innst. 25 S (2023-2024)"
 },
 {
 "id": "stortinget-94385",
@@ -654624,13 +654642,13 @@
 "snippet": "Prop. 122 L (2022-2023), Innst. 29 L (2023-2024), Lovvedtak 2 (2023-2024)"
 },
 {
-"id": "stortinget-93992",
+"id": "stortinget-95493",
 "source": "stortinget.no",
-"type": "representantforslag",
-"title": "Representantforslag fra stortingsrepresentantene Guri Melby, Abid Raja og Sveinung Rotevatn om at alle barn skal få tilbud om en barnehageplass rett etter endt foreldrepermisjon",
-"court_or_body": "Utdannings- og forskningskomiteen",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93992",
-"snippet": "Dokument 8:227 S (2022-2023), Innst. 25 S (2023-2024)"
+"type": "ikke_spesifisert",
+"title": "Saker som Stortinget ikke har behandlet i sesjonen 2022-2023",
+"court_or_body": "Stortinget",
+"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=95493",
+"snippet": ""
 },
 {
 "id": "stortinget-95579",
@@ -654640,15 +654658,6 @@
 "court_or_body": "Valgkomiteen",
 "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=95579",
 "snippet": "Innberetning 5 (2022-2023)"
-},
-{
-"id": "stortinget-95493",
-"source": "stortinget.no",
-"type": "ikke_spesifisert",
-"title": "Saker som Stortinget ikke har behandlet i sesjonen 2022-2023",
-"court_or_body": "Stortinget",
-"url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=95493",
-"snippet": ""
 },
 {
 "id": "stortinget-95466",
@@ -677673,15 +677682,6 @@
 "snippet": "Saken gjelder Navs behandling av en sak om endring av barnebidrag der klageren sonet i fengsel. Utbetaling av uføretrygd stanses som utgangspunkt når en person soner fengselsstraff. Dersom vedkommende forsørger barn, utbetales likevel 50 prosent uføretrygd jf. folketrygdloven § 12-20 første ledd andre punktum. Klagerens bidragsplikt ble etter en endringssøknad satt til 0 kroner, til tross for at klageren på dette tidspunktet hadde rett til utbetaling av 50 prosent uføretrygd. Etter at bidraget ble satt til 0 kroner, ble utbetalingen av uføretrygden stanset. Klageren forsøkte senere å få gjenopptatt både bidragsplikten og utbetalingen av uføretrygden, og anførte at det var en sammenheng mellom bidragsvedtaket og stansen i utbetalingene. Han ble imidlertid møtt med at han ikke hadde bidragsevne, fordi han ikke hadde inntekt. At han ikke lenger hadde inntekt, var samtidig en konsekvens av vedtaket om endring av barnebidraget. Saken reiste spørsmål om Nav hadde oppfylt utredningsplikten etter forvaltningsloven § 17 og veiledningsplikten etter § 11, både ved behandlingen av endringssøknaden og senere begjæringer om omgjøring. Ombudet mente at Nav ikke hadde utredet saken tilstrekkelig før bidraget ble satt til 0 kroner, og heller ikke fulgt opp klagerens senere opplysninger om sammenhengen mellom bidragsvedtaket og stansen av uføretrygden. Ombudet kom også til at klageren ikke hadde fått tilstrekkelig veiledning. Sivilombudet konkluderte med at Nav hadde brutt veilednings- og utredningsplikten, jf. forvaltningsloven §§ 11 og 17."
 },
 {
-"id": "sivilombudet-https://www.sivilombudet.no/uttalelser/pressens-innsyn-i-straffesaksdokumenter/",
-"source": "sivilombudet.no",
-"type": "uttalelse",
-"title": "Pressens innsyn i straffesaksdokumenter",
-"court_or_body": "Sivilombudet",
-"url": "https://www.sivilombudet.no/uttalelser/pressens-innsyn-i-straffesaksdokumenter/",
-"snippet": "Saken gjelder Hordaland, Sogn og Fjordane statsadvokatembeters avgjørelse om å innvilge Bergens Tidende (BT) delvis innsyn i en avsluttet straffesak. I forbindelse med innsynskravet viste avisen til retten til ytringsfrihet etter Den europeiske menneskerettskonvensjonen (EMK) artikkel 10. De etterlatte i saken mente på sin side at innsynet krenket deres rett til privatliv etter EMK artikkel 8, og påklaget avgjørelsen til Sivilombudet. Sivilombudet kom til at det er tvilsomt om innsyn av det omfanget statsadvokaten har innvilget, er nødvendig for at BT skal kunne kontrollere politiet og påtalemyndigheten og legge til rette for offentlig debatt. I forholdsmessighetsvurderingen må det i tillegg legges vekt på at flere av opplysningene er av svært privat karakter, og på belastningen innsynet derfor vil innebære for de etterlattes privatliv. Sett opp mot hensynene som taler for innsyn, mente ombudet at inngrepet som innsynet medfører ikke er forholdsmessig. Vilkårene for inngrep etter EMK artikkel 8 nr. 2 er dermed ikke oppfylt. Ombudet ba statsadvokaten om å vurdere BTs innsynskrav på nytt. Vurderingen må gjøres for hvert enkelt dokument."
-},
-{
 "id": "sivilombudet-https://www.sivilombudet.no/uttalelser/krav-til-begrunnelse-nar-klageinstansen-tidligere-har-opphevet-underinstansens-vedtak-i-samme-sak/",
 "source": "sivilombudet.no",
 "type": "uttalelse",
@@ -677716,6 +677716,15 @@
 "court_or_body": "Sivilombudet",
 "url": "https://www.sivilombudet.no/uttalelser/departementets-ansvar-for-tilgangen-til-digitale-offentlige-tjenester-gjennom-id-porten/",
 "snippet": "Saken gjelder Digitaliserings- og forvaltningsdepartementets ansvar for at innbyggerne har reell tilgang til offentlige tjenester når staten har bygget opp en digital infrastruktur (ID-porten) som er basert på digital innlogging med elektronisk identifikasjon (eID) fra private leverandører. Mange mennesker får ikke eller kan ikke benytte eID på høyeste sikkerhetsnivå, og har derfor ikke tilgang til viktige deler av forvaltningens digitale tjenestetilbud. ID-porten er en statlig portal som må brukes for å logge inn til det offentlige tjenestetilbudet i Norge. Staten tilbyr fire eID-løsninger for innlogging. Det er tre av disse som kan brukes for innlogging på høyeste sikkerhetsnivå. Alle disse tre er private. BankID er klart mest brukt. De private eID-ene på høyeste sikkerhetsnivå er valgt av staten gjennom en offentlig anskaffelse. Staten hadde lenge planer om å utvikle en offentlig eID på høyeste sikkerhetsnivå, i tilknytning arbeidet med nye pass og nasjonale ID-kort. Staten valgte å avslutte denne del av arbeidet og fortsette med anskaffelse av private leverandører. Sivilombudet mener at departementet ikke i tilstrekkelig grad har undersøkt og fulgt opp hvilke konsekvenser de valgte løsningene har for innbyggernes tilgang til forvaltningen. Problemene har vært kjent i lang tid, uten at staten har sørget for tilstrekkelig utredning av hvilke krav som kan stilles til de private leverandørenes vilkår, og hvordan konsekvensene for dem som blir utestengt kan avhjelpes. Utredningen i forbindelse med anskaffelsen av eID-løsninger til ID-porten i 2021 oppfylte etter ombudets syn ikke kravene i utredningsinstruksen. Behovet for utredning ble ytterligere understreket av at staten samme år avsluttet arbeidet med en offentlig eID på høyeste sikkerhetsnivå. Departementets mangelfulle oppfølging av problemene med digitalt utenforskap er kritikkverdig og ikke i samsvar med god forvaltningsskikk eller det man må forvente av forvaltningen for å sikre forsvarlig og likeverdig tjenestetilbud. Departementet bes, i samarbeid med øvrige ansvarlige myndigheter, sørge for en samlet vurdering av tiltak som kan sikre innbyggerne bedre tilgang til offentlige tjenester."
+},
+{
+"id": "sivilombudet-https://www.sivilombudet.no/uttalelser/pressens-innsyn-i-straffesaksdokumenter/",
+"source": "sivilombudet.no",
+"type": "uttalelse",
+"title": "Pressens innsyn i straffesaksdokumenter",
+"court_or_body": "Sivilombudet",
+"url": "https://www.sivilombudet.no/uttalelser/pressens-innsyn-i-straffesaksdokumenter/",
+"snippet": "Saken gjelder Hordaland, Sogn og Fjordane statsadvokatembeters avgjørelse om å innvilge Bergens Tidende (BT) delvis innsyn i en avsluttet straffesak. I forbindelse med innsynskravet viste avisen til retten til ytringsfrihet etter Den europeiske menneskerettskonvensjonen (EMK) artikkel 10. De etterlatte i saken mente på sin side at innsynet krenket deres rett til privatliv etter EMK artikkel 8, og påklaget avgjørelsen til Sivilombudet. Sivilombudet kom til at det er tvilsomt om innsyn av det omfanget statsadvokaten har innvilget, er nødvendig for at BT skal kunne kontrollere politiet og påtalemyndigheten og legge til rette for offentlig debatt. I forholdsmessighetsvurderingen må det i tillegg legges vekt på at flere av opplysningene er av svært privat karakter, og på belastningen innsynet derfor vil innebære for de etterlattes privatliv. Sett opp mot hensynene som taler for innsyn, mente ombudet at inngrepet som innsynet medfører ikke er forholdsmessig. Vilkårene for inngrep etter EMK artikkel 8 nr. 2 er dermed ikke oppfylt. Ombudet ba statsadvokaten om å vurdere BTs innsynskrav på nytt. Vurderingen må gjøres for hvert enkelt dokument."
 },
 {
 "id": "kudos-a21b009c-35da-4f10-b881-082e3decd69e",
@@ -1076065,6 +1076074,15 @@
 "court_or_body": "Folkehelseinstituttet (FHI)",
 "url": "https://www.fhi.no/publ/2026/norsk-overvakingssystem-for-antibiotikabruk-og-helsetjenesteassosierte-infeksjoner-nois-arsrapport-2025/",
 "snippet": "Denne årsrapporten presenterer nasjonal forekomst, risikofaktorer og konsekvenser av infeksjoner i operasjonsområdet for utvalgte kirurgiske inngrep i 2025, samt resultater for helsetjenesteassosierte infeksjoner og antibiotikabruk i sykehus og sykehjem. Rapporten beskriver metode for datainnsamling"
+},
+{
+"id": "kudos-a32f24af-051d-4374-a1c0-241a7aa70650",
+"source": "kudos.dfo.no",
+"type": "Evaluering",
+"title": "Helhetlig organisasjonsgjennomgang Eigersund kommune",
+"court_or_body": "Eigersund kommune",
+"url": "https://kudos.dfo.no/dokument/a32f24af-051d-4374-a1c0-241a7aa70650/filer/a32f24af-0e0e-4e43-b27d-b34a0089d2c7.pdf",
+"snippet": "Rapporten er en helhetlig organisasjonsgjennomgang av Eigersund kommune som kartlegger styrker, utfordringer og kapasitetsbegrensninger. Den bygger på dokumentanalyser, nøkkeltall, sammenligninger, intervjuer, workshop og spørreundersøkelse, og vurderer ledelse, struktur, arbeidsprosesser og ressurs"
 },
 {
 "id": "forbrukertilsynet-forbrukerklageutvalget-sok-i-vedtak-for-2021",
